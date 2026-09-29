@@ -24,12 +24,19 @@ A Streamlit app that takes a **SwingScope momentum-batch HTML** and tracks its 1
 * **News & Sentiment**: headlines with scores and links.
 * **_state** (hidden): the full tracker state. Upload the workbook through **Restore from a tracker Excel** to continue where you left off.
 
+### Data reliability
+
+* **Two price sources.** Yahoo Finance first, then NSE's official bhavcopy (and index closes) for every session not yet confirmed by NSE. The NSE print wins when both exist, which fills gaps when Yahoo is late or rate-limited.
+* **Two evening runs.** 18:05 IST sends the report only when all 10 closes are in. 20:15 IST fills any gaps and sends if 18:05 couldn't; if a trading day produced no data at all, it sends a short alert instead. You never get the same day twice.
+* **Bonuses and splits.** Prices are stored raw (as traded). Split/bonus events come from Yahoo, or are flagged when a close falls overnight by a bonus ratio (−50% ≈ 1:1 bonus, −33% ≈ 1:2, …). Every earlier price is divided by the ratio and the quantity multiplied, so a bonus never shows up as a fake crash. The Telegram message flags each event, and "suspected" ones should be verified. You can review, reject or add events in the app (② Daily update → Corporate actions). Dividends are recorded but not added to P&L.
+* **Holiday calendar.** The official NSE holiday list is refreshed weekly into `data/nse_holidays.json`. Weekdays for which NSE published no bhavcopy are learned automatically (and unlearned if prices turn up later). If next year's list isn't out yet in December, exit dates for that year assume weekdays only, and the log says so.
+
 ### Conventions
 
 * **Day 0** is the signal-day close from the HTML.
 * **Entry** is the Day-1 open. If that isn't available yet, the Day-0 close is used and marked provisional. A manual fill price overrides both.
 * **Day N** is the N-th real NSE trading session after the signal. A session counts once at least half the basket has a close for that date.
-* Future dates are projected with the NSE holiday list in `core/prices.py`. Update that list each year.
+* Future dates are projected with the NSE holiday calendar (auto-refreshed, see above).
 * **Net P&L** deducts the batch's estimated round-trip cost (0.6% in the HTML). **Nifty 50** is measured from the Day-0 close.
 
 ## Run locally
@@ -48,9 +55,21 @@ streamlit run app.py
 
 Streamlit Cloud's disk is temporary. If you don't use GitHub sync, download the Excel regularly and restore from it when needed.
 
+## Starting the next batch (every 21 days)
+
+Upload the new SwingScope HTML into the **`inbox/`** folder of the repo (GitHub → `inbox` → **Add file → Upload files** → Commit).
+You don't need the app or a computer for this.
+
+* The Action starts right away. It registers the batch under `data/batches/<date>/`, builds the Excel and HTML files, and moves the upload to `inbox/processed/`.
+* If you upload on the signal day (after the close), the **Day-0 "buy at next open"** message arrives in Telegram within a few minutes.
+* From the next evening it is tracked at 18:05 IST until Day 21. Finished batches stop on their own, and overlapping batches are tracked side by side.
+* **Research notes (optional):** upload a `.txt` with the **same name** as the HTML, or named `research_notes_<batch date>.txt`. You can add or replace notes later with that second name.
+
+You can also still upload a new batch in the Streamlit app (tab ①). If you use the app on Streamlit Cloud, set `GITHUB_TOKEN`/`GITHUB_REPO` so the batch is saved to the repo.
+
 ## Day-end delivery to Telegram (after 6 PM IST)
 
-Every weekday at **18:05 IST**, the GitHub Action updates the closes and sends your Telegram bot:
+Every weekday at **18:05 IST** (retry at **20:15 IST**), the GitHub Action updates the closes and sends your Telegram bot:
 
 1. **A summary message:** Day X/21 with a progress bar, P&L (gross and net), value, today's change, Nifty and alpha, winners and losers, max drawdown, the top 3 leaders and laggards, today's biggest movers, how many research calls are on track, the shortlist top 3 and up to 3 positive headlines. On Day 20 it becomes an **"EXIT TOMORROW"** reminder, and on Day 21 a **"batch complete"** report.
 2. **An album of 3 files:** the Excel tracker, the dashboard HTML and the research & sentiment HTML, named with the day and date (for example `…_tracker_D08_2026-10-09.xlsx`).

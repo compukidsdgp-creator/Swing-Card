@@ -20,7 +20,8 @@ from core.news import collect_news
 from core.parser import parse_swingscope_html
 from core.research import auto_research, fetch_fundamentals, parse_notes
 from core import telegram
-from core.service import rebuild_outputs, update_from_yahoo
+from core.prices import holiday_years_covered, is_trading_day, refresh_nse_holidays
+from core.service import rebuild_outputs, update_prices
 from core.tracker import HOLD, compute, list_batches, load_state, new_state, save_state
 
 
@@ -34,6 +35,10 @@ def main() -> int:
     ap.add_argument("--telegram", action="store_true", help="Send summary + Excel/HTML to the Telegram bot")
     ap.add_argument("--force-send", action="store_true",
                     help="Send even if there is no new session today or it was already sent")
+    ap.add_argument("--final-attempt", action="store_true",
+                    help="Last run of the evening: send even if some closes are still missing, "
+                         "and alert if no data arrived on a trading day")
+    ap.add_argument("--no-nse", action="store_true", help="Skip the NSE bhavcopy download")
     ap.add_argument("--include-complete", action="store_true", help="Also touch batches past Day 21")
     a = ap.parse_args()
 
@@ -45,6 +50,10 @@ def main() -> int:
             print(f"Registered batch {b['batch_id']}")
         a.batch = a.batch or b["batch_id"]
 
+    print(f"[calendar] {refresh_nse_holidays()}")
+    nxt = datetime.now(ZoneInfo("Asia/Kolkata")).year + 1
+    if datetime.now(ZoneInfo("Asia/Kolkata")).month == 12 and nxt not in holiday_years_covered():
+        print(f"[calendar] ! {nxt} holiday list not available yet - exit dates for {nxt} assume weekdays only")
     process_inbox()
 
     ids = [a.batch] if a.batch else list_batches()
@@ -61,7 +70,15 @@ def main() -> int:
         if before >= HOLD and not a.include_complete:
             print(f"[{bid}] complete (Day {before}) — skipped")
             continue
-        n, errs = update_from_yahoo(state)
+        upd = update_prices(state, use_nse=not a.no_nse)
+        n, errs = upd["yahoo"] + upd["nse"], upd["errors"]
+        for note in upd["notes"]:
+            print(f"[{bid}] {note}")
+        for ev in upd["new_actions"]:
+            if ev["kind"] == "split":
+                print(f"[{bid}] CORPORATE ACTION {ev['symbol']}: ratio {ev['ratio']} ex {ev['ex_date']} "
+                      f"({ev['status']}, {ev['source']}) - prices and qty adjusted")
+                state.setdefault("pending_alerts", []).append(ev)
         syms = [s["symbol"] for s in state["batch"]["stocks"]]
         if a.notes:
             txt = Path(a.notes).read_text(encoding="utf-8")
@@ -74,12 +91,13 @@ def main() -> int:
             state["research"] = auto_research(state, compute(state))
         res, paths = rebuild_outputs(state)
         k = res["kpi"]
-        print(f"[{bid}] +{n} prices · Day {before} → {k['day']} · gross {k['gross_ret']:+.2f}% "
+        print(f"[{bid}] +{upd['yahoo']} Yahoo / +{upd['nse']} NSE prices · coverage {k['coverage']}/{k['n_stocks']}")
+        print(f"[{bid}] Day {before} → {k['day']} · gross {k['gross_ret']:+.2f}% "
               f"· P&L ₹{k['gross_pnl']:,.0f} · files: {paths['xlsx'].name}")
         for e in errs[:10]:
             print(f"   ! {e}")
 
-        if a.telegram and not ship(state, res, paths, a.force_send):
+        if a.telegram and not ship(state, res, paths, a.force_send, a.final_attempt):
             failed = True
     if failed:
         print("::error::Telegram delivery failed - see the lines above")
@@ -142,8 +160,13 @@ def process_inbox() -> list[str]:
     return new_ids
 
 
-def ship(state: dict, res: dict, paths: dict, force: bool) -> bool:
-    """Send the day-end report once per new trading session. Returns False only on a real failure."""
+def ship(state: dict, res: dict, paths: dict, force: bool, final: bool = False) -> bool:
+    """Send the day-end report once per trading session. Returns False only on a real failure.
+
+    * 18:05 run: sends only when every stock has today's close.
+    * 20:15 run (--final-attempt): sends even if a few closes are missing (flagged in the message),
+      and alerts you if a trading day produced no data at all.
+    """
     bid, k = state["batch"]["batch_id"], res["kpi"]
     if not telegram.enabled():
         print(f"[{bid}] Telegram: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set - add them as repository secrets")
@@ -151,16 +174,34 @@ def ship(state: dict, res: dict, paths: dict, force: bool) -> bool:
     today = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%d")
     already = state.get("telegram_sent") == k["last_session"]
     fresh = k["last_session"] == today
-    if not force and (already or not fresh):
-        why = "already sent for this session" if already else f"no new session today (last {k['last_session']})"
-        print(f"[{bid}] Telegram: {why} - skipped (use --force-send to override)")
-        return True
-    stamp = f"D{k['day']:02d}_{k['last_session']}"
-    files = [paths["xlsx"], paths["dashboard"], paths["research"]]
+    complete = k["coverage"] >= k["n_stocks"]
     try:
+        if not force:
+            if already:
+                print(f"[{bid}] Telegram: already sent for {k['last_session']} - skipped")
+                return True
+            if not fresh:
+                if final and is_trading_day(today) and k["day"] < 21 and state.get("telegram_alert") != today:
+                    telegram.send_text(
+                        f"⚠️ <b>SwingScope {bid}</b>: no closing prices for today ({today}) from Yahoo or NSE "
+                        f"by 20:15 IST. Tracker is still at Day {k['day']} ({k['last_session']}). "
+                        f"It will catch up automatically on the next run.")
+                    state["telegram_alert"] = today
+                    save_state(state)
+                    print(f"[{bid}] Telegram: no data today - alert sent")
+                else:
+                    print(f"[{bid}] Telegram: no new session today (last {k['last_session']}) - skipped")
+                return True
+            if not complete and not final:
+                print(f"[{bid}] Telegram: only {k['coverage']}/{k['n_stocks']} closes for today "
+                      f"(missing {', '.join(k['missing_today'])}) - waiting for the 20:15 retry")
+                return True
+        stamp = f"D{k['day']:02d}_{k['last_session']}"
+        files = [paths["xlsx"], paths["dashboard"], paths["research"]]
         for line in telegram.send_report(state, res, files, stamp=stamp):
             print(f"[{bid}] Telegram: {line}")
         state["telegram_sent"] = k["last_session"]
+        state["pending_alerts"] = []
         save_state(state)
         return True
     except Exception as ex:

@@ -240,20 +240,20 @@ with tab_upd:
             st.info("Partial sessions (not counted until at least half the basket has a close): " +
                     ", ".join(f"{d} ({n}/{len(syms)} stocks)" for d, n in sorted(partial.items())))
 
-        st.markdown("#### A. Automatic — Yahoo Finance")
+        st.markdown("#### A. Automatic — Yahoo Finance + NSE bhavcopy")
         ca, cb = st.columns([1, 2])
         if ca.button("🔄 Fetch latest closes", type="primary", width="stretch"):
-            with st.spinner("Downloading closes from Yahoo Finance…"):
+            with st.spinner("Downloading closes from Yahoo Finance and NSE archives…"):
                 n, errs = update_from_yahoo(state)
             persist(state, f"Yahoo update ({n} prices)", push=True)
             if n:
                 flash("success", f"Stored {n} price points. Now at Day {compute(state)['kpi']['day']}.")
             if errs:
-                flash("warning", "Some data could not be fetched:\n\n- " + "\n- ".join(errs[:12]) +
-                      "\n\nUse the bhavcopy upload or manual entry for anything missing.")
+                flash("info", "Notes from this update:\n\n- " + "\n- ".join(errs[:12]))
             st.rerun()
-        cb.caption("Pulls daily open/close for all 10 stocks plus Nifty 50 from the signal date to today. "
-                   "Day-1 **open** becomes the entry price. Manual and bhavcopy values are never overwritten.")
+        cb.caption("Pulls daily open/close for all 10 stocks plus Nifty 50 from Yahoo, then confirms each session "
+                   "with NSE's official bhavcopy (fills anything Yahoo missed). Detects bonuses/splits. "
+                   "Day-1 **open** becomes the entry price. Manual values are never overwritten.")
 
         st.markdown("#### B. NSE bhavcopy upload (most reliable)")
         bh = st.file_uploader("CM bhavcopy CSV/ZIP (old `cmDDMMMYYYYbhav.csv` or new UDiFF `BhavCopy_NSE_CM_…csv`)",
@@ -336,6 +336,38 @@ with tab_upd:
 
         with st.expander("Data sources per cell"):
             st.dataframe(res["sources"].iloc[:, : k["day"] + 1], width="stretch")
+
+        st.markdown("##### Corporate actions (bonus / split / dividend)")
+        st.caption("Found automatically from Yahoo, or flagged when a close drops overnight by a bonus/split ratio. "
+                   "A split/bonus divides every earlier price by the ratio and multiplies the quantity, so the "
+                   "return stays continuous. Set a wrong one to *rejected*; add any that were missed.")
+        cas = state.get("corp_actions") or []
+        cadf = pd.DataFrame(cas if cas else [], columns=["symbol", "ex_date", "kind", "ratio", "amount", "status",
+                                                         "source", "note"])
+        caed = st.data_editor(
+            cadf, num_rows="dynamic", hide_index=True, width="stretch", key="ca_ed",
+            column_config={
+                "symbol": st.column_config.SelectboxColumn("Symbol", options=syms, required=True),
+                "ex_date": st.column_config.TextColumn("Ex-date (YYYY-MM-DD)", required=True),
+                "kind": st.column_config.SelectboxColumn("Type", options=["split", "dividend"], required=True),
+                "ratio": st.column_config.NumberColumn("Ratio (1:1 bonus = 2)", format="%.3f"),
+                "amount": st.column_config.NumberColumn("Dividend ₹/share", format="%.2f"),
+                "status": st.column_config.SelectboxColumn("Status", options=["confirmed", "suspected", "rejected"]),
+                "source": st.column_config.TextColumn("Source", disabled=True),
+                "note": st.column_config.TextColumn("Note")})
+        if st.button("💾 Save corporate actions"):
+            rows = []
+            for r in caed.to_dict("records"):
+                if not r.get("symbol") or not r.get("ex_date"):
+                    continue
+                r = {k_: v_ for k_, v_ in r.items() if not (isinstance(v_, float) and pd.isna(v_)) and v_ is not None}
+                r.setdefault("kind", "split")
+                r.setdefault("status", "confirmed")
+                r.setdefault("source", "manual")
+                rows.append(r)
+            state["corp_actions"] = sorted(rows, key=lambda e: (e["ex_date"], e["symbol"]))
+            persist(state, "corporate actions", push=True)
+            st.rerun()
 
 # =========================================================================== #
 # ③ DASHBOARD
