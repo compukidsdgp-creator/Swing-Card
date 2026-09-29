@@ -97,6 +97,68 @@ def phase_for(day: int) -> str:
     return "Exit day — batch complete"
 
 
+COMMON_RATIOS = (1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 10.0)
+
+
+def applicable_actions(state: dict, last_session: str | None = None) -> dict[str, list[dict]]:
+    """Split/bonus events that fall inside the hold (after the signal close, up to the latest session)."""
+    sig = state["batch"]["signal_date"]
+    out: dict[str, list[dict]] = {}
+    for ev in state.get("corp_actions", []):
+        if ev.get("kind") != "split" or ev.get("status") == "rejected" or not ev.get("ratio"):
+            continue
+        if ev["ex_date"] <= sig or (last_session and ev["ex_date"] > last_session):
+            continue
+        out.setdefault(ev["symbol"], []).append(ev)
+    return out
+
+
+def add_corp_actions(state: dict, events: list[dict]) -> list[dict]:
+    """Merge events (from Yahoo, the detector or the user). Returns the ones that are new."""
+    have = state.setdefault("corp_actions", [])
+    new = []
+    for ev in events:
+        ev = dict(ev)
+        ev.setdefault("status", "confirmed")
+        ev.setdefault("added", datetime.now().strftime("%Y-%m-%d %H:%M"))
+        dup = None
+        for h in have:
+            if h["symbol"] != ev["symbol"] or h["kind"] != ev["kind"]:
+                continue
+            gap = abs((datetime.strptime(h["ex_date"], "%Y-%m-%d") - datetime.strptime(ev["ex_date"], "%Y-%m-%d")).days)
+            if h["ex_date"] == ev["ex_date"] or (ev["kind"] == "split" and gap <= 4):
+                dup = h
+                break
+        if dup is None:
+            have.append(ev)
+            new.append(ev)
+        elif dup.get("status") == "suspected" and ev.get("status") == "confirmed":
+            dup.update({k: v for k, v in ev.items() if k != "added"})  # confirmation replaces a guess
+    have.sort(key=lambda e: (e["ex_date"], e["symbol"]))
+    return new
+
+
+def detect_corp_actions(state: dict) -> list[dict]:
+    """Flag overnight drops that match a bonus/split ratio (e.g. −50% = 1:1 bonus) that no source reported.
+    NSE price bands make a genuine one-day fall of 33%+ very unlikely, so these are applied as 'suspected'."""
+    b = state["batch"]
+    found = []
+    for s in b["stocks"]:
+        sym = s["symbol"]
+        series = [(b["signal_date"], s["last_close"])] + sorted(
+            (d, c["close"]) for d, c in state["prices"].get(sym, {}).items() if d > b["signal_date"])
+        for (d0, c0), (d1, c1) in zip(series, series[1:]):
+            if not c0 or not c1 or c1 / c0 > 0.7:
+                continue
+            ratio = c0 / c1
+            best = min(COMMON_RATIOS, key=lambda r: abs(ratio / r - 1))
+            if abs(ratio / best - 1) <= 0.04:
+                found.append({"symbol": sym, "ex_date": d1, "kind": "split", "ratio": best,
+                              "source": "detected", "status": "suspected",
+                              "note": f"close fell {c0:,.2f} → {c1:,.2f} overnight ({(c1 / c0 - 1) * 100:.0f}%)"})
+    return add_corp_actions(state, found)
+
+
 def compute(state: dict, today: date | None = None) -> dict:
     b = state["batch"]
     stocks = b["stocks"]
@@ -110,36 +172,56 @@ def compute(state: dict, today: date | None = None) -> dict:
     all_dates = all_dates[: HOLD + 1]
     exit_date = all_dates[HOLD] if len(all_dates) > HOLD else b.get("exit_date_est")
 
+    # ---- corporate actions (splits / bonuses) applied during the hold ----
+    # Prices are stored raw. Every price before an ex-date is divided by the ratio and the
+    # quantity is multiplied, so returns and P&L stay continuous across a bonus or split.
+    last_real = dates[-1]
+    entry_date = dates[1] if len(dates) > 1 else None
+    acts = applicable_actions(state, last_real)
+
+    def factor(sym: str, d: str) -> float:
+        f = 1.0
+        for ev in acts.get(sym, []):
+            if ev["ex_date"] > d:
+                f *= ev["ratio"]
+        return f
+
     # ---- close matrix (symbols x Day0..Day21), NaN where not yet available ----
     day_cols = [f"Day {i}" for i in range(HOLD + 1)]
     closes = pd.DataFrame(np.nan, index=syms, columns=day_cols)
     srcs = pd.DataFrame("", index=syms, columns=day_cols)
     for s in stocks:
-        closes.loc[s["symbol"], "Day 0"] = s["last_close"]
-        srcs.loc[s["symbol"], "Day 0"] = "signal"
+        sym = s["symbol"]
+        closes.loc[sym, "Day 0"] = s["last_close"] / factor(sym, b["signal_date"])
+        srcs.loc[sym, "Day 0"] = "signal"
         for i, d in enumerate(dates[1:], start=1):
-            cell = state["prices"].get(s["symbol"], {}).get(d)
+            cell = state["prices"].get(sym, {}).get(d)
             if cell:
-                closes.loc[s["symbol"], f"Day {i}"] = cell["close"]
-                srcs.loc[s["symbol"], f"Day {i}"] = cell["src"]
+                closes.loc[sym, f"Day {i}"] = cell["close"] / factor(sym, d)
+                srcs.loc[sym, f"Day {i}"] = cell["src"]
     # forward-fill gaps inside the elapsed window only (e.g., one missing print)
     elapsed = day_cols[: cur_day + 1]
     closes[elapsed] = closes[elapsed].ffill(axis=1)
 
-    # ---- entry price: override > Day-1 open > Day-0 close ----
+    # ---- entry price: override > Day-1 open > Day-0 close (all adjusted) ----
     entry, entry_src = {}, {}
+    qty_mult = {}
     for s in stocks:
         sym = s["symbol"]
         ov = state.get("entry_override", {}).get(sym)
         d1 = state["prices"].get(sym, {}).get(dates[1]) if len(dates) > 1 else None
+        f_entry = factor(sym, entry_date) if entry_date else factor(sym, b["signal_date"])
         if ov:
-            entry[sym], entry_src[sym] = float(ov), "manual fill"
+            entry[sym], entry_src[sym] = float(ov) / f_entry, "manual fill"
         elif d1 and d1.get("open"):
-            entry[sym], entry_src[sym] = d1["open"], "Day-1 open"
+            entry[sym], entry_src[sym] = d1["open"] / f_entry, "Day-1 open"
         else:
-            entry[sym], entry_src[sym] = s["last_close"], "Day-0 close (provisional)"
+            entry[sym], entry_src[sym] = s["last_close"] / factor(sym, b["signal_date"]), "Day-0 close (provisional)"
+        qty_mult[sym] = f_entry
+        if f_entry != 1.0:
+            entry_src[sym] += f" · adj ×{f_entry:g}"
 
-    qty = pd.Series({s["symbol"]: s["qty"] for s in stocks})
+    qty = pd.Series({s["symbol"]: s["qty"] * qty_mult[s["symbol"]] for s in stocks})
     entry_s = pd.Series(entry)
     invested = float((qty * entry_s).sum())
     cost_pct = (b.get("cost_pct") or 0.6) / 100
@@ -181,9 +263,9 @@ def compute(state: dict, today: date | None = None) -> dict:
         path = closes.loc[sym, elapsed]
         path_after_entry = path.iloc[1:] if cur_day >= 1 else path
         rows.append({
-            "#": s["rank"], "Symbol": sym, "Qty": s["qty"],
-            "Signal close": s["last_close"], "Entry": entry[sym], "Entry basis": entry_src[sym],
-            "Invested": s["qty"] * entry[sym],
+            "#": s["rank"], "Symbol": sym, "Qty": qty[sym],
+            "Signal close": closes.loc[sym, "Day 0"], "Entry": entry[sym], "Entry basis": entry_src[sym],
+            "Invested": qty[sym] * entry[sym],
             "Last close": last_close[sym], "Day chg %": day_chg[sym],
             "Return %": ret_pct[sym], "P&L": pnl[sym],
             "High close": path_after_entry.max(), "Low close": path_after_entry.min(),
@@ -229,6 +311,13 @@ def compute(state: dict, today: date | None = None) -> dict:
         "last_updated": state.get("last_updated"),
         "stale": dates[-1] < today.strftime("%Y-%m-%d") and cur_day < HOLD,
     }
+    last_d = dates[-1]
+    kpi["coverage"] = (sum(1 for x in syms if state["prices"].get(x, {}).get(last_d)) if cur_day >= 1 else len(syms))
+    kpi["n_stocks"] = len(syms)
+    kpi["missing_today"] = [x for x in syms if cur_day >= 1 and not state["prices"].get(x, {}).get(last_d)]
+    kpi["actions"] = [ev for evs in acts.values() for ev in evs]
+    kpi["dividends"] = [ev for ev in state.get("corp_actions", []) if ev.get("kind") == "dividend"
+                        and b["signal_date"] < ev["ex_date"] <= last_d]
     if kpi["nifty_ret"] is not None:
         kpi["alpha"] = kpi["gross_ret"] - kpi["nifty_ret"]
     else:

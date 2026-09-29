@@ -140,7 +140,7 @@ def build_workbook(state: dict, res: dict) -> bytes:
         _body(wc.cell(r, 2), s["symbol"], bold=True, align=LEFT, fill=zebra)
         _body(wc.cell(r, 3), s["isin"], align=LEFT, fill=zebra)
         wc.cell(r, 3).font = Font(name="Calibri", size=9, color="6B7280")
-        _body(wc.cell(r, 4), s["qty"], "0", fill=zebra)
+        _body(wc.cell(r, 4), float(res["qty"][s["symbol"]]), "0", fill=zebra)
         _body(wc.cell(r, 5), round(float(entry[s["symbol"]]), 2), INR2, bold=True, fill=zebra)
         for i in range(HOLD + 1):
             v = closes.loc[s["symbol"], f"Day {i}"]
@@ -473,6 +473,22 @@ def build_workbook(state: dict, res: dict) -> bytes:
         c.alignment = Alignment(wrap_text=True, vertical="top")
         wi.merge_cells(start_row=r1 + 1 + i, start_column=2, end_row=r1 + 1 + i, end_column=16)
         wi.row_dimensions[r1 + 1 + i].height = 60
+    ca = state.get("corp_actions") or []
+    r2 = r1 + 2 + len(b.get("evidence", []))
+    wi.cell(r2, 2, "Corporate actions (splits, bonuses, dividends)").font = Font(name="Calibri", size=11, bold=True, color=NAVY)
+    if not ca:
+        wi.cell(r2 + 1, 2, "None recorded during this hold.").font = F_MUTED
+    else:
+        for j, h in enumerate(["Symbol", "Ex-date", "Type", "Ratio / amount", "Status", "Source", "Note"]):
+            _hdr(wi.cell(r2 + 1, 2 + j), h)
+        for i, ev in enumerate(ca):
+            val = ev.get("ratio") if ev["kind"] == "split" else ev.get("amount")
+            vals = [ev["symbol"], ev["ex_date"], "Split / bonus" if ev["kind"] == "split" else "Dividend",
+                    val, ev.get("status", ""), ev.get("source", ""), ev.get("note", "")]
+            for j, v in enumerate(vals):
+                _body(wi.cell(r2 + 2 + i, 2 + j), v, align=LEFT)
+        wi.cell(r2 + 3 + len(ca), 2, "Splits/bonuses: prices before the ex-date are divided by the ratio and the "
+                "quantity multiplied, so returns stay continuous. Dividends are shown for information only.").font = F_MUTED
     wi.column_dimensions["A"].width = 2
     wi.column_dimensions["B"].width = 30
     for c in "CDEFGHIJKLMNOP":

@@ -89,6 +89,13 @@ def summary_message(state: dict, res: dict) -> str:
              f"<b>Day {k['day']}/21</b> · {e(k['last_session'])} · {e(k['phase'])}",
              f"<code>{bar}</code> {k['days_left']} session{'s' if k['days_left'] != 1 else ''} left · exit ~{e(str(k['exit_date']))}",
              ""]
+    if k["day"] >= 1 and k.get("coverage", k.get("n_stocks")) < k.get("n_stocks", 0):
+        lines += [f"⚠️ Only {k['coverage']}/{k['n_stocks']} closes available today — "
+                  f"missing {e(', '.join(k['missing_today']))} (last known price used).", ""]
+    for ev in (state.get("pending_alerts") or []):
+        tag = "suspected — please verify" if ev.get("status") == "suspected" else "confirmed"
+        lines += [f"🔔 <b>Corporate action</b>: {e(ev['symbol'])} split/bonus ratio {ev['ratio']:g} "
+                  f"(ex {e(ev['ex_date'])}, {tag}). Prices and quantity adjusted.", ""]
     if k["day"] >= 1:
         lines += [
             f"{_dot(k['gross_pnl'])} <b>P&amp;L {_inr(k['gross_pnl'])}</b> ({_pct(k['gross_ret'])})"
