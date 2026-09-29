@@ -45,11 +45,14 @@ def main() -> int:
             print(f"Registered batch {b['batch_id']}")
         a.batch = a.batch or b["batch_id"]
 
+    process_inbox()
+
     ids = [a.batch] if a.batch else list_batches()
     if not ids:
         print("No batches found in data/batches — upload an HTML in the app or pass --html.")
         return 0
 
+    failed = False
     for bid in ids:
         state = load_state(bid)
         if state is None or bid.endswith("-DEMO"):
@@ -76,24 +79,82 @@ def main() -> int:
         for e in errs[:10]:
             print(f"   ! {e}")
 
-        if a.telegram:
-            ship(state, res, paths, a.force_send)
-    return 0
+        if a.telegram and not ship(state, res, paths, a.force_send):
+            failed = True
+    if failed:
+        print("::error::Telegram delivery failed - see the lines above")
+    return 1 if failed else 0
 
 
-def ship(state: dict, res: dict, paths: dict, force: bool) -> None:
-    """Send the day-end report once per new trading session."""
+INBOX = Path(__file__).resolve().parent / "inbox"
+
+
+def process_inbox() -> list[str]:
+    """Register every SwingScope HTML dropped into inbox/ (plus optional research notes .txt).
+
+    inbox/anything.html               -> new batch (batch id = date in the HTML title)
+    inbox/<same name>.txt  or  inbox/research_notes_<batch id>.txt   -> your research notes
+    Processed files are moved to inbox/processed/.
+    """
+    if not INBOX.exists():
+        return []
+    done = INBOX / "processed"
+    new_ids = []
+    for html_f in sorted(INBOX.glob("*.htm*")):
+        try:
+            raw = html_f.read_text(encoding="utf-8", errors="ignore")
+            b = parse_swingscope_html(raw)
+        except Exception as ex:
+            print(f"[inbox] {html_f.name}: not a SwingScope batch HTML ({ex}) - left in inbox")
+            continue
+        bid = b["batch_id"]
+        if load_state(bid) is None:
+            state = new_state(b, raw)
+            print(f"[inbox] Registered new batch {bid} from {html_f.name} ({len(b['stocks'])} stocks)")
+        else:
+            state = load_state(bid)
+            print(f"[inbox] Batch {bid} already exists - kept its price history")
+        for notes in (html_f.with_suffix(".txt"), INBOX / f"research_notes_{bid}.txt"):
+            if notes.exists():
+                txt = notes.read_text(encoding="utf-8", errors="ignore")
+                state["research"], state["research_notes"] = parse_notes(txt, b), txt
+                print(f"[inbox] Attached research notes {notes.name}")
+                done.mkdir(exist_ok=True)
+                notes.rename(done / notes.name)
+                break
+        rebuild_outputs(state)
+        done.mkdir(exist_ok=True)
+        html_f.rename(done / html_f.name)
+        new_ids.append(bid)
+    # notes uploaded later for an existing batch: inbox/research_notes_<id>.txt
+    for notes in sorted(INBOX.glob("research_notes_*.txt")):
+        bid = notes.stem.replace("research_notes_", "")
+        state = load_state(bid)
+        if state is None:
+            print(f"[inbox] {notes.name}: no batch {bid} yet - left in inbox")
+            continue
+        txt = notes.read_text(encoding="utf-8", errors="ignore")
+        state["research"], state["research_notes"] = parse_notes(txt, state["batch"]), txt
+        rebuild_outputs(state)
+        done.mkdir(exist_ok=True)
+        notes.rename(done / notes.name)
+        print(f"[inbox] Updated research notes for batch {bid}")
+    return new_ids
+
+
+def ship(state: dict, res: dict, paths: dict, force: bool) -> bool:
+    """Send the day-end report once per new trading session. Returns False only on a real failure."""
     bid, k = state["batch"]["batch_id"], res["kpi"]
     if not telegram.enabled():
-        print(f"[{bid}] Telegram: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set — skipped")
-        return
+        print(f"[{bid}] Telegram: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set - add them as repository secrets")
+        return False
     today = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%Y-%m-%d")
     already = state.get("telegram_sent") == k["last_session"]
     fresh = k["last_session"] == today
     if not force and (already or not fresh):
         why = "already sent for this session" if already else f"no new session today (last {k['last_session']})"
-        print(f"[{bid}] Telegram: {why} — skipped (use --force-send to override)")
-        return
+        print(f"[{bid}] Telegram: {why} - skipped (use --force-send to override)")
+        return True
     stamp = f"D{k['day']:02d}_{k['last_session']}"
     files = [paths["xlsx"], paths["dashboard"], paths["research"]]
     try:
@@ -101,8 +162,10 @@ def ship(state: dict, res: dict, paths: dict, force: bool) -> None:
             print(f"[{bid}] Telegram: {line}")
         state["telegram_sent"] = k["last_session"]
         save_state(state)
+        return True
     except Exception as ex:
         print(f"[{bid}] Telegram ERROR: {ex}")
+        return False
 
 
 if __name__ == "__main__":
