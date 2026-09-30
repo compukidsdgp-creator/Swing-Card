@@ -1,6 +1,9 @@
 name: Daily SwingScope update + Telegram
 
 on:
+  # Exact timing: an external scheduler (cron-job.org) calls "workflow_dispatch" at 18:05 and
+  # 20:15 IST - see README. GitHub's own schedule below is kept as a backup only: it is
+  # best-effort and is often hours late.
   schedule:
     # 12:35 UTC = 18:05 IST: main run (sends once all 10 closes are in)
     - cron: "35 12 * * 1-5"
@@ -22,6 +25,10 @@ on:
         description: "Send to Telegram even if already sent / no new session"
         type: boolean
         default: false
+      final_attempt:
+        description: "Last run of the evening (send even if some closes are missing)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,9 +44,9 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: pip
@@ -51,7 +58,7 @@ jobs:
           ARGS="--telegram"
           if [ "${{ github.event_name }}" != "workflow_dispatch" ] || [ "${{ inputs.news }}" = "true" ]; then ARGS="$ARGS --news"; fi
           if [ "${{ inputs.force_send }}" = "true" ]; then ARGS="$ARGS --force-send"; fi
-          if [ "${{ github.event.schedule }}" = "45 14 * * 1-5" ]; then ARGS="$ARGS --final-attempt"; fi
+          if [ "${{ github.event.schedule }}" = "45 14 * * 1-5" ] || [ "${{ inputs.final_attempt }}" = "true" ]; then ARGS="$ARGS --final-attempt"; fi
           python update_daily.py $ARGS
 
       - name: Commit updated files
