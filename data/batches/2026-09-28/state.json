@@ -445,7 +445,7 @@
  },
  "entry_override": {},
  "news": {
-  "fetched": "2026-10-01 18:32",
+  "fetched": "2026-10-01 19:49",
   "days": 7,
   "items": [
    {
@@ -483,15 +483,6 @@
     "published": "2026-10-01 12:43",
     "score": -0.361,
     "label": "Negative"
-   },
-   {
-    "symbol": "LAURUSLABS",
-    "title": "Laurus Labs (NSEI:LAURUSLABS) Stock Gets Fair Value Bump On Mixed Analyst Commentary",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/laurus-labs-nsei-lauruslabs-stock-120733440.html",
-    "source": "Simply Wall St.",
-    "published": "2026-10-01 12:07",
-    "score": 0.945,
-    "label": "Positive"
    },
    {
     "symbol": "MARKET",
@@ -555,6 +546,15 @@
     "published": "2026-10-01 09:08",
     "score": -0.202,
     "label": "Negative"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Stock Market Holiday: Are BSE, NSE open or closed for Gandhi Jayanti tomorrow? Check upcoming market holid",
+    "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQcnR0TFpzNlZabjJueFo4OWtfWHptOHpRbFZTZ0JQZVRWc1RFTWdBMngyZnFIREVfekl2UFYtaHJiLXVFSnV1emVXMV9TQmYyN3lHTjNHZkdtZ0F0ZzV2Y3MxRDU4OWF3dWFKUVNJNlpWZFJsUTltWUtqMDJDZjNIdXZPOUNvRHBNVHgwMlpUbHVyRFFmWlFSSEdYUGFheFRvSmJ1VGdXbEZqQ3loaENCNi1nUzBOVWlMTDBoSWxsRzMzRlh2dGRZM0l3REg2U0Q4My1QMkdGbDlKc0haek5oQlBYXzVSWWV4dTlCRW1BbGtFc21keWxkMkNCUHhoeW8wc1NVWUpaeHU3N0430gGSAkFVX3lxTE9hVHRMUHNwVXJJVk5UbXVOdHdfdnJUaGxFQ2xPTFhCa2g5UzJ3eURLazFaVzI0eUIwenJ5UWU2N3dIUmVsY2cxR1FSZFVmWjhhaWJ5Y2VBTWVoOVJpa3VyOWR2ZTVCNWZnWTA1R3VzY0NhMjRWOGxxdlUwS1dGZGtOR0tNU1dmaUxIS3NEeEw4R0haUm5WaXRfUHp5cS1YRDN5QVJsRGZLa3praG04ZFZ1VTZVWmVXVWRjcWs3LUR0bEdCQUVET3I2UFZxQ3JmUEhZcnhhbWRiTWRGeFhoRldzbzZfclUyWTltUXJYVkdibHhZVDVlcG4wMk1WbmxpQlhDTzM1Z1dpNDlNc1NlMGpHWUE?oc=5",
+    "source": "The Economic Times",
+    "published": "2026-10-01 08:50",
+    "score": 0.402,
+    "label": "Positive"
    },
    {
     "symbol": "MARKET",
@@ -704,7 +704,7 @@
     "symbol": "MARKET",
     "title": "Indian benchmark shares post longest weekly losing run in 25 years",
     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa2lpSGdlN0dhOTM3eUw3MlQtN183dHZydW95WXVWM2MyTEFaeTlvRUllR29aLWJxT3dvdVNmNlpzTGVldkpIMFNScVVhVEJ5TTU5TDhoVTZZWlpXbENCUHlKMWx3MmJ4bWkyU1E1OGF6Sk9YakxYcHRyM0tWdnlrX0NpQktmLU90VkRRVG5FQXdPZ3c3dFV0N0xndUdrTl9lY0xKZUJsNmY4LS1BYndDNENRZC0?oc=5",
-    "source": "Reuters",
+    "source": "reuters.com",
     "published": "2026-10-01 02:25",
     "score": -0.382,
     "label": "Negative"
@@ -728,10 +728,19 @@
     "label": "Positive"
    },
    {
+    "symbol": "DIACABS",
+    "title": "Diamond Power Infrastructure bags \u20b943.26 Cr cable supply order from Adani Power",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZzVzMk9uc3VSN080aktTMVlwZTAzcUJaak9BQVJaMlJtYVZ4Z25YdGYtSDJzQXlSc1BicEZiay13UHc5dS1kbFZMZG1fQ0E0UlFSV1ZfaGRsRFp5RGZIcXZYalB1OUlJZi1kcUZkLTh2STNFMXRCOEc1YjNJSlg5Z3ZWcUtVYmxCSVZJU1BQQlRIVjNZcEktZGZMUFNoWkNRcXlqTVhXTnpzSkxic2h2bHdaZVF2dw?oc=5",
+    "source": "Alice Blue",
+    "published": "2026-09-30 20:33",
+    "score": 0.735,
+    "label": "Positive"
+   },
+   {
     "symbol": "MARKET",
     "title": "Stock Market Today: Sensex Falls 48 Points, Nifty Slips 95 Points on FII Outflow, Crude Oil Prices",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzlPOXI0RHJNcWxNa2cwcjZZeVh1THZFUUdZUW5jREV6LURhYU1Lb3hFa1RXRjk4THFvdFRDMDh2ZlY4d1U0NU0yeVFmVERKaFRLZ2UxMTBJME0tc0hIVWZJZXE0ZXNHbVZLZEJnTkttMXFBOTV1YUo3dmltMEVCLTg3RUUydEZiUWd0VkFVdE14VmRseWZLSl9TSQ?oc=5",
-    "source": "APAC Media",
+    "source": "apacnewsnetwork.com",
     "published": "2026-09-30 15:56",
     "score": -0.718,
     "label": "Negative"
@@ -785,10 +794,19 @@
     "symbol": "MARKET",
     "title": "Sensex, Nifty end lower after volatile session; pharma, healthcare, metal stocks drag",
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOODFZNVdnMzNqeHJpQnZacWlUa08tRWlQMVNtaUhzV2xHdVlOVUhvaTJBdV9rLWFPaXhTT2NreHZySWhNdXRsbWcxci1rRUFYdFhkdU00cWNIaXZCRnkzV3NhRHpzSXV5TVF3cG5ZOXdDWjVGVkZuZHN5NWRNTEN5bm1SYjkwZG1vUFZFYTUwa2pMTmZQNXZDZ0NUcEhVT3BwRU1uUDVvWEs5eS1FaU5ZdjdCLXp2djkzTEd2cTJUUXdoN1JxQ2U1cTJrVXc?oc=5",
-    "source": "ANI News",
+    "source": "aninews.in",
     "published": "2026-09-30 10:37",
     "score": -0.0,
     "label": "Neutral"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Taking Stock: Sensex, Nifty end flat amid volatility; metal, pharma stocks drag",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNlFuRkRRZUhlRVJyZnBmVEdDeTdqdk5ENjRJX2ItNnhSUjdVRHdLUnN4UERueWt1M3I2TER3dm8zcU85QlN4Y2ZTNGdNcnpEeFhWbWx4WlBQOWVKdHdzcmpSS0oydktFczVQa2hvRGRrOThnTmpIQ3pwcFpTQXViZThZT29FT042UWx6LVlpNk0zZ1RuaDhWZlZXZ2wzbDhKSjN4RzJsWFIzZGZ0UGxFTFJXMllWWFFDYkZRUFhlc2tsRVQ3cVJIZ25GUFo2N0hHVzM1aHRsd9IB3AFBVV95cUxNTG1lRURYT0VLVEplb2p5emQyMDB3d3BhZUM4b1ZJZk10NEo0c195N2ZEc09rQUJsUXNjRmNMaFBoNGc3bVV3M2R1ZWNSZDRPMEJuWENZdkVlT2RUVEhGWVA3VEdLQnRtSUc0RmNWMzF0MlY2cVhjMEF1d0VSc3FCbXdwb1A1Q0hfOTZ1cndBbThOZ282N0ZKRWZhWTUtOFE4WTZRdU9xcEotMmxXczBkZjRsVmlHdW1KZmM1TFIyZzE5VFpHNVVTODNybUstU0oxSVhwOUhUMnVEZWhh?oc=5",
+    "source": "Moneycontrol.com",
+    "published": "2026-09-30 10:20",
+    "score": 0.202,
+    "label": "Positive"
    },
    {
     "symbol": "MARKET",
@@ -830,7 +848,7 @@
     "symbol": "MARKET",
     "title": "Stock Market Today, 30 September 2026: Sensex Recovers From Early Dip, Nifty Holds 22,700 as Banks Lead",
     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1vUEtTa3RVaVhqVnEycGxtWTBFZmNncmViS0oxVWlzMGk0S29HQXIxSXVwbEVac1MyNmxmWkhVTzM1UXl4aTFKNHdoaS1zcEpDN1lwUnRuVkdzZXp2VGM4VVA3RE5NOFdSRDRhanVaaE05UUtSRnZzaHNMdVUzdHc?oc=5",
-    "source": "univest.in",
+    "source": "Univest",
     "published": "2026-09-30 05:30",
     "score": 0.402,
     "label": "Positive"
@@ -848,7 +866,7 @@
     "symbol": "TDPOWERSYS",
     "title": "TD Power Systems Share Price Rise Streak and Fundamentals",
     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMUk2aDJkZ0Z2ZHJvRFdwTGdya28xQTYwVmI5ZlhzbTZTd2xKcFVjazl5N3NWbzlMMU5ZeERrWm1KaXNIRkkwUlNpVFp3N3QtUmt3N3BzcFhEN1JkNW9rVklZelluMld5SjhmYTFFM2VuckFkdzJPd1Nua0J2QTlicHBSWmRWTm04UU5r?oc=5",
-    "source": "univest.in",
+    "source": "Univest",
     "published": "2026-09-30 05:11",
     "score": 0.0,
     "label": "Neutral"
@@ -882,6 +900,15 @@
    },
    {
     "symbol": "MARKET",
+    "title": "Stock market today: Sensex, Nifty to open higher or lower?",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOG5Ma211Y2s0U0YwMFpKa1p2QXBLdHQ3SGktU3o1dHdfTUlvS2NYc3M5dWtfbUlmekt1eTdDOFE2c3ZhcXFNb2dkdmtOa3V0VUxsZUlsLXZCczhVZmFaSk1uTEJaYkhrWU9pYUtXemtCTDU1QjVhUElwakNhc2tEdm5MRTAtYU5oMTA3cks4NDhzMGlGNDJEMnNOejhKbFJqQW9HOVlEelkxVUI3dVlaM1lQVUFBQ3J6RS1tNVVjRUhMWGVjaUdaWVk3VThxUDcweThQa1lLdE4xNHhyUzRacEUzSTXSAeoBQVVfeXFMTTlQakZzaTcxcmppc1Azb0M0Z1ZzSXQtb0tYbmxUUHZqekg1SUlkaGJ6YlZOZmJvX0tzWUxkbGkyU2lHVTJvY3kzTDZBUllQdU5oUnJ6bUVWTFI3VFgxSUYzYlJTd2pOS2dfc2VVRTltY2dwbVo5MHdTbEJjeHM4Yzc5Ny1sMHpUVF9kTEFKTlBBT1l1cVJVZGo2SlRXeW9yd05ZZFJIQURkZUYyNm1zVUxEYTc0ZVNWOGdIYW5STUJhbzZhcFF1TEpCRFRrcG1aZkFIakxYdF9aWXV4Rk5jTm5ubGNDWXk5eTV3?oc=5",
+    "source": "India Today",
+    "published": "2026-09-30 03:18",
+    "score": 0.226,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
     "title": "These top 3 developments from US stock markets have a direct impact on Sensex, Nifty, Bank Nifty, Nifty IT",
     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNaElFSTd5Tm02MUliUk56RHI5RWFBSktBZjk4OWx0UzR4eEM3WHMzR0xrVzZ3cUI5N2dGTjFWWWtackFVcV9Ed3FkWXZxU2pUVnZ5eU8yMUwtTXA4UjRNRG1IX2pGQmh3US1FdWVhbnIzUzJLS1ZVM0FTclpYVkhyek9tTy00WmU4Ri1BMGdDN29IRU9qejNWUHdySjJla3FHcFp0SnF5b2tnbHNSUDBBVS1mZFhKNG1Pd1lBM0J5cUlfMVNCNE9IZVQxRHg0cTlTMXFNay1yWjZVd1hjeTFzY1B5S2ZMc3g0WHVGNnhFZmZXNWVkNW9kaEhIZUV0c2xyNGFF0gGIAkFVX3lxTE9kSkF0a3ZSZlJXc2tjSjFwOE1Hb2RVTnd5S3FrVnIxa3pDS1FoUE52VHc3Q2t3OXZIQ2pydmJUSWVzcm5ub0VGdnpNdDlOX18yYmF5MnNhejhubFMydlVYdmNlYlZXQ0NnV2RReFg2ekdfTUI0SXFJbmF2cjV1RXB5VVBYS3dQY1hCYXdIRVZ5YTIteV9Pek1ZSmx1RXdQVW9HMndYSVhVcDIwcmlhSDQ5MnpwUVpxbC0tbTBUT0JPZndPRWlYcmlqY0F2bm90UE5YMnU0UWx2ZV9GTzVQb1hTMjlwMUxSOGhXRVVUZ2Vpc25TZzJsLWlWT2J3aUFraTNMbTdDQ0ltLQ?oc=5",
     "source": "Livemint",
@@ -902,7 +929,7 @@
     "symbol": "MARKET",
     "title": "India benchmark shares log worst month since March as oil, global rate hikes spark outflows",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRTNmakVIbE1QRkJkd0VLTm03TjkxX29LaTgtekt5UmxjUVBzckppYmctZVc5V0JWNUNtR2dOaVRpU1F1eTd4M2YybFJ1TC1ncEZzZERrd0ptTGlKSHVZVnRxcHhnUldJVDlLdUhIM0ZYS3IxNzk4TWctZVdVbFMyUTEtbWd6MjYwMWs4RFE4b3ZERVZlLUdNYWF3d0xHX2pNbEVNdll3?oc=5",
-    "source": "Reuters",
+    "source": "reuters.com",
     "published": "2026-09-30 02:24",
     "score": -0.494,
     "label": "Negative"
@@ -983,7 +1010,7 @@
     "symbol": "MARKET",
     "title": "Stock Market Today: Sensex, Nifty Decline Amid High Oil Prices; Tata Chemicals Down 4.5%",
     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSzJsdnF0SDkzMmFPNTNaZ05vaGU2STJGWFdWNEprdEJSWV9JeUZpaW1XTWs3eGJsVGJUTVctVlFLOHpScGZEaF9wWkxEWms0TG1aOHdKY0F2Q2hmSXlMMS1XOTNtX2lLQmVFTlN1ZzFOVzhMemtQV0NJMExuR3ZObDZadHhUOUxkeTQ4?oc=5",
-    "source": "APAC Media",
+    "source": "apacnewsnetwork.com",
     "published": "2026-09-29 11:14",
     "score": 0.226,
     "label": "Positive"
@@ -1019,7 +1046,7 @@
     "symbol": "AEROFLEX",
     "title": "AEROFLEX Share Price gains as market cap tops Rs 6,946 Cr",
     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZWdYU0xLYUJYR3QwY3N5RXNVb3c4cTMzbUlrcWVoRndKQVAwbmZqakRQeTB3Z3E4LUk1ckxpRGd5WURhaWNRNFlBZlVYRThLNnVfSzRGUXhTdVpnRFZMWHhNNFJ1bTljbFV2VnZPMWJfc3ZYMWQ4bHJIRGZCbE94ZElPc3lIM28?oc=5",
-    "source": "univest.in",
+    "source": "Univest",
     "published": "2026-09-29 08:18",
     "score": 0.71,
     "label": "Positive"
@@ -1031,15 +1058,6 @@
     "source": "The Indian Express",
     "published": "2026-09-29 07:39",
     "score": 0.0,
-    "label": "Neutral"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Stock Market Today: Sensex Falls Over 1,100 Points, Nifty Below 22,800",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRnZ3TE4yZWYwT2tZS2pRUk1yQWpfLWN3MC1oMjg4ajlOLXIyZ2tOR0pISEtFVjg2ZDdVampIU0RZRjdXempzUUZoUHg4V1FUTExUUmdCVEpFSzl4dzFQcjg3R1VWaVo5alBkREVMVmxHUm4tZURXX1R0Q01FMVZPUS0yVXd1S0x1eElGWmdCVVVIZk9JVzBCb2pHQUlxTldJaGRyNTlVMkxqUl95MVRVeFcxT0tSTUpaRjlNbU5JX19nSHZ0X05R?oc=5",
-    "source": "Kalkine India",
-    "published": "2026-09-29 07:26",
-    "score": 0.026,
     "label": "Neutral"
    },
    {
@@ -1145,7 +1163,7 @@
     "symbol": "ATHERENERG",
     "title": "Ather Energy Share Price News: Today\u2019s Decline Analyzed",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSlI3d1lGdTBUQ1NsMmhvSDh5UVZMVndVcjQtLUJBX2VLOFhIT1hoZFFhaEZWaVhKSm85eUw5SFY3NTBrMlJ0SThWYU1Ib1R5Y0NyUGlSQzk4UDloNlhPVmRyR1JWR0hZUDdfeGZXT2toVDVseWxuZVBKVFVKdW1RNg?oc=5",
-    "source": "univest.in",
+    "source": "Univest",
     "published": "2026-09-29 04:43",
     "score": -0.128,
     "label": "Neutral"
@@ -1172,7 +1190,7 @@
     "symbol": "MARKET",
     "title": "No respite after Monday blues: Sensex slumps 568 points, Nifty below 22,650; what\u2019s dragging the markets down?",
     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUmk0WlNhUWFKM2hkY0tydWR0QV9jUVFvV0lQclJYVFlpcXd1Q2xYWjV6aDQ3SGZKWjdkdE9nWTFNNWFsT3NwNXpnVlNtQVowZDhOTmF5eHJkbmdZZ0R5eWh2RHlhZmlXNE03ODdxWnJtYWE0NzlLdmZCNXBVMUNLRW1Hem5EYjUwMXdvcjN5alZJbUdLSTN2RDhvamt1cm8yNWNzOURJZUctaExtNk1ocHRONWswa2ZRc2pjYnRtMXJQcV93MEtTc05yZkJIa1phUnFSSjlSaXpGZ9IB5wFBVV95cUxQUXJua0JCWWl3dVNjWmdUNFdmYTNrYjh1ZDNMS0tVRUhNSTJ6c3RRRjZaRmJnNnMya2MxbmpId0djX3QzQ29LS2EweVFmSFNjZTVfVFIxUEZlbUFEX0F6djZvMnZhUW1oUWlHV29yMno5V0ZzZjJwYnhOSkhuT1BMc1FDdTFwcGtiTTYyT3ktdnVaSjFnU1hkZVhrSE82N1c5NDJjR2Z3LUlNQ0Q5N29rVnVPRTJwUjY5NlNoVkVRMlFQRFVzUnFtYmh0NHhManBaYm5HOEYwckcyR25KR3NiZXFFbVRVZDA?oc=5",
-    "source": "fortuneindia.com",
+    "source": "Fortune India",
     "published": "2026-09-29 04:21",
     "score": -0.402,
     "label": "Negative"
@@ -1194,15 +1212,6 @@
     "published": "2026-09-29 04:02",
     "score": -0.421,
     "label": "Negative"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Market Update: Sensex Sinks 600 Points, Nifty Below 22,600 As Oil Trades At $106; Broader Markets Under Pre",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbDQ3N1pycF9Qc3RDQWFwZmZpYk5ab3MxOGlZdk5yYkdkNlVPZ2NUTHJJTHQ1Q0hxbFVSMW91STVEaTZwdDV0WXJwdXdZY2FhWllXY2QtRjVwRlo5RlBtSV9IMGdNOTdsa2lPdWo5ZjU4TFdzeTNuOVBkRGFmSWNpSzNTS09rV2c1Y3RZN0RxZUY2QUh0M0g3TEt5VGN6SUh4UmY5dnY4eFdwQTZfU3VTZDRrWjIyWFZiVDY3VDFPVGlwcVdYNjRrS1dmVDBPNEE3eHhmZEp5d2nSAd4BQVVfeXFMUDZLY1ZybUU5QjJkWnduc3Vpa1ZsNGdjNjFVQ3ZLX2tkOEJLdWlfd1RjdVBnY2wweG1yc0RJdERaWmpsTWtSeDJMaWRCUnp6NWV1QkFUekRERGtCSUZ0STlYZWdWUmFOdlVxWGY3MHpwQW1QQlN3c1htVEpiQ2lhNnFBY2RPMnZXTk94TjFzQkVvU2RaMnoxRy0zRGVScmZLeU93WlQzaHNlT0xsQUVtX2FJXzdQUGw1cEh0MWt2cUZ4VzdfQXRvOVltaGN1Wi1iSTg0c0NFUDloZ0JvN1RB?oc=5",
-    "source": "News18",
-    "published": "2026-09-29 03:54",
-    "score": -0.077,
-    "label": "Neutral"
    },
    {
     "symbol": "MARKET",
@@ -1232,19 +1241,10 @@
     "label": "Positive"
    },
    {
-    "symbol": "KIRLOSENG",
-    "title": "3 Indian Nuclear Stocks With Earnings Growth Over 17%",
-    "link": "https://finance.yahoo.com/energy/articles/3-indian-nuclear-stocks-earnings-001032785.html",
-    "source": "Simply Wall St.",
-    "published": "2026-09-29 00:10",
-    "score": 0.888,
-    "label": "Positive"
-   },
-   {
     "symbol": "MARKET",
     "title": "Indian shares slide to near six-month low as US-Iran deadlock lifts oil prices",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQmUtcnhXbVNOQ0lacFk2Z1JXa0JON1VtZTRsYnZVMDlKdjh0dXhobk9tajVtRVdUbE5RV2MxUy1MbUpkNkc4UXNvalZoZXltbUNScGEyanBReERmbTRuQnB2d2M2dkU3NkJ0anMybXdHWV9QWElRVG9WcDhNSzE4eTV4VWs4WWluaGpYR1NZZTNuYVFPNWZwUk1YcXNOR0NrN0REb2V5eENFRjFaTVNpeWtJdw?oc=5",
-    "source": "Reuters",
+    "source": "reuters.com",
     "published": "2026-09-28 14:53",
     "score": -0.542,
     "label": "Negative"
@@ -1316,7 +1316,7 @@
     "symbol": "RRKABEL",
     "title": "RR Kabel Share Price Today: decline, valuation and peers",
     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE43Z0JKcUo3bkM2R2FfLWQ5TXNkQ2dpMnNldEZ1UHU3THMyeUkyTkc4TmN5V3NEUjFiNGVEQlBWd1pwQk5lZk54YWIyX0F3ZGNWQWJJc1NGY25WakxxMjQ3VWFfRHZhN291N1F6Wnd4YW55TjQ0eXJ5bXNuMA?oc=5",
-    "source": "univest.in",
+    "source": "Univest",
     "published": "2026-09-28 05:52",
     "score": -0.382,
     "label": "Negative"
@@ -1532,7 +1532,7 @@
     "symbol": "THANGAMAYL",
     "title": "Thangamayil Jewellery Share: Bull Case vs Bear Case for 2026",
     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbV84TnZBcDlZcGRjQ2YxN1Z3eC1lNHdhNTN1ZENIRnZsR21zVVQyQUFmNnpKbmQ1VWl6SEpGNi1XX01ZcXZuM09QZklRNUh3YTZwd1RJNDRpM01BRUJfS0VJSXRGVy12UllLVU5jZnd4UWMyQjlkZHJPRGsxX2RQZnY2c3RRRE0?oc=5",
-    "source": "univest.in",
+    "source": "Univest",
     "published": "2026-09-25 12:22",
     "score": 0.0,
     "label": "Neutral"
@@ -1586,7 +1586,7 @@
     "symbol": "DIACABS",
     "title": "Diamond Power Infrastructure (DIACABS-BE) Share Price Falls 3.54% Today",
     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSmhSUlhBeGVjR0VmV1paYzdJdDlLd045M2hLX1dPc0NQdkJXUmR5dUNCNGNYeGxBNnlrTVNtMkQya1JiamhQQTNfbU8zdmxndzB4TWlmSndSdmpzZ3RGU0VickFfeDg2U0x0ZmFkMWtxMndNU3FkdmMyTTE3R20wdnNpdUJoN1RNdlFKbXJHNXlqMU9KUUE?oc=5",
-    "source": "univest.in",
+    "source": "Univest",
     "published": "2026-09-25 06:49",
     "score": -0.052,
     "label": "Neutral"
@@ -1631,7 +1631,7 @@
     "symbol": "LAURUSLABS",
     "title": "Stocks to BUY, SELL or HOLD Today, Sept 25: Adani Power, NSE, PB Fintech, Laurus Labs and others",
     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNSUFqNDJicXN5c19sQXd2WXNJb1BWb2UtNUpOZTI3d2JudFdlNkZmTzVQUzFKM3VXTHJlZGZKUlhCZTR6MUZob0p6Y0hERlZkcDBzYmp6OGJaMTBKRFcySjNlblpkZXNabW1kZFZLRzdkT2N2Wnl0TWtJcU54Skk2MTJMUTVFQmJnbXlzeE9jSDgxRlhQaUd1X0xibGxDWks3Y01hZkViMTdVNVJYZ3RJald5TGVvUW5sMkV2M2dxbXBiWUNDT2ZXV0xONFBVa1lPOWN0aW1ZY3JVZ9IB3wFBVV95cUxQOGJWak1PMG9YdEpvYzc3S1VhNXI1bDBheUl0TVdJMTBCdmJoM2M5NUFhQzdYb0VFM2dsRmZLOER4U3k1eFUwQmg2QTdlRGNYZ3Fod1F3RW52bWVGUU02NlpaUkVhWTBXUXd3SERZblFDR2JVR3ZZZ1FkcTVTcGU2ZWZQUEVaWlFTMmJRWDR5WHVoYWtQejV5YjRjNXQtSHBKOFdaM1Y0UVBTNTZENWU1elFHYTZmVkUzSFkwUkM2TGw4Sno0SU00WXNUMjZUenpEMXdqQ3AxdmFOeE9HNnI4?oc=5",
-    "source": "etnownews.com",
+    "source": "ET Now",
     "published": "2026-09-25 02:49",
     "score": -0.052,
     "label": "Neutral"
@@ -1640,7 +1640,7 @@
     "symbol": "MARKET",
     "title": "India shares log longest weekly losing run since 2020 as oil prices bite",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRDlIOXFjNzhyRGVteU5DNTJCdVlRNUZEY3VObFdZNDI1MDU2SUo0NEM1N1JDTHpDMTk0YU9OM2V1eXRla1VaanBsTTlUM1lWR3VYU0g1eG5pM21hNzFWQTdabWphemRRMlc1U09MdWxVRVNLUWxjd3pIODVuY2UtcFE0dEhPTUM2MU1pbHNOQ1NnOUQtME1TTDJjSzJzOGljZTRmN0NBZ2Q0S1VodGZaSXFxZU1VTGNnanc3a0o0anM?oc=5",
-    "source": "Reuters",
+    "source": "reuters.com",
     "published": "2026-09-25 02:24",
     "score": -0.382,
     "label": "Negative"
@@ -1653,21 +1653,12 @@
     "published": "2026-09-25 02:06",
     "score": 0.178,
     "label": "Neutral"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Stock Market Today: Gift Nifty, Bond Yields To Oil Prices \u2014 Five Key Factors That May Drive Sensex, Nifty 50 On September 25",
-    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdVk2NWY2YmFvVWRzUDF4anpscG54WjM1SVVVVldRT244LTh1aXVWbXFCWnQyQVZnbmQycU41N3JiV3p5ZTF6VlZMSUI3NUQtR0tsVDF6cS0zdjZiQ3lCM0VhTXFoSEt4aEh2YVF2cXFxY2ZfMkVZSjhuNDZyODRGQUNYRXNpeWdEZzRjd2ZaeThvb3BxdmpBdU1jZVhNWHAyUzR0eGhtTzRHYTVkdTdvYWhRcWhldEkxV3Z2bnZ2SjhqNVYzMWR4MTcxdWc4X0FkNzdjb1VhYUFFNFNOTnVMeGFtUkF5SC1ZRG4wM1Z3VUU1SE5ucnfSAf4BQVVfeXFMTzFDRFpfdFA3RTRhanpJaFljZTc3ams4V2FOMENpZWYtUC1uSEwtYWlNODhZSnhnVXBZUEc5REwtbjFDYkFtSjd3SlBwbHgzblJDQ2pyc2F2aHdwV1NnaTlxU2plcGhYNWg4cWZiZGNObUVPOENwTFRuS0dnbHdTbVNtQTZGUXlGTnVnaEhZYW0xVHhjVnpZdk1qMlQxWFNnRHM4NENlWDFtdFhQODYyNWFRb2haeThMUWdsZk55R1g4YzBWbkFGc2xvX0Q4REwxdHBjb2VidHFmMHNKRnZDXzBrQU5oZmJ5bVFuZ2dIVmhlMGJKNHhhQmFPdlNPVlE?oc=5",
-    "source": "NDTV Profit",
-    "published": "2026-09-25 01:28",
-    "score": 0.807,
-    "label": "Positive"
    }
   ],
   "errors": []
  },
  "created": "2026-09-28T13:27:26",
- "last_updated": "2026-10-01T18:32:29",
+ "last_updated": "2026-10-01T19:48:57",
  "research": {
   "method": "notes",
   "generated": "2026-09-28 13:27",
