@@ -39,6 +39,23 @@ A Streamlit app that takes a **SwingScope momentum-batch HTML** and tracks its 1
 * Future dates are projected with the NSE holiday calendar (auto-refreshed, see above).
 * **Net P&L** deducts the batch's estimated round-trip cost (0.6% in the HTML). **Nifty 50** is measured from the Day-0 close.
 
+## 📡 Live dashboard (24x7)
+
+`app.py` now opens on a read-only **Live dashboard**. The previous app is kept as **🛠 Manage & update** in the sidebar.
+
+* **During market hours (09:15–15:30 IST):** live prices for your 10 stocks and the Nifty (Yahoo, delayed ~1–15 min), refreshed every 60 s. You get live value, P&L since entry, today's move in ₹ and %, Nifty today and alpha. Each stock row shows your research view next to it.
+* **15:30 to 18:05:** today's provisional closes, until the official update lands.
+* **Any other time:** the latest official closes.
+* **Underneath:** the full **21-day performance** report and the **Research & sentiment** report as two tabs, with Excel/HTML downloads.
+* **Data source:** the dashboard reads the latest data straight from your GitHub repo, so it's current as soon as the evening run commits. In Streamlit Cloud → App settings → Secrets, add:
+  ```toml
+  LIVE_REPO = "your-username/your-repo"
+  # optional, avoids GitHub's anonymous rate limit on shared servers (read-only token is enough)
+  GITHUB_TOKEN = "github_pat_..."
+  ```
+  Without `LIVE_REPO` it uses the files deployed with the app. Streamlit Cloud redeploys on each push, so those catch up too.
+* **Free Streamlit Cloud:** apps go to sleep after a period with no visitors. Opening the link wakes the app in under a minute, and the data is always the latest when it wakes.
+
 ## Run locally
 
 ```bash
@@ -88,6 +105,22 @@ The report is sent **once per trading session**. On NSE holidays (no new close) 
 5. Test it: **Actions → Daily SwingScope update + Telegram → Run workflow** with *force_send* ticked.
 
 Optional: add the same two values to the Streamlit app's Secrets to get **Send today's report** and **Send test message** buttons in the ⑤ Downloads tab.
+
+### Exact timing with cron-job.org (recommended)
+
+GitHub's built-in schedule is best-effort and can start runs hours late. For on-time reports, let a free external scheduler start the workflow:
+
+1. GitHub → Settings → Developer settings → **Fine-grained tokens** → Generate. Repository access: **only this repo**. Permissions: **Actions: Read and write**. Copy the token.
+2. Create a free account at **cron-job.org** → *Create cronjob*:
+   * URL: `https://api.github.com/repos/<owner>/<repo>/actions/workflows/daily_update.yml/dispatches`
+   * Schedule: custom, Mon–Fri **18:05**, time zone **Asia/Kolkata**
+   * Advanced → Request method **POST**, headers
+     `Authorization: Bearer <token>` · `Accept: application/vnd.github+json` · `X-GitHub-Api-Version: 2022-11-28` · `Content-Type: application/json`
+   * Request body: `{"ref":"main","inputs":{"news":"true","final_attempt":"false"}}`
+3. Clone that job for **20:15** with body `{"ref":"main","inputs":{"news":"true","final_attempt":"true"}}`.
+4. Use *Test run*: the response should be **204**, and a "Manually run" workflow appears in Actions.
+
+The GitHub schedule stays on as a backup. Duplicate runs are harmless because each session is sent only once.
 
 To change the time, edit the `cron` line in `.github/workflows/daily_update.yml` (it's in UTC: `35 12 * * 1-5` = 18:05 IST).
 
