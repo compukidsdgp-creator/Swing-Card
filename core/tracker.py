@@ -159,6 +159,20 @@ def detect_corp_actions(state: dict) -> list[dict]:
     return add_corp_actions(state, found)
 
 
+def missed_sessions(last_session: str, today: date) -> list[str]:
+    """Trading sessions after `last_session` whose official close should already be in (today counts after 18:30 IST)."""
+    from zoneinfo import ZoneInfo
+    now = datetime.now(ZoneInfo("Asia/Kolkata"))
+    t = today.strftime("%Y-%m-%d")
+    out = []
+    for d in project_sessions(last_session, 30):
+        if d < t or (d == t and now.strftime("%Y-%m-%d") == t and now.hour * 60 + now.minute >= 18 * 60 + 30):
+            out.append(d)
+        else:
+            break
+    return out
+
+
 def compute(state: dict, today: date | None = None) -> dict:
     b = state["batch"]
     stocks = b["stocks"]
@@ -309,7 +323,7 @@ def compute(state: dict, today: date | None = None) -> dict:
         "worst_day": float(port["Daily %"].min()) if port["Daily %"].notna().any() else None,
         "today_chg": float(port["Daily %"].iloc[-1]) if cur_day >= 2 else None,
         "last_updated": state.get("last_updated"),
-        "stale": dates[-1] < today.strftime("%Y-%m-%d") and cur_day < HOLD,
+        "stale": cur_day < HOLD and bool(missed_sessions(dates[-1], today)),
     }
     last_d = dates[-1]
     kpi["coverage"] = (sum(1 for x in syms if state["prices"].get(x, {}).get(last_d)) if cur_day >= 1 else len(syms))

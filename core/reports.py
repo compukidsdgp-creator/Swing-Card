@@ -132,7 +132,7 @@ def dashboard_html(state: dict, res: dict) -> str:
     figs = [charts.fig_equity(res), charts.fig_stock_bars(res), charts.fig_contribution(res),
             charts.fig_heatmap(res), charts.fig_paths(res), charts.fig_drawdown(res), charts.fig_daily(res)]
     stale = (f'<div class="warn">Latest session in the tracker is {k["last_session"]}; '
-             f'today is {k["today"]}. Run the daily update after 4 pm IST.</div>') if k["stale"] else ""
+             f'today is {k["today"]}. The daily update (18:05 IST) has not picked up the latest session yet.</div>') if k["stale"] else ""
     pct = k["progress"] * 100
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>SwingScope {b['batch_id']} — 21-Day Dashboard</title>
