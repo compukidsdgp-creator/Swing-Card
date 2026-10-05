@@ -39,46 +39,67 @@ def market_status(now: datetime | None = None) -> dict:
 # --------------------------------------------------------------------------- #
 # Intraday quotes (Yahoo, ~1-15 min delayed for NSE)
 # --------------------------------------------------------------------------- #
-def fetch_live_quotes(symbols: list[str]) -> tuple[dict, str | None]:
-    """Latest traded price per symbol for today. Returns ({sym: {"price", "time"}}, error)."""
-    try:
-        import yfinance as yf
-    except ImportError:
-        return {}, "yfinance not installed"
+_LAST_GOOD: dict = {}          # last successful quotes, shared by all viewers of this server
+
+
+def _download_quotes(tickers: dict) -> dict:
+    import yfinance as yf
+    out = {}
+    raw = yf.download(list(tickers), period="1d", interval="1m", progress=False, group_by="ticker",
+                      threads=False, auto_adjust=False, timeout=8)
+    for yt, sym in tickers.items():
+        try:
+            sub = raw[yt] if isinstance(raw.columns, pd.MultiIndex) else raw
+            s = sub["Close"].dropna()
+            if not s.empty:
+                ts = pd.Timestamp(s.index[-1])
+                ts = ts.tz_convert(IST) if ts.tzinfo else ts.tz_localize("UTC").tz_convert(IST)
+                out[sym] = {"price": float(s.iloc[-1]), "time": ts.strftime("%H:%M")}
+        except Exception:
+            continue
+    return out
+
+
+_INFLIGHT: dict = {"thread": None, "result": None}
+
+
+def fetch_live_quotes(symbols: list[str], deadline_s: float = 12.0) -> tuple[dict, str | None]:
+    """Latest traded price per symbol for today, with a HARD time limit.
+
+    Yahoo sometimes stalls or rate-limits shared cloud servers; the page must never wait on it.
+    Only one request is in flight at a time; while it is slow, the last good quotes are shown
+    (marked with *). Returns ({sym: {"price", "time"}}, warning_or_None).
+    """
+    import threading
     tickers = {f"{s}.NS": s for s in symbols}
     tickers[BENCHMARK_YF] = BENCHMARK_SYMBOL
-    out = {}
-    try:
-        raw = yf.download(list(tickers), period="1d", interval="1m", progress=False, group_by="ticker",
-                          threads=True, auto_adjust=False)
-        for yt, sym in tickers.items():
+
+    th = _INFLIGHT["thread"]
+    if th is None or not th.is_alive():
+        box: dict = {}
+
+        def work():
             try:
-                sub = raw[yt] if isinstance(raw.columns, pd.MultiIndex) else raw
-                s = sub["Close"].dropna()
-                if not s.empty:
-                    ts = pd.Timestamp(s.index[-1])
-                    ts = ts.tz_convert(IST) if ts.tzinfo else ts.tz_localize("UTC").tz_convert(IST)
-                    out[sym] = {"price": float(s.iloc[-1]), "time": ts.strftime("%H:%M")}
-            except Exception:
-                continue
-    except Exception as e:
-        err = f"intraday download failed: {type(e).__name__}"
+                box["out"] = _download_quotes(tickers)
+            except Exception as e:  # noqa: BLE001
+                box["err"] = f"Yahoo error: {type(e).__name__}"
+
+        th = threading.Thread(target=work, daemon=True, name="quotes")
+        _INFLIGHT.update(thread=th, result=box)
+        th.start()
+    th.join(timeout=deadline_s)
+    box = _INFLIGHT["result"] or {}
+    if not th.is_alive():
+        out = box.get("out") or {}
+        if out:
+            _LAST_GOOD.update(out)
+            missing = [s for s in tickers.values() if s not in out]
+            return out, (f"no quote yet for {', '.join(missing)}" if missing else None)
+        err = box.get("err") or "Yahoo returned no intraday prices"
     else:
-        err = None
-    # fallback for anything missing
-    for yt, sym in tickers.items():
-        if sym in out:
-            continue
-        try:
-            import yfinance as yf
-            p = yf.Ticker(yt).fast_info.get("last_price")
-            if p:
-                out[sym] = {"price": float(p), "time": "last"}
-        except Exception:
-            pass
-    if not out and err is None:
-        err = "no intraday prices returned"
-    return out, err
+        err = f"Yahoo is slow (no answer within {deadline_s:.0f}s)"
+    stale = {k: {**v, "time": v["time"].rstrip("*") + "*"} for k, v in _LAST_GOOD.items() if k in tickers.values()}
+    return stale, err + (" - showing last good prices (*)" if stale else " - showing official closes")
 
 
 def live_table(state: dict, res: dict, quotes: dict) -> tuple[pd.DataFrame, dict]:
