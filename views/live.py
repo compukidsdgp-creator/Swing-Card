@@ -172,9 +172,13 @@ def live_block():
         syms = tuple(s["symbol"] for s in b["stocks"])
         quotes, err = get_quotes(syms)
         df, sm = live.live_table(state, res, quotes)
-        head = "Live" if m["is_open"] else "Today's close (provisional, before the official update)"
-        st.markdown(f"##### {'🟢' if m['is_open'] else '🕕'} {head} — {sm['covered']}/{len(syms)} quotes · "
-                    f"{m['now']:%H:%M:%S} IST")
+        if sm["covered"] == 0:
+            st.markdown(f"##### 🟠 Live prices unavailable right now — showing official closes of "
+                        f"{k['last_session']} · retrying every minute")
+        else:
+            head = "Live" if m["is_open"] else "Today's close (provisional, before the official update)"
+            st.markdown(f"##### {'🟢' if m['is_open'] else '🕕'} {head} — {sm['covered']}/{len(syms)} quotes · "
+                        f"{m['now']:%H:%M:%S} IST")
         c = st.columns(6)
         metric(c[0], "Live value", inr(sm["value"], False), f"{inr(sm['today_pnl'])} today")
         metric(c[1], "P&L since entry", inr(sm["pnl"]), pct(sm["ret"]))
