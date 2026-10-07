@@ -650,7 +650,7 @@
  },
  "entry_override": {},
  "news": {
-  "fetched": "2026-10-07 19:03",
+  "fetched": "2026-10-07 20:09",
   "days": 7,
   "items": [
    {
@@ -700,7 +700,16 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Stock market prediction for tomorrow: Sensex, Nifty outlook for Thursday | Kospi, Taiwan cues to watch | 8 Oct 2026",
+    "title": "Nifty, Sensex end lower amid RBI rate hike, rupee hits 5-month low",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMmZUcHJrclM3Q3FCQS1RVGNJLWp3amY0dXFxc3p4eWtqT1owSks0YzBFSU5reGdmQmY2RmZRSjg0SWl6NEwwSm0tR1djbVYtaW1mODZzalEySUhURzd6WVNhaHl4YXFVVFA1Z1JwdkJLTzJoOTJQczU3OUx6RHFtd1liSnJ6NXNKNGpWLWtIcXlCS09kNkNCTXByUEtrbExsbzNkNXBtcjhEZkhpU1NWT1RfSEd5dw?oc=5",
+    "source": "ANI News",
+    "published": "2026-10-07 10:31",
+    "score": -0.202,
+    "label": "Negative"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Stock market prediction for today: Sensex, Nifty outlook for Thursday | Kospi, Taiwan cues to watch | 8 Oct 2026",
     "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMlVmVVRiR09jS1JEOVdHWFpMTjRha1VCcjZwVl9xa0tfOW9NQUFWczhoQnFHNThxdFdhbEYzV0U0UDBQcDA4V0ZDOVVYQ3lrUVc0NXNjM05Sc1BGUlJ1ZGVqZnR6ai1pWWtlendJeGxnbXJZY3JzVmpYODRDeTRIMDRLazZISTJXME9mYndpclpFYlJrajJ6czVDcUV6YUtQV0xPU25Qdkk2UGR5T1lnLUVVckdaTVhncTFIY0tVVzVIUERnNkloUElwWWVhSlRjeTBqeTI0dmppa0VmWjBGNWgycll6SzNRRkhISjdUMzNoUdIB9wFBVV95cUxPaHp5T0FoSE9IYzNzMTJZd191SWptN1FjSUk5M01MU0pWZkVyeGdibEU2aEpScE1ZUy01YlRkLTd3WlluMEhXWU02NzdMNVVwbFd5MmtkUlpzUHB3YUFPd0Frb19YbE1oVlA1UkRwTWVPamg1Z1VaelMyT2laT3NqX3BSOElTdUNlU2lyc0xrNURaRXBBXzNpWTlKLV9iX2xtRjlieW92OGxkTXRjS2txWUg2TndLam1JSW9QTkx4UG9wVExBdTY4eEdmWmlfVUh1c0ZJQmVfM2dITzg1b2s5eVh0ZDd1NWJLVFNhRUpsa1lnUG1uMElj?oc=5",
     "source": "Livemint",
     "published": "2026-10-07 10:27",
@@ -724,6 +733,15 @@
     "published": "2026-10-07 09:16",
     "score": -0.273,
     "label": "Negative"
+   },
+   {
+    "symbol": "AEROFLEX",
+    "title": "Aeroflex Enterprises Slips 2.72% to \u20b9128.96 \u2014 Range Support at \u20b9122.51 in Focus - Triangle Correction",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczI2dWtrQXZnOWd0OGRKenBjWWZzZHNsSmFhV0FORmZENnZYM09yVVFCSlJaU0hxWFY5S0VoVkhaTXV2Rm5rcFpxMEo2QUh4Q0hxT1pUaUdURVZBMXBIX2JvZmdMLWVSMmExSUh0U3lSaFFINnBmN2dGbWdLMEFjTHFlM0dlalBDSUJ6THJTM25BT2J0VWZud0JCR1RpR0JYT1pZWnVhellBZVhNZG02UExOZlg?oc=5",
+    "source": "https://www.siam.in/",
+    "published": "2026-10-07 08:47",
+    "score": 0.077,
+    "label": "Neutral"
    },
    {
     "symbol": "MARKET",
@@ -970,6 +988,15 @@
    },
    {
     "symbol": "MARKET",
+    "title": "Sensex surges 685 points, Nifty settles above 22,700 as markets extend recovery",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNd2hjbG9kY2NObkdwUUxLZDBKVU52OERHekRJcTZ3TG4zbFhxUjR2R0FwUFJJc2hYT2Nma2p2NGgya0FfWmYwbU96MWhCUXVSTjFiY3pJcFk3UjBWTlZ6VTlxcm5aa2hRRkVJVGhxa0QybmJZc01vTHVtcHlkSzFHMVQ5VDY2THI4c3phbHVORVRoMXd4amVydXBuMnphWnFveGYtZXlhanpEVjBXcTA5ckNYRVY3MVVKdmVyUEhQUEVBZm9jTHRpdTViUVZERWNy?oc=5",
+    "source": "TradingView",
+    "published": "2026-10-06 10:48",
+    "score": 0.765,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
     "title": "Sensex, Nifty Surge 2nd Day on Easing Oil, Bank Stock Buying",
     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHVNQk5rbFFGZEtlam93TG5zOU1QYUJxc2V5NWpSSVVwc1VSbE9BSkZBQ0hXdF9EbHNYZzhncG0zMGxCenZrWXN1eVBjdkl1aEpwWi1RRXpJYU9zNlI2aDZpYVRrVWZ2RlZ2TEdUU1VGaWw5VW1KZ281elRsVTF0RjhUbGZuUkJ2QmYzUjFXWGpSckY1dzlzLWxxVzVRejc2YkdIZNIBqgFBVV95cUxNRGpoVUxreDZKZV9jZTNBUHhEQlZURmZ2b1VoMnVqbmREdDRRTGRERncwZWtVZDhQLU04STVuZHFfVUg3OEl3RmZHdXA0OUxlNWdEdzBpWnp1NTgyMlVqRWZtV3lYZk1JZHV3YmlOQkZfbDNaNVdncWJlVUM0TzR0dGZ5c1BKelk3ZWJ3OVRSVmYxT2dXUlV1YzYyRERoU2cwLUpzT3lOYk4tQQ?oc=5",
     "source": "Rediff MoneyWiz",
@@ -1037,15 +1064,6 @@
     "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNMmF0TGdKVDhMZFppQ1ZaWGdBWjRld0x4aTJHRTl5OWMyd1d3ZUZQTF9PeERyT2p1aGtlLVluYmdES0FjaTBIN0NlMk5KSHctMnhnVVVQaEFhVTU0YXBLZHJoMUptY216SHJudW9oU3llX280RWtiVEFGNldkWTlvYmdtaDZSZ2FfZmpvZzRYb0IwQ19kUW5mVVk1TkNSMzE0cm1QcjdOem8tNWlYcDNDWVNyY1FPb0FMTWZ6ekJBejJyWWl2NmhqQVNRQXNpUUpTZDU1VkVNWEZtVFhGSzBTYTZIbEZlUHFJdVpmTmFLZjUzRHh5SHRFUkJGQXRLTTRKY0Q1UGFGR2RldjN5Z2tubNIBlgJBVV95cUxNNjZFZmdwQVhHZElndVhuUG1fdXk2QXFZS25zbFNIZ3JDT1luVElkN2t5bFZ4bTRIQUJRNGtBLUUzWkppODcwQ09JZXdDQjhxcGVKaDBJdlh6cmR3U0Z4c1h1OS1hTG9abW11dC1RWFJVemVWbGtVQVFMa1VUSmV4UzVmM04yOE9TcjFScmtCWmNwVkE0djdhZHNlZWxLMXZNelAxVnJ4bGVRR191V3VrcFUzSmtsTGJ6OUNuTDRSZGExVm02UllqblFXSWpEeDZkdlRHQnVuRkFtVzBPRjBaaVJwUXo4TThwV3pIOXFJM3ZHM1V3N21OY0V4bnMwd3lqbFl6Ym9SS3U0b0tkbHFrTjV5Q0g4QQ?oc=5",
     "source": "Livemint",
     "published": "2026-10-06 08:45",
-    "score": 0.402,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Stock Market Today: Sensex, Nifty steady led by Trent; SRIT, Shah Investors see firm listing",
-    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNjJCNGlUa1VPbTdaQThoNUpDZjhjOGJzaktmUklvMG9zQkd4M1pRck5xUldKUy1kenJfa2E3VjJhN21UNWZTSFp2b0cxd25DVnROVllZelZ0RklQbzRjcmVOa2tVU0lWZHRGS0Y5VlVNdjlhNjhaRWl0WUx3bFVwN3Z6RER5SWtqeDIxM3BRN1ZXb2ZLb1p3RGlBWlRJY3ZrS09DV1k4cUQydVNxcHplRDBwV2xLRE1yVmZhbnhRV3ZZUQ?oc=5",
-    "source": "IndiaIPO",
-    "published": "2026-10-06 07:00",
     "score": 0.402,
     "label": "Positive"
    },
@@ -1186,15 +1204,6 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Stock Market Today: Gift Nifty, Nasdaq To AI Stocks Rally \u2014 Five Key Factors For Sensex, Nifty 50 On October 6",
-    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORmdPaFREQ0lrNzg0b0NsbVktMmFTMjd5SG1PUGRuSFowajhYSzlxa0VZMnJKTjE4aGNjZDlPNmsxLTROQVA3ZndPLVRiU2xkUjZuNHk3QjNFaUh5R2VMZkR6YUZ4aFZZekoxX3RZV0t4aXI3d3NYSDZkWFp5X0Y3d2hmeG10dXR0TTl2QzNWTmV1VmpiOXIycTVER2ZfUms3ekxrOXhXRjdxNXMtZXpwUURaZUo3Tk5RUlh6V0cyUmhQUWwtWFFJWm9zRGp3NWJXcUZMMTNidjQ1QUN2S18tQ2t3NGhsQm9mNGp0dVExQjFFQdIB-gFBVV95cUxOTC1KMnFWYk40ZkpnbEpQOEduMUxtSmZYd1FJMkxWRTF0dGJFbjRwWmc1SWZQWVZwYlkxd2NGdUU4Zlo2NDR2ckNxZzNYdGdyN3lvemZCVVdMQTBRWHBwd2Q4MWdKTjhMQ1VZUWJFNmh5ZmVnTlBUWDhPekJTS2lrTmFoT0ktZWJPR2pRb1dTOTVTcFdueDZrdkdVZUdqeTktT2EweWMyQjFtd2RGU3dLdEJqTzJ1ZEdvUHBaMmdNTmdkdlpJZjI4cXhOMzdQUFM5WTdfeFUyT0NXZnBHLThYazZ4MEN0X2NwcWJYNkhwWHdENFk3UWJKX2Nn?oc=5",
-    "source": "NDTV Profit",
-    "published": "2026-10-06 01:27",
-    "score": 0.883,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
     "title": "Five reasons India's stock market is sinking even when its economy is growing",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1EdEhaMjJGMk1DR0ZaZkZfOVJ6V1pNODA0VlBGQ2p2eEtSNHc3ZzZ6d01sZVAwWE1HUkctaHk1aUNBTUY5ZXMxbVUxYWVFeFZHdU9aQW93UjlKbXhCSUE?oc=5",
     "source": "BBC",
@@ -1289,15 +1298,6 @@
     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNcGdDREhER2NiVVUwbDVNQnAzS2I1Rm1rN0pGRUlxSVM1Y3R0M2ptc0YwTXVXbHkxNFgwTUp5cDhwc2ZpNDYzalRRMDZ4cHFhSHpicHpxdjJaUHpMXzdzc3BtOGhYNmhOcGxWYl9JTl9wVlZudk5BbGs0WHBBSmhpNGxBRFc4cVBZdFE4ajVtbHdtUU1pc2tScXk4d3k5b0RpOU9iRG9jcVVqNVFWLWhJcnJaWjVFTUNpOTdoY01VUkZVM3pfVGFFWGdkaF9mSWw4ckpzLU1vLVhRRDh6akdHWEFxdF8?oc=5",
     "source": "TradingView",
     "published": "2026-10-05 10:19",
-    "score": 0.026,
-    "label": "Neutral"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Stock Market Today: Sensex, Nifty Rebound After Eight-Week Losing Streak",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdlJXTnZ6X2FBNXdPc0V3NDdqTUY5emt4dGtLLURJMXN1bW1ueURCU2Q1VzZaa2JfenNRbVpnRkpLemF0TVBJS1d5YmtXOFAxRTJ3WXhZYk9HV3F3VmdqLXAtWldHTDBXd1M4WnQ1VGdIeGkyQzdHbGFvQWplOENrUGlWOFlFQ0c5NFRwaHlyX21JZGw3NFdZ?oc=5",
-    "source": "INDToday",
-    "published": "2026-10-05 08:48",
     "score": 0.026,
     "label": "Neutral"
    },
@@ -1470,6 +1470,15 @@
     "source": "Livemint",
     "published": "2026-10-05 01:28",
     "score": 0.842,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "ideaForge Secures Major Domestic UAV Order | L&T Wins Major Dubai Road Infrastructure Contracts | Top Buzzing Stocks Today",
+    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQQl9MeVMwSlZPNjFoWV82anhaSURQSnplczlnNjNYamRISHlaekxGRGRteGwyUklZdUFtbGQ4TTFLckZLX21FVjZYUzdDMkRCZkJHdXUxNlM0cWh4NHcyWTU1dGQtbFQwTzFwRGZMT1JyTjBCNEY2RnZDMkFzSmJyRWR3Z3NrX0M4VGlwSThLUkowYmhmWFhyYUJWa3BBbDc2azVjdC1mRk1PT3paNmoxcmxmSDVqdXhFUWZqNDFuMmRQcmNSVHJGazBKNzNyaUlicExSVkhSMFA3dW1lS1VTV0RLQl84amxKQk1oSjBxNHRIV0RvSEpOMlFSSG81QXpuNkJNeUFoWllEZTQ?oc=5",
+    "source": "Equitymaster",
+    "published": "2026-10-05 00:30",
+    "score": 0.826,
     "label": "Positive"
    },
    {
@@ -1699,15 +1708,6 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Stock market closed for next 3 days - here is why | Check NSE calendar dates October 2026",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTF9uN20xbnhuQnphNVJJYUQ5OEtiNmt4TUdjc2h6RnBhUjUwREVMTGJrMWw1MU5XRWlFQ0NxVU03SkdmcWxRZmZNRThabVE1Ym5jQ3JHODYwV3pwVDRnb05TcXpYLTgyRGdUenVyd0N0TkJhdUNGWlVZaHFEc29nTF95RkxrYVpzVUtKU3pvdTFlN2p6ekZOakctaEM0OWRqT2ZUcm13dmh5RWh4djlGZXNEc291ek1PcU9uX3pPUmppd1lRZWhKU3kzaXFwbTF6TkZqWkNmRTIyM0ozN2ZBWVZ2YzVUekF1cWtZ0gHwAUFVX3lxTE1ncG5KbUNDMkppVFJ5S21aeVhyZnBBbjZCcjZmUkVjYlF6ZzNiLS1NY0p5X0htRVhQLTlXVi1HQ0pNU1hYckRsSWRsTmY0TEdwMk9RTzM3QXZjYVJqdnRIb0hjXzF5VmFRWlBWRFQtbk5oWS1ITi11ZDJwcUJJaXJESThUNXdUZWNoR2xHeGZtS19GWk5yX202NnZTQXVOZVE3WF9NSjg5clYzckozVVA0ZzZVRTF0eXBNdEYtai1MR09Vc28wMldfYUFhcldJZ25mWHV5WnZyWEh0MU1jWXFucV9VN05jZGdhNGp4NG9rYQ?oc=5",
-    "source": "Livemint",
-    "published": "2026-10-01 08:33",
-    "score": 0.0,
-    "label": "Neutral"
-   },
-   {
-    "symbol": "MARKET",
     "title": "Sensex Crashes 1,000 Points: Rs 9 Lakh Crore Wiped Out As Foreign Investors Sell Indian Stocks En-Masse",
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNXktbmdLdk5ia29mWlp6Q1QzRWdPaVFKVjlKRWR4RjNZaEJBZDg2MVcyRFlCT3JGeUd4c2dsdlMwaHhleVBralN4LWpOUEs2TWFxTWxUUXFudE9YUDB4T28xX294dkswTFJ5MmZZakY2ZDZSZTQ4QkJnVG9vWVJzQU5yTW9YTUY4NmpzLU1GbHF5Z0xRblZwU3N5MTlOa01NSnB6ZXZVOWNzSEd5bU5SQ2MyS2h6bGxm0gHAAUFVX3lxTE5PQVJTcVhrVlBVR1pReEp4d2UtQkRqRHNocXdrbUZDem9oOUpXbEJVYm5uU3Vyd000VU1ONE92Qkctc0t4OTVHZndldGJVOVpTbjFzU29tekxTaFBWaE9JZXpTUWtUajRUR3VyVEFabVhzVmEyYjRGdmlDRXpYOWQ1b2dwbU5Ya01Hc2ppcEpfeFJvTWk0OVN6b0Y5SHdPWnpDOHdYVVBENHNCZlRneGhuQkE0eTFERDlWYmpvVVhGTA?oc=5",
     "source": "NDTV",
@@ -1818,7 +1818,7 @@
   "errors": []
  },
  "created": "2026-09-28T13:27:26",
- "last_updated": "2026-10-07T19:03:01",
+ "last_updated": "2026-10-07T20:09:04",
  "research": {
   "method": "notes",
   "generated": "2026-09-28 13:27",
