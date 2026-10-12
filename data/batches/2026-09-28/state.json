@@ -815,7 +815,7 @@
  },
  "entry_override": {},
  "news": {
-  "fetched": "2026-10-12 21:22",
+  "fetched": "2026-10-12 22:14",
   "days": 7,
   "items": [
    {
@@ -907,15 +907,6 @@
     "published": "2026-10-12 10:18",
     "score": -0.434,
     "label": "Negative"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Sensex sheds 548 points, Nifty settles at 22,363 on oil price spike, foreign fund outflow, rising bond yields",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNckVJUTJETHRnVjBBUFlYTngxUVowbVhOZ1FJS2tCZE5FUFp2Z3lkdXVBeFBSaE05bkMzc0dhN2lkM21hLWE1M05PRUV2aTRkU0piNmE2TEVXMXlrUUotWnRxYVVid3Rld2ZWTVJrTnVoOXB0cEt0TE5DcXVHSTAySTFFcmhlWWh1YU0yanQyQVQtbHZRMEdWRGI3LVlxYl9qRlNMTTdWTFZMSXVLbWdRUkU4Y2Zqc21kRnRDVXA4LVhCc2hyQlNr0gHMAUFVX3lxTFBrMU1TSkpDTHREa2FWNVJPUDloQ1llYUpuMWF4X3V3UUpBNF9ucEFyS0dMMndZa1JiaXlreXpUR3JEUVBWdl9HR3l2RTBra1U0Mi1tRUFLVUdaYWliY2FDSXM2elBmT1g1QlNfVEpxc1NVNWJHc2NqRGZDczJvSHB6bjR1RXFYWFAxd1RRM21pZEs4WUJPM0wyZDExY0M4QVNJT0xHNlZMY1pPMVpKZXlzN0VaNWtnN05QZm1CdXp1dWk2UUVfaVV6LUZhdw?oc=5",
-    "source": "Telegraph India",
-    "published": "2026-10-12 10:18",
-    "score": 0.026,
-    "label": "Neutral"
    },
    {
     "symbol": "MARKET",
@@ -1053,6 +1044,15 @@
     "label": "Neutral"
    },
    {
+    "symbol": "MARKET",
+    "title": "Stock Markets Today: Sensex, Nifty pare early gains",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOM1hFbjcxdWs2elI0QVFoZWtiNnZRakdod1I3bDlWNU1hWDFlMHdzcFBEbjJyUnk2UDJ3NGExMTRycVRHb1E4bE52bWZWZGZFMzZuNEJoNk5JYkROYjhiTmpKN1lpRWFxVkVjSTYxc1N6MkpsdzZNT1ZNaENzQW5Ybjl4V2FLVEpJaGZtMVZuRkFVeXdwRWhaTGtRa0h5QUp5R2xtaVBmRVF2aWJIbnJDd2VpLVNXNGxwcXA0X01VakFpN2FXeHo1SHVHako0TVp4YXR6bDZaeUFMc1N6Yjhz?oc=5",
+    "source": "Rediff",
+    "published": "2026-10-12 05:22",
+    "score": 0.649,
+    "label": "Positive"
+   },
+   {
     "symbol": "ATHERENERG",
     "title": "Ather Energy Share Price Rise Streak: peer comparison today",
     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVEI4bC0tOFgzY1NVeHl5WE9VRTVTU0p2TXBTdXYySF92cWdTNTlXQTVFRkZWa1BPT1pqSUctOGRWM3JhbmF5R2d4MEc3TTVRdEZuU0ZyZWZIOFhZbDBweld2QjBWZ1BkTk9XVHBNUVRGeWVjVnRnMF9aT2ZZMXBXQXB0akdqOXBqUjNJ?oc=5",
@@ -1081,29 +1081,20 @@
    },
    {
     "symbol": "MARKET",
+    "title": "Sensex Falls, Nifty Rises as Oil Prices Ease on Monday",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWlllMlN5aHIxREpvMExDb0hCZ1I5SFY5VFdCU2o4V1l6WjdGMUdHTHM3MjFwQVM2aGVRaWhYTnhYMUZEMkVKVHlfX0R1N3pMdXdmYjY0c1RObzdQZEdRckJoNHJCVi12Q1VWWUlXWVhlWk5LbDFYYURDQkliNXdjdzY2cVVQOElocnJCM2Y4VjEwVU1laHJGbENjQU1NQ0dGSGJlRU9pNkpXc1NXel9zZGs1ZnhkVnBMVFFJZjFKZ3hXZmtha3pPSVdwM0FHQUkzMmQyRThvcE5jUQ?oc=5",
+    "source": "HDFC Sky",
+    "published": "2026-10-12 04:49",
+    "score": 0.382,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
     "title": "Stock markets open higher amid easing oil prices",
     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ1JpTFBYTVJfc3k1dzQzcTB5bWl0LWJ0dGdPZXlfa1JLOTRRWFp2RVluY3I1VjhmdDAxMlJFVTZKQk9iZjhYVmViQWNpVEhoOVFJVHljWXJYc0NwLWF3Mnd1YjhSVEkwLWlyYXpQX3JaLU5RMVl0RHM4QnpiX1pTX1BtZDg3blZCQjlzaXREWHFzczRXUlR6RjN2VUVzd1VUeXdHZNIBsgFBVV95cUxOTVJlOHpaN2oxbmlybktHbHduNXpHeHNtVTNObzRDT1M5bW5IbnBVbjdwQ0U4bEE4NWVNQUNlODRIU2tzMlgwRGs4d0YwQ29nc18wMWpjalVkUC1VSlUzRE9tenZXSkhYR1QtbHA4ODY2Sk80QU43WHBGc1c1VE5EdlRPQ0c1MTRXNFpTWjJVeFpmS29MNFFYdG9ud01CMW42clFRM3JMX05QZGZsZjNiYVN3?oc=5",
     "source": "The New Indian Express",
     "published": "2026-10-12 04:31",
     "score": 0.25,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Sensex, Nifty Volatile In Early Trade; Russia-Ukraine Energy Ceasefire, Iran-Saudi Talks Lift Sentiments",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSThvZ0ZKVzhKUWhzZ1V0WTN6UXZMU2lpUU1tOGhvdVRXcVNOOVZZRll5NFZ3ZE10TmNrQmxNX21IVDdvSHhPMy0tNjN4ekoxVWx6cUlHbUEyMGpDSjlsR0ktdlRyQ0owZnEteUFJMXFHakxkUFB6cVM2dWVaTmtKUmlrUUVwQ05FeldaTHNlODFKc2NyRWFfdFItODVRUkc1N3RocjdGQ3JvcUE5VThOYzFIUTB2dGxsZTFaSFJFNzFEUTDSAdABQVVfeXFMTWkwU1JLNUtJUXdGRWFTUXVieXJOVTNFS2Fldk5BN082RTQ0RDJuakkxNWpncWR0MkVpaURqaEJjNEZGMFpELUQ0ZE5ya0p0VWJVT0VEYzhMY3ZYTFhhVl84MGxWd2lMTkRvR2VGZzZyYWdnSWtXUXRGVnBoYzFuaEEwUVg0QlNQX082UWJjdlozaW9iYVpTTENMdWU4RHZ6QXo4OWRGWDZtQzQxWGwzZUxNSWUtSTdFMV91Z3NHc0xCLVZldnF4LTJobkVOMlJjdA?oc=5",
-    "source": "Outlook Money",
-    "published": "2026-10-12 04:26",
-    "score": 0.586,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Stock Market Today: Sensex, Nifty Eye Higher Opening",
-    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40YU52Zmhra3cyNVpocDFGLWhuSXJhYnkzeXNibzZKNGRBR1lkNWxVdWlwWGdNRzh6ektqdWJDOXRBQmx6YlpETTVsMWVLNzR3LUEzYzBIemxRMFh4U3ZLNktfMlBua1ZUTmswOHBKalZ1U3paRTJ4Qw?oc=5",
-    "source": "INDToday",
-    "published": "2026-10-12 04:07",
-    "score": 0.402,
     "label": "Positive"
    },
    {
@@ -1278,6 +1269,24 @@
     "label": "Positive"
    },
    {
+    "symbol": "DIACABS",
+    "title": "Diamond Power Infrastructure (DIACABS) Share Price, NSE",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5JV0lHeHF2MFVvUUczOUVwMTlLcGJQZ0ZGNzhBaUtlRDBtUFB2aVpCQ1F1WExTUGYwTTZBcVVMNkVHY3RBLWhRUHQzSExqOTIyQms5WV9sN3JyRnQybmprXw?oc=5",
+    "source": "TechGraph",
+    "published": "2026-10-09 12:20",
+    "score": 0.34,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Sensex, Nifty rebound over 1 pc after two days of losses",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbXVIa1kzX29XVDh6TXNTWVdlS2pmN05CRXJSWEpDX3VEQnMyUmFhYzBjVFhFRUg5eDlITjNrcGpxcnoteVBBM1BIZm1sM01jT3hvVDRIbzc3a1ZXNXgtSGdkci1jZElCQnNQdVJPVnlDYVZIY2d6SS15UXFudEVzTHJRRU5qay1tMFdUM2tySndvcGlIYTFjRE9IYkN1WWc?oc=5",
+    "source": "The Federal",
+    "published": "2026-10-09 11:58",
+    "score": -0.026,
+    "label": "Neutral"
+   },
+   {
     "symbol": "MARKET",
     "title": "Sensex, Nifty Rebound Over 1% on IT Surge, Easing Oil Prices",
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaWtsZTBySzJXeGhsZlU2VlJqUHFUU2hnaUZxa0w2WGgzLWpGZVktLUh6V3JkUW5GVVFIcVNJWkwxQ3ExWTNGOGRfTUJPS0RRd0Z0YjFoWXM0LW5xc3pNekJmcGcyTDMzNk9LaVBxeWkxSG1lbmlvWEs4UGdhcGVOblFzbjFOUUxHdzFGbV8xX2FWSWVMRGRCc3F5VkhXd1p0THNMSHJjUXk1Y1phMEJYaU9qLW1vS1NZczI2LWZPdHFOVGZWQmFZ0gHKAUFVX3lxTE5mU0o3Um1qTEE2RlN2Q1ZDdGQ3ZmVmV0ZTTHJKMGJENXYwNVVwdkN3STVhdGxoeUhPM0ZEcnV6QTNXalJrT283eWRoNlAzaXZsVXhTSnA0SUVPbUpWOF9DQ2tIdFBfanRJRThWOW5FelkxTzB4SjR1cVhTUnRNVnpoWUM3b25MaS0yR3doTjRyOXdZdUxENHRNWUhrZDJ1dV8zZWRIOGZ5TXljVWFHU0FsTHpKaVdzVGZDdllxcUtzREF1Vzh0ZFZEbkE?oc=5",
@@ -1293,15 +1302,6 @@
     "source": "Rediff MoneyWiz",
     "published": "2026-10-09 10:43",
     "score": 0.459,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Led by IT stocks, easing oil prices, Sensex, Nifty jump over 1% after two days of losses",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUFNlZGw3LWVfSEZKR1JzbEZGREltX1pqT0VoVTVDMXVENUt1Y3lndmNrUml1aTluZkdreU1WV3NzNDU5blRkUlFSTS1wUFRfeFlpLXZkc2t4YXNMSUE4b3hvVXN6NXY1UkdzMlpPN04zaHNNYWx4dGc0VzhJOXZiMHVUeURMRVYzM2d1SXp5NXRrT0ZFRW9MNmF0U3FSME96OTBIWXR2amwyWk1YZUtMNFByaElCWlUwQmJ1NXVJWF9TdWtFX0HSAcsBQVVfeXFMTzZKdEh6SmVsV1pEUEM5Q29xTEpzMWNoQ2FQa3hBOFVpN3d0SUVzY1AyR09hdkJNY1EyWEp2alVqMkpPQlcxSVB3TmNnM3ZxQVRod184Mi1aaURESmVtd3Y4WGNRcFJEZTk0b2ZPWjdybnc1T0VaRmsxUWtMajlHWkkwRXlEMEFwZXQxWHNvMGUxSXJaX1ZBX1E2MEhHSWE5OEcxSm1QTlRqSlF1ckJkeUtTOWtxczE0eXl4OTlsaHZZMHZZdm1BVUs5bTQ?oc=5",
-    "source": "Telegraph India",
-    "published": "2026-10-09 10:35",
-    "score": 0.572,
     "label": "Positive"
    },
    {
@@ -1612,6 +1612,15 @@
    },
    {
     "symbol": "MARKET",
+    "title": "Sensex Plunges 1,045 Points, Nifty Hits 52-Week Low Amid FII Selling, RBI Tightening",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTzlTcjZJdzhXaXg4Nmh4UXB2cjFBbFpMVlYxTjFaWUVtLWFKcWFsUmh4cGZnQ2EtYmtCdndZdWxDQVdOYnB3Nzl6cFdMUUllZFk4aW1rYWhJc3ZDeFFaX3RXZVI4dkFpN1NsSFhEdVVjbEhRVE1tMTZKeWk2NWNBUEpIRVFrRTVFT1lvYlkzREtjVXgwLVlaM1gxd2JJNWdfYW91NWlJZV9JYlpwVElFNW5PUnY4akRWMVF4V3BVdzNNVGl1RU95QmNDTkRhUjdzZTVPLWxB0gHYAUFVX3lxTE93RzN0WDJnOEZxTi0xdm9KSTdwY1d0emlMSF80YUpGeld0aDVfOWxtMEMxT0szbUEtTGY2QVJ2ZFRZUUFMVms2UWlVbU9SZElYaDJCY2hGb25IVzFERkZzSXRoRVhmdWFUdVpyMUY3azZ5Ukk0V0VjdGI4aUN1YWk4ZUNRZnpFT0Y0dV92d3BBYkE5RXhCWjl3MUVHMVQzZnotVUptRFJKc3MxUGx6aWVqdHViX3ZHNmJ2MGVvTHFCN09HTUNFUkIzWDJnT0dmaDJueWlMd1RoMA?oc=5",
+    "source": "Rediff",
+    "published": "2026-10-08 10:49",
+    "score": -0.542,
+    "label": "Negative"
+   },
+   {
+    "symbol": "MARKET",
     "title": "Sensex Today Tanks 1,177 Points | Nifty Below 22,250 | 4 Reasons Why Indian Share Markets Are Falling",
     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOWWRXc0NzcEdVSUhfdVEwenRUU0lBOFdSZ3hrSXdGdDZqUUpqLVdVUjlULVZlOW5CT0VLVjRCVDdaTnFXZVVGdUZVZUFMZk05N2p0NUQ5bFlUdU1kbElId25GTmdEUlJHV0dJcVhreWdqU2g1cTJnR1p2SW1BcHRKOHF2bnRJWFdkejhBdkUtMUliX2t1bjVRQWxfdHlWS2llOWN0NEpKeFZrRlJiWlIyZVBJWk9FcWphRmh1Yk9ROENFcndtSmpQUnhjZW1lZE44bkpPRDVnTmNVNnNFbjQ4ZXBqVldtSEdyTWJaa214SQ?oc=5",
     "source": "Equitymaster",
@@ -1864,20 +1873,20 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Sensex Today Ends 429 Points Lower | Nifty Below 22,650 | NALCO Down 5%",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObV9keUR4Ymh6a2xXajRZVWdRWk9HZ1NJSlM2Y3AyVTg3TGNXSzVRZ3VFNzVYc2k2Qi1HSXVQNHBQQVBnQ2pEX0NkYXVza01LRDJXRTl2ajRiT1FBRjFDT1JfS0FRQjNSbkptUUpPX29ScVVNNU4wbDF1c2d2MVVSRmc4cWRVNkJwM3B6eDV3S0trRFhzQjBGcXVSbzEtTWFJVG9icGdDQUdDYUxFSHRUUHMxOEJOQ0drZWplYmxTbVNjOVByeGVF?oc=5",
-    "source": "Equitymaster",
-    "published": "2026-10-07 10:32",
-    "score": 0.226,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
     "title": "Stock market prediction for today: Sensex, Nifty outlook for Thursday | Kospi, Taiwan cues to watch | 8 Oct 2026",
     "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMlVmVVRiR09jS1JEOVdHWFpMTjRha1VCcjZwVl9xa0tfOW9NQUFWczhoQnFHNThxdFdhbEYzV0U0UDBQcDA4V0ZDOVVYQ3lrUVc0NXNjM05Sc1BGUlJ1ZGVqZnR6ai1pWWtlendJeGxnbXJZY3JzVmpYODRDeTRIMDRLazZISTJXME9mYndpclpFYlJrajJ6czVDcUV6YUtQV0xPU25Qdkk2UGR5T1lnLUVVckdaTVhncTFIY0tVVzVIUERnNkloUElwWWVhSlRjeTBqeTI0dmppa0VmWjBGNWgycll6SzNRRkhISjdUMzNoUdIB9wFBVV95cUxPaHp5T0FoSE9IYzNzMTJZd191SWptN1FjSUk5M01MU0pWZkVyeGdibEU2aEpScE1ZUy01YlRkLTd3WlluMEhXWU02NzdMNVVwbFd5MmtkUlpzUHB3YUFPd0Frb19YbE1oVlA1UkRwTWVPamg1Z1VaelMyT2laT3NqX3BSOElTdUNlU2lyc0xrNURaRXBBXzNpWTlKLV9iX2xtRjlieW92OGxkTXRjS2txWUg2TndLam1JSW9QTkx4UG9wVExBdTY4eEdmWmlfVUh1c0ZJQmVfM2dITzg1b2s5eVh0ZDd1NWJLVFNhRUpsa1lnUG1uMElj?oc=5",
     "source": "Livemint",
     "published": "2026-10-07 10:27",
     "score": 0.402,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "RBI rate hike shakes Indian markets: Sensex, Nifty end lower amid renewed tightening concerns",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNY2h6RTJPNWUxc0hSVl9wRzQxZjQwaTF1ZnRnejNBQ25BQjlHdER1RERNMGQtbXRKNlJ0ekdsTi1VVmVISjBweVVtRWJpbkgtcGdtQWU0UUo5NVZYdlduYnlBbFlfMFp1TUtlQUI5aWJ2YnBrUEF4WFZvNjVoeFJTZE1nVm0zbDk2eUpMbUJfUmFtcnVFVkZEUUR0Q1dJcGFXQXY1c2FvS09wb2RRU2FXRWJpeTl0RnY4S196dkNVTU1KVElna0ZfcmpmNi16bUNJLTdpdm02cExPQ09wWWfSAesBQVVfeXFMTnhVT1hmTGRZWU5JVndGZUhtbi1MM2hVaEdBWWtUdWlBcU9QYlBzbWRQWEdZSC1pbmhjSFlPUjJDelVYQzJJTkpzNE1sTFpXWHIxZzVaM1lHbW51SW8zZnMyQWRRZWRISXZFaVBKajZNcjJLM29GSHdROHNGc05iMm85SVQtMXpVUjE0TDdqVGZ6UGtxTXBzTlNSOE5ZZWpLWkp5b2paMU9nbnYxYU0wczhLb2Vla1Q4WVFGVGtXSElzVEFyd21mQW5NWFprVndDNm50ZjZ2ZWlRaHZ0Mk5WWUpYYmljOUZ3U0JkZw?oc=5",
+    "source": "The New Indian Express",
+    "published": "2026-10-07 10:24",
+    "score": 0.226,
     "label": "Positive"
    },
    {
@@ -1936,21 +1945,21 @@
    },
    {
     "symbol": "MARKET",
+    "title": "Stock Market Open Report Today, October 7, 2026: Sensex, Nifty Decline as RBI Hikes Repo Rate by 25 bps to 5.50%",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPWHFYaXdTMHI5dDJTa1pXVHhGZENhMS1hRXZudVVqd25Id0RUMmJNVGZtVnl4dXpxdXkzMkRETWFjaXotWGtBenJnQS10LU90X0NyN196U2dHUjlzUThyVnJkbG9sWjBlN2REN0V1MVVmYUNEUERYeFlDZUJjQU5hQWc5aHloLXIzaXB4V3R6QjR3dWNxVWZhR3RnUzBCanFkOWdkdDNEUG1VUU45SnVHdXZabEVRaG9hRC14TXVnOV9TLUxBRV9DNTJKZElUZTlJ?oc=5",
+    "source": "HDFC Sky",
+    "published": "2026-10-07 05:19",
+    "score": 0.026,
+    "label": "Neutral"
+   },
+   {
+    "symbol": "MARKET",
     "title": "Nifty, Sensex open in pressure ahead of RBI policy as investors cautious on growth-inflation dynamics",
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaHdtMmlBYlcxWV9oYlg2enVYa0dGWHN5QmZHTXFObDhzN3hFVFFGMjJaRmxSSW8tVXBwaUcxNk1PWEpiMENhQXZwMFI3TlVZLXZkV3VzcVpNYzU4MTFnTTI4d2ozOXJqdTdQX1pYa21BRHVCay05d1E2UXpPOExzX0FoUnVtU2NYR3JRb20tTF9paGxJRWJwaFY4TXdRV2NqVE1GdmlBNkFSOVNwR29fT1pWbFNLV2pkalFiRzBrQlhPYWZsbC1B?oc=5",
     "source": "ChiniMandi",
     "published": "2026-10-07 04:33",
     "score": 0.296,
     "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Markets open lower after two-day rally, Sensex falls 460 points; RBI policy in focus",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTVRyTDhxa2dwYjd3TG9nLVM1Z3o2ZVRNSWpQcjhaTllPaW5hdTN0NGVVQ0xjM19NUU5COV9yUXM3SzFPempObDU5S0JjZG5wVXhPVXNVaXBzd0tyQkNidUV3RnYtSFJzNE92ZWFFMTVDRWhjZHpDYkdEbFNnRkFpTl9Tc01KVThWNDFZQzdldzNHWEhEc1NMWjVwWkthdjJRV3ZmNDRJNm5sX29mY2JMYW5yVDNMNTEyTXRFX2JLZy1KajdZMGoteVBoY081ajjSAdQBQVVfeXFMT2ZzcW9TR0E5Q3BsQ1J6aHJfaTdhLTRpdWkxYk5JR3ZnU2Zrd0ROWTlDUHdpRGZKWGM3aURsSXBPb2N5SEdRSHdWblVWZ3p6V3FLYWl6Si0xd3Rzb0l1Si15ZGl1SFdhWmNpMGpTcVhTQlBmbGdIZl9JVk1GeGRyN1ZGaDhXYjZ5ZGc5OGxSdzlkeDkyNV90TG11Wmw3LVU1eGIyM19UQ3ZfbDRSM0dKemhyTzljTXJvRDdqZE9fMl83cUtEWVI1SzE0MmlCcGoyR3plc1o?oc=5",
-    "source": "Telegraph India",
-    "published": "2026-10-07 04:16",
-    "score": -0.103,
-    "label": "Neutral"
    },
    {
     "symbol": "E2E",
@@ -2125,6 +2134,15 @@
    },
    {
     "symbol": "DIACABS",
+    "title": "Diamond Power Infrastructure Ltd. (DIACABS) Share Price Rise Streak Extends in Second Straight Session",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZ1BOMU5hNW9FU2hKWE1POGtjZWg2RVZ4QnI1UGw2R2hhaEpVQVhrR1lwWnFSU09Za0UtWThyWHRKbl9KMlR1SFpNemFjcGhGanFUWWVfbGFYWWcxSExGS2VCdUV5QjJMeE1EcTduVUhxQlBseWpTcWhGbk5NVmhWUkdkZ1U2X2tnV2NfQWFWLS1FMVFFaEdNUmxIUQ?oc=5",
+    "source": "Univest",
+    "published": "2026-10-06 04:41",
+    "score": 0.586,
+    "label": "Positive"
+   },
+   {
+    "symbol": "DIACABS",
     "title": "Diamond Power Infrastructure bags \u20b943.26 Cr cable supply order from Adani Power",
     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQR1Rpb09UTEZ0ZVhfWU9ZVmFSYWtUSHhiWUtOaXB3U0FJSXlIZkFzaVM1MHZQMkVmWkdSX19VOUZ6RFQxWXZ0TXBuYVNlVGszOVVXd29TYm8zc0ZzVUpQT0tRcGJ4X2VmM01uNUVZQkg0TDVmZEM1UU9NZW9XS3FnYU5GV3BSbXliRXJUS1RQTmI1QzVmS0dzRnVLY2didHZvaHlUcFlVdk5Kd3J1TE8zQnA2V1Q?oc=5",
     "source": "Alice Blue",
@@ -2145,7 +2163,7 @@
   "errors": []
  },
  "created": "2026-09-28T13:27:26",
- "last_updated": "2026-10-12T21:22:15",
+ "last_updated": "2026-10-12T22:14:41",
  "research": {
   "method": "notes",
   "generated": "2026-09-28 13:27",
