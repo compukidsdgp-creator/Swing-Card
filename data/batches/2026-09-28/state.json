@@ -980,7 +980,7 @@
  },
  "entry_override": {},
  "news": {
-  "fetched": "2026-10-15 17:16",
+  "fetched": "2026-10-15 18:39",
   "days": 7,
   "items": [
    {
@@ -1000,15 +1000,6 @@
     "published": "2026-10-15 12:55",
     "score": 0.0,
     "label": "Neutral"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Stock Market Today: Sensex Surges 1,534 Points, Nifty Nears 23,000; IT, Banking Stocks Rally",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONmkzTE9hbDByVnkxVVV1NkgtSzVXa0ROMkY0c3ZmMlpvT2U2djZUVGRKNFpnZFpLV1F2XzM0Zjc3VjJqU0dSYkRRVzNQczdxTThodFhSUGhzSjVvSUNlN0xSU1NLOENzQWNUdDJSOEpfUk80M3NETi1XN2NzenRwOV9n?oc=5",
-    "source": "APAC Media",
-    "published": "2026-10-15 12:02",
-    "score": 0.836,
-    "label": "Positive"
    },
    {
     "symbol": "MARKET",
@@ -1048,6 +1039,15 @@
    },
    {
     "symbol": "MARKET",
+    "title": "Stock Market Today: Sensex Surges 1,534 Points, Nifty Nears 23,000; IT, Banking Stocks Rally",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONmkzTE9hbDByVnkxVVV1NkgtSzVXa0ROMkY0c3ZmMlpvT2U2djZUVGRKNFpnZFpLV1F2XzM0Zjc3VjJqU0dSYkRRVzNQczdxTThodFhSUGhzSjVvSUNlN0xSU1NLOENzQWNUdDJSOEpfUk80M3NETi1XN2NzenRwOV9n?oc=5",
+    "source": "APAC Media",
+    "published": "2026-10-15 11:10",
+    "score": 0.836,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
     "title": "Sensex Jumps 1,534 Pts, Nifty Surges on Banks, IT, Reliance",
     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcHBsSmtUUC1IREJWVmRfMWlCSlktel9UMm1WX2pOS2R0dUlEVGdTNHJBbW1xcHRMdGhNMW42UEdyMVNqbGZvSUFkcWVVeXFHcUJELTU5c0JabUlMUWFsYVhlbmxMbTBwU1JzTU45T0FQQS00ZnRFVDBfVUROdUdqRGl1VnB0VVRWRTZzVWw2SnE4b19rcnkzZFQ4QURsWFN5Z3BGbWxqUmpMTWkw0gGyAUFVX3lxTFAwM3VHeDdVdk5GNEJwRm00RExhZTFFOTB2cE8xb2lmZm5KajNmNzJUQVk2R1dROHY2TWJSSlhpTU90cFdaODhZYWJvSm44SUtKMUtOUlZhWldaNjY4YVNXV0lFUnNvRkRLc1dkV2NGY1RmZmVuVEZSa3NRVERZQ0JEVFRNRFM0RG9vcWpBa1RJeDNIVDE4a3pNTG41elZvZjNUNlNxYnFkVmVjekppYV9QeHc?oc=5",
     "source": "Rediff MoneyWiz",
@@ -1062,15 +1062,6 @@
     "source": "Trade Brains",
     "published": "2026-10-15 10:33",
     "score": 0.852,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Sensex Today Rallies 1,534 Points | Nifty Above 22,950 | 3 Reasons Why Indian Share Markets Are Rising",
-    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMTB3ci1XRHJzLTlSTWxBOFZQZWtSUWpSRjZMSEY5aGx1Q3poNmEwSW4tUXl5ejRIOGQwYTAxZ0gxaXIxX2RxSWZNYU5JbUozNjhDYmpCa0U1MHU4M0ExYmVQMWxmendZdW9pdy1TWERSNV9EVWQ2R1AzV3VBQ2QtRXZmcHpFRjRpVlV3b2RlYW1MczZ1OVM2SXZMR2NzY2d3UDRKcERGeXJudzVwZkhDY3M1anNtZ3J2VEMwVzNsM2F3TGVLQkpuaFh6dFprdmYwd3lUR2tKMXJ1dnhBVkZlUUNFU2lDOHJYVks2UmRJTk4?oc=5",
-    "source": "Equitymaster",
-    "published": "2026-10-15 10:27",
-    "score": 0.691,
     "label": "Positive"
    },
    {
@@ -1453,15 +1444,6 @@
    },
    {
     "symbol": "AEROFLEX",
-    "title": "Aeroflex Industries Rs 202 Crore Capex Plan by March 2028",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOR1hzaVpnSGVVMzdTcDBla0lIbE9RVTdOYnJFc2ZubFZGTG4wNUtKX29nU2JpSDFPOTVZUTAzcXJVbDJwWmplMEl5N0F4OHhDQ3BpUjNrSHhXRUg5VjcxMEVRblFXRk5wVlpCYlZGdVdEa3Q0RHRxZzhKQjFlUC1oM2pXUzVhOEpXdFFZNVVEZHpYcDZPQUJrTHJVYWN6aDRnVk5IbERISV9OTU5iT2c5enNCUWZMWXVsQzMtZFh0TUluRl82?oc=5",
-    "source": "Kalkine India",
-    "published": "2026-10-14 09:56",
-    "score": 0.0,
-    "label": "Neutral"
-   },
-   {
-    "symbol": "AEROFLEX",
     "title": "Aeroflex Industries shares rally 10% to 52-week high as board approves capacity expansion plan; check details",
     "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOcFFzRVljSmVOeTd5cW5pRzlldXJBLUpaYU1GVDRyRU0yWGVFTEl1bjlSajdjQ1ZyTnBEZFktR3ZYREREM3VVNE4zQl9rX0l0TnE1UmpzOUw1R1ZvUmdOVTJCckR3aWtwcFBlQ2c2ZUhnTmc4V2hMRUsxelJaQlVDS1hxekFDRFRVVTBjaDRBRjlKd1JPUnAzZFF6OXk1WnJVMzR0UDI1d3pZR3R4cF9sallCMzdXRW1ZNlAxUUppRWw0bXBYY0FWN0ZSTG5iNXpzeGY1aVJ1aHVXd2RmS0pyMnJuSG5IcWpvclhzeEpQcUJSTmdkakdGSU1R?oc=5",
     "source": "Upstox",
@@ -1728,6 +1710,15 @@
     "source": "The New Indian Express",
     "published": "2026-10-13 11:19",
     "score": 0.848,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Stock Markets Rebound: Sensex Jumps 1,109 Pts, IT Firms Lead",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNenFqbEc2ejBUSUZKMmI3UlVyTUdBWVlnREt1VXVXU2E2NzBPX2d5Z2FQazN6NkIzOGVHNkpCNFdGal91cTdMRXd2dGNyMzJWaVNVYm5YTFpsY0VSdGZDSkJMTGJCMTdoM19pLWV0NkJBNGcwd0czRWhyMC1fX0x2WUpILTdkTnBoOFA3VkM2ODBkaXJaMjk1SzVYNl9GRkpYYXhCR25NN09ScnpNU2hCNjFCOW_SAboBQVVfeXFMTmdNSG5jN1lSOFJFSmlmRW9xdVZlc1d5TW5QM3duUnlOTmN5YjdTUzJRUm0wd3ZUdTl2X2diRENZanZqSTJnb3RFRDMtYk1lVVVYRUhGNUF0NVUtMTR1WTV6WHBMZ1gzWkpVbnRtdFhoWllnTXFieUo1YkpXMW1WZHdiUFRZaDVTdkdFYVp5cGkzMWJBVVJUVlVJMThseGFkMVI1Qkx5dEFBTDh1WGVkRFg1cldJTUwwVW9R?oc=5",
+    "source": "Rediff MoneyWiz",
+    "published": "2026-10-13 10:53",
+    "score": 0.459,
     "label": "Positive"
    },
    {
@@ -2409,7 +2400,7 @@
   "errors": []
  },
  "created": "2026-09-28T13:27:26",
- "last_updated": "2026-10-15T17:16:51",
+ "last_updated": "2026-10-15T18:39:35",
  "research": {
   "method": "notes",
   "generated": "2026-09-28 13:27",
