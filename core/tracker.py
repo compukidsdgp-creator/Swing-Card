@@ -225,7 +225,11 @@ def compute(state: dict, today: date | None = None) -> dict:
         ov = state.get("entry_override", {}).get(sym)
         d1 = state["prices"].get(sym, {}).get(dates[1]) if len(dates) > 1 else None
         f_entry = factor(sym, entry_date) if entry_date else factor(sym, b["signal_date"])
-        if ov:
+        if s.get("order") == "Keep" and not ov:
+            # rebalance: already held, no trade - the new holding period starts from the signal-day close
+            f_entry = factor(sym, b["signal_date"])
+            entry[sym], entry_src[sym] = s["last_close"] / f_entry, "Kept (Day-0 close)"
+        elif ov:
             entry[sym], entry_src[sym] = float(ov) / f_entry, "manual fill"
         elif d1 and d1.get("open"):
             entry[sym], entry_src[sym] = d1["open"] / f_entry, "Day-1 open"
@@ -295,7 +299,8 @@ def compute(state: dict, today: date | None = None) -> dict:
     ret_matrix["Day 0"] = np.nan
 
     gross = float(pnl.sum())
-    costs = invested * cost_pct
+    traded = [x["symbol"] for x in stocks if x.get("order") != "Keep"]
+    costs = float((qty[traded] * entry_s[traded]).sum()) * cost_pct if traded else 0.0
     net = gross - costs
     kpi = {
         "batch_id": b["batch_id"],

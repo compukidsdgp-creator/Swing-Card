@@ -116,9 +116,19 @@ def summary_message(state: dict, res: dict) -> str:
             up, dn = movers.iloc[-1], movers.iloc[0]
             lines += ["", f"⚡ Biggest move today: {e(up['Symbol'])} {_pct(up['Day chg %'])} · "
                           f"{e(dn['Symbol'])} {_pct(dn['Day chg %'])}"]
-    else:
+    elif not b.get("rebalance"):
         lines += [f"Signal day — buy all {len(b['stocks'])} stocks at the next open.",
                   f"Capital ₹{(b.get('capital') or 0):,.0f} · regime {e(b.get('regime') or '—')}"]
+    if b.get("rebalance") and k["day"] <= 1:
+        keep = [x for x in b["stocks"] if x.get("order") == "Keep"]
+        buy = [x for x in b["stocks"] if x.get("order") != "Keep"]
+        when = "at the next open" if k["day"] == 0 else "at today's open"
+        lines += ["", f"🔁 <b>Rebalance</b> ({e(b['signal_date'])}) — orders {when}:",
+                  "🔴 Sell: " + (", ".join(f"{e(x['symbol'])} ×{x['qty']}" for x in b.get("sells", [])) or "—"),
+                  "🟢 Buy: " + (", ".join(f"{e(x['symbol'])} ×{x['qty']}" for x in buy) or "—"),
+                  "⚪ Keep: " + (", ".join(f"{e(x['symbol'])} ×{x['qty']}" for x in keep) or "—")]
+        if b.get("new_money"):
+            lines.append(f"New money in ₹{b['new_money']:,.0f} · regime {e(b.get('regime') or '—')}")
 
     brief = state.get("research")
     if brief and brief.get("shortlist"):

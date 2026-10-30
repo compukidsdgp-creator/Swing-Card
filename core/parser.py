@@ -44,7 +44,7 @@ def parse_swingscope_html(html: str | bytes) -> dict:
         txt = mark.get_text(" ", strip=True)
         if txt.lower().startswith("signal"):
             signal_date = _date(txt)
-        elif txt.lower().startswith("sell"):
+        elif txt.lower().startswith(("sell", "rebalance", "exit")):
             exit_date = _date(txt)
     if not signal_date:
         signal_date = _date(re.search(r"Signal after the close of (.{0,30})", full_text).group(1)) \
@@ -63,6 +63,7 @@ def parse_swingscope_html(html: str | bytes) -> dict:
             summary[dt.get_text(" ", strip=True)] = {"value": dd.get_text(" ", strip=True), "note": note_txt}
 
     capital = _num(summary.get("Capital committed", {}).get("value"))
+    new_money = _num(summary.get("New money in", {}).get("value"))
     costs = _num(summary.get("Estimated costs, buy and sell", {}).get("value"))
     cost_pct = _num(summary.get("Estimated costs, buy and sell", {}).get("note"))
     regime = summary.get("Market regime", {}).get("value", "")
@@ -70,22 +71,43 @@ def parse_swingscope_html(html: str | bytes) -> dict:
     warnings = summary.get("Stocks with a warning", {}).get("value", "")
 
     universe = ""
-    m = re.search(r"Universe:\s*([^\n]+?)(?:Buy|$)", full_text)
+    m = re.search(r"Universe:\s*(.+?)(?:\s+(?:Buy|Rebalance|Place)\b|$)", full_text)
     if m:
         universe = m.group(1).strip()
 
-    # ---- order ticket table ----
-    stocks = []
+    # ---- portfolio table: "Order ticket" (fresh batch) or "Target portfolio" (rebalance) ----
     table = None
     for h2 in soup.find_all("h2"):
-        if "order ticket" in h2.get_text(strip=True).lower():
+        t = h2.get_text(strip=True).lower()
+        if "order ticket" in t or "target portfolio" in t:
             table = h2.find_next("table")
             break
+    if table is None:  # fall back to the first table that has a "Last close" column
+        for tb in soup.find_all("table"):
+            if any("last close" in th.get_text(" ", strip=True).lower() for th in tb.select("thead th")):
+                table = tb
+                break
     if table is None:
-        table = soup.find("table")
-    if table is None:
-        raise ValueError("Could not find the order-ticket table in this HTML.")
+        raise ValueError("Could not find the order-ticket / target-portfolio table in this HTML.")
 
+    # ---- rebalance: stocks to sell at the next open ----
+    sells = []
+    for h2 in soup.find_all("h2"):
+        if h2.get_text(strip=True).lower().startswith("sell"):
+            st = h2.find_next("table")
+            if st is not None and st is not table:
+                for tr in st.select("tbody tr"):
+                    b_ = tr.find("b")
+                    if not b_:
+                        continue
+                    isin_el = tr.find(class_="isin")
+                    q = tr.find(class_="qty")
+                    sells.append({"symbol": b_.get_text(strip=True),
+                                  "isin": isin_el.get_text(strip=True) if isin_el else "",
+                                  "qty": int(_num(q.get_text()) or 0) if q else None})
+            break
+
+    stocks = []
     headers = [th.get_text(" ", strip=True) for th in table.select("thead th")]
     for tr in table.select("tbody tr"):
         tds = tr.find_all("td")
@@ -114,6 +136,7 @@ def parse_swingscope_html(html: str | bytes) -> dict:
             "volatility": _num(g("Volatility")),
             "traded_daily_cr": _num(g("Traded daily")),
             "watch": g("Watch during the hold") or "",
+            "order": (g("Order") or "Buy").strip().title(),
         })
 
     # ---- per-stock sheet metrics (signal rank, from-high, data quality) ----
@@ -162,6 +185,9 @@ def parse_swingscope_html(html: str | bytes) -> dict:
         "warnings": warnings,
         "evidence": evidence,
         "stocks": stocks,
+        "sells": sells,
+        "rebalance": bool(sells) or any(x.get("order") == "Keep" for x in stocks),
+        "new_money": new_money,
     }
 
 
