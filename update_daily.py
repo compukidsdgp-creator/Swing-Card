@@ -124,6 +124,13 @@ def process_inbox() -> list[str]:
             b = parse_swingscope_html(raw)
         except Exception as ex:
             print(f"[inbox] {html_f.name}: not a SwingScope batch HTML ({ex}) - left in inbox")
+            if telegram.enabled():
+                try:
+                    telegram.send_text(f"⚠️ <b>SwingScope tracker</b>: could not read <code>{html_f.name}</code> "
+                                       f"from the inbox ({type(ex).__name__}: {str(ex)[:150]}). "
+                                       f"The batch was NOT registered - the format may have changed.")
+                except Exception:
+                    pass
             continue
         bid = b["batch_id"]
         if load_state(bid) is None:
