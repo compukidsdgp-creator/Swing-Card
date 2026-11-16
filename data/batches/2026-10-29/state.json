@@ -929,7 +929,7 @@
  },
  "entry_override": {},
  "news": {
-  "fetched": "2026-11-16 22:26",
+  "fetched": "2026-11-16 23:30",
   "days": 7,
   "items": [
    {
@@ -1105,11 +1105,20 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Stock Market Today: Sensex Rises 418 Points, Nifty Near 25,250 as FII Buying Supports Rally",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPenB6Tmd0Qm1Na2NYdER2aUtWM2JZSGd1WWZTM1FEaGVjdEsxWWZmZ2NpSi1PVy10ZE1RNzZfd0p1cVpSdk9tdVFVaG1wLUhsaWZPZnhibTl2SzhpeDI0VFhvLW1ncGtmczhHMl9TRUozcUkxYXNqUnUzb0lCRkRKekIwY3pGd3htQUhCUzdn?oc=5",
-    "source": "APAC Media",
-    "published": "2026-11-16 11:18",
-    "score": 0.802,
+    "title": "Sensex Surges 510 Points, Nifty 50 Gains 146 Points, But Over 2,500 Stocks Decline: What's Happening in the Market?",
+    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOQm9BZDEwR1FhdEF6NHdYWEcyWkZvSjI2cklOc2dlVTdDeVFVOVlGdHpWbTZBNWk3dzFKVE5ROUdFZ0ZVWGUxeTVfT0tLRWtNZl9xeDVicVJ3UVhxazR6Z1VDWi1ZQmdBdkRiY210akIxVXFZbDhKLVhDaWpDUlFQVVhlUVpNd0k5V19nRnM5V2lYUmhYV2NUeFp0Q2lmSzN3MmRsdFpSbUdGVnA4ZHQ0R29taWhJYmRxcDM4T3ROeVNTaGhlUmV0ak5IUUs4RXRiaVFNRDRhTnV4eERfMUZuU1hmbGNNWEZIOHkzVDl4bw?oc=5",
+    "source": "Dalal Street Investment Journal",
+    "published": "2026-11-16 11:21",
+    "score": 0.09,
+    "label": "Neutral"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Gift Nifty Signals Flat-to-Positive Start; Oil Remains Soft",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbHF3dUV3MTN4RHZrR1VXZE5hTTVwd1JjWWRaak9Sem9lMUR3aXNTS2FwWDFXZGJJOFBTME5KcEFfa3lYUjMyQ25zUnVsM0Vyc3pnbmg2TTFhTEpNMmh4SnRBUGxLN29ycXIyb2RzNnU0a1k5OU5zWWZELURZMWRmTHdOUFdiWHFPcUk4dF9FZDFYVGRKbHAwVQ?oc=5",
+    "source": "HDFC Sky",
+    "published": "2026-11-16 11:15",
+    "score": 0.681,
     "label": "Positive"
    },
    {
@@ -1155,6 +1164,15 @@
     "source": "ET Now",
     "published": "2026-11-16 10:52",
     "score": 0.691,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Stock Market Today: Sensex Rises 418 Points, Nifty Near 25,250 as FII Buying Supports Rally",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPenB6Tmd0Qm1Na2NYdER2aUtWM2JZSGd1WWZTM1FEaGVjdEsxWWZmZ2NpSi1PVy10ZE1RNzZfd0p1cVpSdk9tdVFVaG1wLUhsaWZPZnhibTl2SzhpeDI0VFhvLW1ncGtmczhHMl9TRUozcUkxYXNqUnUzb0lCRkRKekIwY3pGd3htQUhCUzdn?oc=5",
+    "source": "APAC Media",
+    "published": "2026-11-16 10:42",
+    "score": 0.802,
     "label": "Positive"
    },
    {
@@ -1214,19 +1232,10 @@
    {
     "symbol": "MARKET",
     "title": "Taking Stock: Markets bounce back; Nifty closes near 25,300, Sensex jumps 510 pts",
-    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONGNLWTVTVDh4SzRuaGtXa0EwVGN4NWp2V1ZpY2VCTmNvUk04dTdsQjFtTmlaa0JPSDlKcGNIRTZyRUR2dGpUWHNoZk10TF85YmtwMnM2OU9oekNkV3hDcWRTZWRFNlNzVnN6WUY0TkV6YkR4dU5sZTE4OGxKUkU4czYxWWl6NGgxMHBHbEstd1pvdUpZSERCLXJydWRzVTJZdFI2LUVhVnAxLU9tandQTmdOREd1d294RzlyN293TUNfUTVlSHU5d09vRm83NzlBdUplUmhvWdIB1wFBVV95cUxONGNLWTVTVDh4SzRuaGtXa0EwVGN4NWp2V1ZpY2VCTmNvUk04dTdsQjFtTmlaa0JPSDlKcGNIRTZyRUR2dGpUWHNoZk10TF85YmtwMnM2OU9oekNkV3hDcWRTZWRFNlNzVnN6WUY0TkV6YkR4dU5sZTE4OGxKUkU4czYxWWl6NGgxMHBHbEstd1pvdUpZSERCLXJydWRzVTJZdFI2LUVhVnAxLU9tandQTmdOREd1d294RzlyN293TUNfUTVlSHU5d09vRm83NzlBdUplUmhvWQ?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdzJTQWFDZmphSEZXYlVnRTZ0TnAwdjFrRXBGM0pHNThLZ1Y5WjdOSXlHTjFLZ01fYnhObXhWanVBRWdHak5WaDFWVk5ISnAxRUNXckxfSW1PSmJVNDAzRHM2SE9oWTlTZnJCMzJpY0tWajF3SHBpUV9WUFp2RXItY1doY1VwdHpYdzRsVFRNUUtmY2xMX05HTUNaSUxRbUpUNDNlZWR0T2x3MXE5aFJLQ3VVeVZ5WF9UZzJ0Z3NzLWsxOURHOEl3R00wc21mUno2OWfSAdcBQVVfeXFMTjRjS1k1U1Q4eEs0bmhrV2tBMFRjeDVqdldWaWNlQk5jb1JNOHU3bEIxbU5pWmtCT0g5SnBjSEU2ckVEdnRqVFhzaGZNdExfOWJrcDJzNjlPaHpDZFd4Q3FkU2VkRTZTc1ZzellGNE5FemJEeHVObGUxODhsSlJFOHM2MVlpejRoMTBwR2xLLXdab3VKWUhEQi1ycnVkc1UyWXRSNi1FYVZwMS1PbWp3UE5nTkRHdXdveEc5cjdvd01DX1E1ZUh1OXdPb0ZvNzc5QXVKZVJob1k?oc=5",
     "source": "Moneycontrol.com",
     "published": "2026-11-16 10:19",
     "score": 0.691,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Sensex closes 510 points up, Nifty gains 147 points, midcap and smallcap face pressure",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNamJkaVRTam85THlZLXFUSHp6d0xxSVJidmgyRGFWdGFWQktka2NjRkxzYkNFRm5UbFppZ1hISTFVSnZ1Q2JSVWZCVXZVdXBWRmgxeDFCYWMzZTk4MlhaXzItaTR6ZU40Nm5BdTVPNk5ianJGUmJuSFNCaEVKOXRBQTNoUzRaMzlMbk1WWGJrbGYzYkx0Nk1KSlBTZmlRUG9sd2t3SmtpQWp5cDBENXhJaW0zdFZLRWlDMHQ3VnVtQmc5eHp2Q3B2bFozYnFaampz?oc=5",
-    "source": "ANI News",
-    "published": "2026-11-16 10:17",
-    "score": 0.477,
     "label": "Positive"
    },
    {
@@ -1384,6 +1393,15 @@
    },
    {
     "symbol": "MARKET",
+    "title": "Stock markets rally in early trade led by foreign fund inflows, lower crude oil",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTi1FNXdRM3VDOXJ4el9COVp5OTZmSFp0QzVKOVdDMTNUa1FiUGFRU1dVYUxMSUFPQ2g2dmhQTHRfUHAyQjNETFpUQVNGdjRGQjVpMUt6UFNkd0pjYVFERWpwX2tSaUdzTVlaVlBMMHg1SFVob1pxVU85dkhCakllNlhyMmtaZ0s4Z2lEZmYtOE5NU19sZ0ZZTWpGNjVObENLNFYwMkdCdmpGWDFkSXlSczU0RC1JaGVrcHJEMlN5anM3WkpDU2tOamhURjI?oc=5",
+    "source": "Deccan Herald",
+    "published": "2026-11-16 05:35",
+    "score": -0.361,
+    "label": "Negative"
+   },
+   {
+    "symbol": "MARKET",
     "title": "Sensex jumps 719 points, Nifty climbs above 25,300 in early trade; ITC, Airtel, Asian Paints, Eternal, lead",
     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUVFicENfM2MzeDYzZFlEZjVqeWR2Qlp5VU5XUGlmYXVUUlRGSFdPczBvemxxNHRLWUF1TUxoYjR0UmhKVkUzOEFQTC1fRTlfM0lCUWVIcTg2RlFwQTYxel9YZm5TN0xrRmRoZkt6RXRFc3pIdGlqY3ZsR1MzT0hKelJrTUl0ZmQ4Q0d3a0VuajVzZFZoOGpEUTlMSjRFRmJXM0NKcDBxZXZMYVowVnNUYkpNMHNoQ3VsY0ZjRE8yRU1HT3g0X2FyTHBnSjFhZVlmUmthNlllTWRLTHVO0gHqAUFVX3lxTE81cUdGUk9ON3NRVFA1VDZFWE9vTW5IeVNqeWo5MzBTV0d4NEd0cE1jcWo3RDJFakdqY2tQOWNaTW1NUlVqNEFSUnk4dE1NZG5NNGtCalpIR3hHbE1BenpqU24yUm9xUmdvQ3pRR1B1d25oMUl1c2pUVGdvUHM5a3FRSHVqUDMxNVd3c2p3aHFybVFPZ0FpYlF0RjdBZkxfQ2lSTFBsaGtlSGQ1YVo5RXl4dmJKRy1BZ0RVanFHeVNuaXBaRHRpWURMQXhKZkctNi1Pb1hkUE54LXpCQnpxWXJ4NkJwUzM3VlBxdw?oc=5",
     "source": "Fortune India",
@@ -1411,30 +1429,12 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Stock markets rally in early trade led by foreign fund inflows, lower crude oil",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVFhsNHVIZkRrWnBIQzlxOXFnaHVtemx3R3NCMDUyNzVXU2FwcHdwOVdRSGZQYjJOZzJ1c1BjTTNTdl9zd0hfLWtFNDNtTWJpbnZNR0hrLU1WenMtd2hkNk15VlQzVGlfZ1lrUXBGTDEzRnJCampjYy1SQ3A1dzVCZzNqRnlSRE52NjhuMlhtbUx6VXVyZFZ3N1JfU3I1Vkk0c244bnRpWExaa1lGOXJqMmlHUzNaXzExQmZJb3JJSVU4UzdjczA3QWFhQXrSAdMBQVVfeXFMTlhTX3pmMUJuLWM1UlN0Q2Q0Z1hFTkZISmFiQWdoVXJQbkN2OUpYMDRLXzlrWVVMc2U1Ny1mLUxoRmk3MlZvamFOTV9OZHFPM1ZyZnZhbDlMSzRJNG9OOHE5S19wWDQzdklOY2tDZ0U4VFVRay1lRWFOcEVxSnBGMEtHQ0hlRlg1d0JtZkVUc1V0eGR2c2RLcjBJOUJaYnRRaWVLR3VIWkxOTWZ4NkpWLUNwamJHNmdiNUxGdl90UmNhSHBZdVVqWHhYWVh3bk80MXc3SQ?oc=5",
-    "source": "The Hindu",
-    "published": "2026-11-16 05:13",
-    "score": -0.361,
-    "label": "Negative"
-   },
-   {
-    "symbol": "MARKET",
     "title": "Sensex Today Trades Higher | Nifty Above 25,200 | Asian Paints & Bharti Airtel Top Gainers",
     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSVo5Y01fc0JhOWhiOHlJNm9KaEhkekFzbHczOHRINkJiaHZUZGkyVVE2TC0xRHpIVzh0NHF6b0xrWXprd0gwSFh4OG5UQ2I3amZBXzd3dldEYk4wbUhSU3piQkV1MUxidXptclIyV095eHNQdVdjNE9MQXFyNFR1aGd5VFNNOEVQb096VUQ5T2c1bEV0bW9yLTdzREJTcFJEMTAxdnpmQ2RBeW1jWjA2RGFaS2J5MmpjT01qYlBCUzQ1dDZaUVZxTTN2TDM3b1hYaENlaTlDRDhUQXQ2eVRRZg?oc=5",
     "source": "Equitymaster",
     "published": "2026-11-16 04:53",
     "score": 0.542,
     "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Indian Stock Markets Rally on FII Inflows, Lower Crude Oil",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTTBqWjJjZEFWVk5vWWpqNzFtMFJBTGZxdjVoazdGYWpvbmdGOTZOVEQxVDcyQVRfYVlKMG1XLWE1Tnl2SXhjUzhCaS01akN0SjJxelc2WU5DdWNPdlpib1BjUWxqaHNTdnE5dU14TUJNbmpxTlJjS3gyTk9ublNzVndXamM1RkpXM1N1Wk1XcThyVHZTeUU2RWt1NFNiRGdwRzNVanIwdF9INHBoR3fSAbMBQVVfeXFMTnBoQ3ZKNTRsMGdDc3llUXFzOW9fRkpFOERIMnFGYm1BLW1mdFdvb1ZseEF4Zm1zTTAzbHVFMWlUR2JfOEtaNzdqakZQZmIzWWNrLVN5RnE3bzBaa2kwSUNxU2REMzlRd3M1ZVBiZEdOeFVlUmF1blBTZEJrTjc1RXlPRUJUZmZseVBEOTdjX2E1MU5hQ3lDdXA3b0FhNUNNSDkxSktjRzZyMEg2MmFFMEhidDQ?oc=5",
-    "source": "Rediff MoneyWiz",
-    "published": "2026-11-16 04:52",
-    "score": -0.361,
-    "label": "Negative"
    },
    {
     "symbol": "MARKET",
@@ -1591,6 +1591,15 @@
    },
    {
     "symbol": "MARKET",
+    "title": "Indian stock markets fall due to rising tensions in the Middle East",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOLWcwRTVyZVl3YU9jUnAwVGEtSWhQZUJlUEJYSGZvanhNQ2d4UFV3N2wtaDRLVnM4M01DTGxlSHUtdng1QXpJQXhjS1Rsb1l3dl9XM21tVVdmT0NfdGpWdXN1dmMzeklYMEVBU0R2dVkxVldFOFNuUGN2aWRCR3E4a0JKLVpPYkdhWGpRYXJ2alFKSTFDUmh4eG5QaWxMQktXQ1ZpT29HM3VBVjRWZW9ZZE1xLVVyX1BpQTEyZVozSEkzRkxOQUtZUHAyMjgxenMzM2pB?oc=5",
+    "source": "DD News",
+    "published": "2026-11-16 02:55",
+    "score": -0.625,
+    "label": "Negative"
+   },
+   {
+    "symbol": "MARKET",
     "title": "Financials lead Indian shares higher as foreign inflows hit monthly peak",
     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWW9UblBTWEw2RXJKNFlkNkJzRHU2WDFISVIxOUJ3ZE41S1lOb2RPTXJkOUlDeXlPVDJIdWRURERiYjZhRTBjazZuQ2U3ekF3eEoxcU1pQWd4eHVJM01QenRFTVI4Wi16Ty1nQXRjTDhzSmhvLW45eFZ1RjlkSjJVZHNDZmtMbHo5WVI4QmdsOXUtSXpuSjZfUk9nMjZabWlHYWkxMEJqVXZNcW9KNUNqc21iT0YtbWhFdFpfNA?oc=5",
     "source": "Reuters",
@@ -1644,15 +1653,6 @@
     "label": "Positive"
    },
    {
-    "symbol": "AETHER",
-    "title": "AETHER.NS (AETHER) Share Price Today (NSE), Market News",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9kOHVUM21zMGI0YzhsWmtTVVZtcDI1S0tmbDU0VEhFQVpFTHNJdS1UUDZ1Z2UyWC1ESTUxUzA4TmNIUG42c25QSUgtVFAzazFfdTl3dE8tTzVvcDZNdmtJ?oc=5",
-    "source": "TechGraph",
-    "published": "2026-11-15 14:49",
-    "score": 0.0,
-    "label": "Neutral"
-   },
-   {
     "symbol": "MARKET",
     "title": "Trade Setup For Nov 16: Nifty Likely To Resume Rally Despite Friday's Sell-Off; Key Levels To Watch",
     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSVNwTFpxOGc1WjIyVkRFbWEweGU5eFl0QVF5eHhCOFpDTmVoVjhSWnhjcjMza2R6SWhDOFFtNDhpbUszSnNGRzZ6UXVEZllzdDVNdDBmYVNDQ3RsbTF5S3hmWkFlZlJiZlhxSDdJRlVTbUQxSG9vR1k2N0pqMHdYSG1zaHQwOXZpbzRoSUVVUlg4VWx5cndiaF9FWjFSNjNGTzVpSjFvMWVLYl9kam1YTEktd3l0RFZmLUFwV2ItcThscU01WEx5akY1Nkp6bTBjTGFKNHMwWdIB3wFBVV95cUxPLXV5VFpoc283T2JwdWZ5d05IRnhvZ1QwT0t5OFVoU0VNS2tVWXo4SFRyX1ZQdVRXTVNyQmFFSzFyeWVaQU9Jdm9WTTJ1aGhCc0V0TU5NQzZmY01NQjhKTllmQnU4eS11OWRUTHdDM1JlMkNfeWZiYjJDa2RqMlUxMHVQYi1rVUVySXBKYmVEZkxRR3lWemJ1RW9VLUVYQ2NjbGZrNE1yMFZWTjhlMXVlSXVCODlhWlBaTXc1TWdJTG1hakV0OWduekIzRHJSZU5ORzZkb1FVdXJmUGlnYzJj?oc=5",
@@ -1669,15 +1669,6 @@
     "published": "2026-11-15 11:49",
     "score": 0.844,
     "label": "Positive"
-   },
-   {
-    "symbol": "CPPLUS",
-    "title": "CPPLUS Share Price Today - Aditya Infotech on NSE/BSE",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9saU5XeHpjMi1XVGhLU21FZThEXzZNZGtzeGNJUGlua05idXNCRlo2TFlDMWJHSDJkbGFobDUzNkFwTnJSYUFwOEJ2d0M4N0t6LVFCNDZOMExxRWc?oc=5",
-    "source": "scanx.trade",
-    "published": "2026-11-15 11:30",
-    "score": 0.0,
-    "label": "Neutral"
    },
    {
     "symbol": "SYRMA",
@@ -1767,33 +1758,6 @@
     "source": "Samco",
     "published": "2026-11-14 06:51",
     "score": 0.718,
-    "label": "Positive"
-   },
-   {
-    "symbol": "AETHER",
-    "title": "NAVINFLUOR Share Price Today - Navin Fluorine International on NSE/BSE",
-    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5KVkRzcU5uaGJqRnktQVNCenZKQ1NlZERDM2duMTh3ZVBRWGRheFQxdkdZdzJoZHozc2dpcFhmUUl3Mmg1M1IwY3diN3hNMjBnVTVyRG1VOVdzOEdlVzlaY2taamYyRnYtNTJoQQ?oc=5",
-    "source": "scanx.trade",
-    "published": "2026-11-14 02:38",
-    "score": 0.0,
-    "label": "Neutral"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Indian stock markets fall due to rising tensions in the Middle East",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOLWcwRTVyZVl3YU9jUnAwVGEtSWhQZUJlUEJYSGZvanhNQ2d4UFV3N2wtaDRLVnM4M01DTGxlSHUtdng1QXpJQXhjS1Rsb1l3dl9XM21tVVdmT0NfdGpWdXN1dmMzeklYMEVBU0R2dVkxVldFOFNuUGN2aWRCR3E4a0JKLVpPYkdhWGpRYXJ2alFKSTFDUmh4eG5QaWxMQktXQ1ZpT29HM3VBVjRWZW9ZZE1xLVVyX1BpQTEyZVozSEkzRkxOQUtZUHAyMjgxenMzM2pB?oc=5",
-    "source": "DD News",
-    "published": "2026-11-13 18:34",
-    "score": -0.625,
-    "label": "Negative"
-   },
-   {
-    "symbol": "MARKET",
-    "title": "Share Market News: Nifty 50 Outlook & Prediction",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOczFWT3cyYUJaSWIxTjRnOVFOb0xTc21YTU1nd0p0a2ZlcTZKc3RfYWtWakZIcVhPeDRPOGI5SXNwTGpLMHpSVXdPZDhkUHFGWXl2RkZaVW5UZmJTUG41Y2pRRnpZYjU1N2tnOE5sUE5ZektVTXd5RDBiQnkwckU5Q0ZsM2JoeVVYM0xzQTh2NExlY1JEMmg4cDZR?oc=5",
-    "source": "Liquide Blog",
-    "published": "2026-11-13 17:20",
-    "score": 0.402,
     "label": "Positive"
    },
    {
@@ -1897,21 +1861,12 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Market News: Share Market Today, NIFTY, BSE/NSE LIVE, Sensex Today, Latest Share Market News Live Updates",
-    "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA2eURra0RNN0hZR0ZxYmMxV00ycGZkVS14M1JaTGFnc2lGeVdLS3NUaDQ0Q0pKSkpLbDcwMUhQN1lwcHJNbmc?oc=5",
-    "source": "Livemint",
+    "title": "Stock Market Live Today: Sensex & Nifty Live Updates, Share Market News And Latest Trends",
+    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5zSUlXeWQtdS1ndHkyZjQtbkIxQ05yUjkwXzJqZnZxd2xIUUQxVlZmU1FzOUJnRlpYMWZ0QUpaNmRXaWp4alNkM19n?oc=5",
+    "source": "NDTV Profit",
     "published": "2026-11-13 08:00",
-    "score": 0.532,
+    "score": 0.402,
     "label": "Positive"
-   },
-   {
-    "symbol": "CPPLUS",
-    "title": "Aditya Infotech CPPLUS Q2 FY27 Earnings Call Key Takeaways",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQnN1bFdPVE5fdFkxQjNZVUJWX0hLV0FzeWVPV1BCTEJiNmRZWm1GUUtPWGk2TWItMFctRldyQldTRXdVS09MZlNjV0FIZC1DLWVkN0pPS0dKVFl4SFRPLVlDbklwRXBMRkVGV1J1djVWQ29DNU4yTkhqVHU1UHB3endFMFZkSzM1S2dvRWNKVDdEcHdLX1YxYVl6YjhZZVdqeGprOExSYUtNcHlSQXZjNWZiOUdNNUFYNWRKZlRCSUp3RU0?oc=5",
-    "source": "Kalkine India",
-    "published": "2026-11-13 07:12",
-    "score": 0.0,
-    "label": "Neutral"
    },
    {
     "symbol": "MARKET",
@@ -1968,15 +1923,6 @@
     "label": "Neutral"
    },
    {
-    "symbol": "CPPLUS",
-    "title": "Stocks to Watch Today Nov 12: Tata Power, Bajaj Finance, Hindustan Copper, BHEL and More",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbGg1ZVR3d2tKdWZ4R0dpRTNpSTIyTHN3TWFtaTRvQUJtQnhVZHBaZkFKTnVLMGFUWFI5bnVKenRuUEZ1cFNDMkxWZGg4eEFGbkhGWWhaYjN3ZGxOMklFT1pCR1VkT1l2eWxnOHk0S1Nsam5XNnVOSTVsT0lDUmMybw?oc=5",
-    "source": "NiftyTrader",
-    "published": "2026-11-12 03:15",
-    "score": 0.0,
-    "label": "Neutral"
-   },
-   {
     "symbol": "MARKET",
     "title": "Stock market outlook today, 12 Nov: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
     "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOZGkyZUJibHBlNGFOR3l3U0NCWUxqLWdySXhqNmRseXB5SnY0ZldhSTl2azlqNm9JbWRHbmhyYWJGWTlQdnlSZ2ExOVh6Vi1iTEU5eW1wS09IMFhWS3dBRmN6V0FIdVRCM3BOZzlxaF9meFhXa0VIdmI5TzZvb3BYTzdTQ1ItS0FlUDliR19hRzZOSmNCdlRDSWRWel9DS2JGYzRfRkxxTy1yZnRPcGFGNUJvSFhpSW5JeUQxZkRreG5lanZtTFpUcTJ3Q19ZM2IxeEtGdTdRLTZtcjZZQloydm5USlNpQm1kTVV4NUhSeEJITzRTV0xVYVZteTlCb0xsak5CY9IBigJBVV95cUxNemJwUGVpY3MyNGI4am1kVG9zbHo5eC1oTDBydG5JWjhuU0pzazNyblF4alVZa3RMb3ZYWGQtelozbFE1NDN6dEQ3Y1Z3ZFR6b2lsSGpZNU4tdWJ1UjNySll1eHZwakRQSjZNaVF1RTFQU0d6em1lZjZtcmRENGozM2lIbjQ2MTN2SmtqUmRpTHpnMzlRNFNKWjU2YjY2ZEVhcE12STl4M1M2cTFXemNoaXRMS25ETFpPSW5wUVVET0xvVmhpNXlHQ2prR1NyaUEzNzJvamtJRkpwbklEdl91b0RJYkJYSXppSVVEd3ZxUmk3MkxwaEZVdzl2Zm9meE5CR3pYQUtpa3hwdw?oc=5",
@@ -2002,24 +1948,6 @@
     "published": "2026-11-11 23:16",
     "score": 0.932,
     "label": "Positive"
-   },
-   {
-    "symbol": "CPPLUS",
-    "title": "Aditya Infotech block deal: Dixon Tech offloads shares worth Rs 582 crore; Motilal Oswal MF, Kotak MF buye",
-    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNaEJwTFBDWTVxRlY2YTRRdlpTZ2VjdW1GSTRCcWM2elZ4Uk1sMnQ4d1g0N1pGM0JJTW8yOWN4LWRZUGt4dHQ3bDAtQTRyZUxuX3hUQXF4NFkzVnBwRDZMQ1JNWkZ0MzA3WloxZWg3cWRXalcwaHZOMEpjRVJCWnVrenlhQkx5TGhhUGwwZzF0RkdUVFl2NE83MllhM1p2ZzcwOUxqYnRNZUpKeEctWFFjVEE2czQxVEl6aTduOHZRQXI0Yi03M2hERzE5Nm5mM2dBOXdzVGlvZW1QUUNqZTNFTXdhaWRZZXJoZ19hTDZpSDNPNkpET3VmZHFYRFpzaTVTSlUyN2J5RXF0dW_SAZACQVVfeXFMUElWVzE5aXJqeE5lZlhKZ25XSmUwRlhzcUxMNkVJNW5VYTlEdGwwbzZkN1FlZjRvQmVQZ3FKMG9JYUVZSE1ZWXQ0c2xsTkRvMGpEbW9Wc1g1QUdKa0lFaWYweW5rUXNwdmtNM0h1QVFMYW84eTQzazVhOGV3S3ZtWWxfSUFPandHNGtuQ3ZZaWsxekJMNEo2WGlqR1Y5MmM4cDdjQjdrakRza3M4aWdYYUFqYUIwaUpiTHBOSnM1c2dmRVdQblFzODdheEpJeDQ2UmhIbk9vcFdmM1BJek1WQTQ4LTFZQ1Z1TzA2Tmo5SnJodUEtb2VNc3RHQl9sTm1ZNTRuMzBIRGJ0cUlBaTM1bi0?oc=5",
-    "source": "The Economic Times",
-    "published": "2026-11-11 17:04",
-    "score": -0.25,
-    "label": "Negative"
-   },
-   {
-    "symbol": "CPPLUS",
-    "title": "Dixon Technologies sells half its stake in CP Plus parent Aditya Infotech for Rs 582 crore",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQM0Vlek00WTY1R2xydE04Qjgwc3ZnUkZ0bXhzWHpzZGt0dGlYc1dIOVNldExtcnlUaTdSLUIxaEpOT1FoZ0NyMEpzRkdVTHNJLUxUTkV6eEVHLXhXX21sNU9zdlVDLVNvRU9zMWJhLXJzRUQwbS1oRmpwSlZ3Ujhyd3ZmN2p6STdOZC0tTk51X2xpaHZjdU51MkFVVkNwRFZUNWdHamlsWHo1LWlSNnZhb1g0THZUNnAwSTM2eVFELWxSaUs0LTIxSFE5TFVibUFHaUp4Z0hEWWRSeU5Oc3RjS0E1RnV6a1l6Qk9V0gHwAUFVX3lxTE9zVGRwV3JXMjl3RV93N1Z0NFFKUldySGxZZGtEUXVtTUdnMlotcUs5QlJNUXBjSG1lUnNGS25HMW1NM3d2LVRDZW1sb1Y3RnZKQ3J3SDBYWXMxR3dGRlVZSlJTNVpfZEowQzRrS01pVkNEdTAxR2NHeFFXUlpNQXJsVnBHZUw0TW56R0J4cFpoQkJOWTBqQWNVcUVvYTdJb1UzMVFPN0tjd0lrUzFUOEpyN1JKWUg5WEt2ZVQwbGFnNlVUbXFTYXZIclZMdmpCRzFtVWdtbDZyTGQ4Y0wxOVl0Vmg5RmE3akVsZngydDkzeA?oc=5",
-    "source": "Moneycontrol.com",
-    "published": "2026-11-11 14:55",
-    "score": 0.0,
-    "label": "Neutral"
    },
    {
     "symbol": "KIRLOSENG",
@@ -2094,15 +2022,6 @@
     "label": "Positive"
    },
    {
-    "symbol": "AETHER",
-    "title": "GUJALKALI Share Price Today - Gujarat Alkalies & Chemicals on NSE/BSE",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jSVBOQjUwbHMxcUhlTUlVcWJmVjlNbWhoMEZXTWZvRUVVMnJZdWlDV0xWcVZKaURzT1o1UG1xaENWRkNkX1BDVzNZUHBLa0dJNWlsaWRUSi0wNGZqRExjZTU5T3dNTmViSXc?oc=5",
-    "source": "scanx.trade",
-    "published": "2026-11-11 00:51",
-    "score": 0.0,
-    "label": "Neutral"
-   },
-   {
     "symbol": "SYRMA",
     "title": "Rubicon Research And 2 Indian Insider Growth Stocks To Watch",
     "link": "https://finance.yahoo.com/markets/stocks/articles/rubicon-research-2-indian-insider-221247084.html",
@@ -2146,14 +2065,25 @@
     "published": "2026-11-10 06:27",
     "score": 0.459,
     "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Sensex, Nifty extend gains to close at highest levels in over eight months, rally on",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOX0NfTHBqWDVKdzN4eF9lcGVZUEwzRzlDSXNLcXFkYW42bTVScWFFQ3c5ejNFc2wzeG81YWZqUnNGaVlHN3Q4MFptUTJLYk1mRU95NjFCUm5DVXp6cU9HTzFwQ0pHWHEybXFfdmxLV05haWtMb0ZiamJrQm5WdGdCVWZaRUM1Qks2YVJmWU5Oc1AwY1lSVHA5alF6c1VuY2x3Q3FUNW9sRm54SnpHbVhNbWs4OVNDSzZJR3B3a0lXcHlwRVkxc2drNGlSSlczSzJyZEZJcmV30gHbAUFVX3lxTE92ZzJPMmtYSWcwUVNkMkNvRHhrUGY4bTJXNkNRX2lfU0JSTTI0SlBVbU5nYXNhdDNYQkRXX3BxZEs1VmRBTlFNZXYyMmV2UlV3eEZ5cnVBQUt6UUdQOWZ6cTBiUGhUMzZRdGo3QTEzQm1HdnRzUlBJWmV1RWVtaldOYkY4a2FnU2pYVGlDYjZHNi1yZUNIQWJwUThmd1FyWmF5Y0NBZkx4aU1iN3NIMUZZcTQxc21kZmh4VFJmdXhORzVQVnBCRk1MVUhxZUIwd1dvV3phdGxINGZkRQ?oc=5",
+    "source": "Telegraph India",
+    "published": "2026-11-10 00:09",
+    "score": 0.84,
+    "label": "Positive"
    }
   ],
   "errors": [
-   "THANGAMAYL Google News: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=THANGAMAYL%20NSE%20share%20when%3A7d&hl=en-IN&gl=IN&ceid=IN:en"
+   "CPPLUS Google News: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=CPPLUS%20NSE%20share%20when%3A7d&hl=en-IN&gl=IN&ceid=IN:en",
+   "THANGAMAYL Google News: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=THANGAMAYL%20NSE%20share%20when%3A7d&hl=en-IN&gl=IN&ceid=IN:en",
+   "AETHER Google News: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=AETHER%20NSE%20share%20when%3A7d&hl=en-IN&gl=IN&ceid=IN:en"
   ]
  },
  "created": "2026-10-30T14:55:17",
- "last_updated": "2026-11-16T22:26:41",
+ "last_updated": "2026-11-16T23:30:26",
  "corp_actions": [],
  "fundamentals": {
   "AEROFLEX": {
@@ -2269,7 +2199,7 @@
  },
  "research": {
   "method": "auto",
-  "generated": "2026-11-16 22:26",
+  "generated": "2026-11-16 23:30",
   "title": "Stock by stock (auto-generated)",
   "stocks": {
    "AEROFLEX": {
@@ -2322,11 +2252,11 @@
    "CPPLUS": {
     "symbol": "CPPLUS",
     "name": "ADITYA INFOTECH LIMITED",
-    "view": "Neutral",
-    "view_score": 0.34,
-    "tone": "neutral",
+    "view": "Neutral to bullish",
+    "view_score": 0.4,
+    "tone": "spec",
     "summary": "11.0% below its 12-month high: a shallow pullback inside the uptrend.",
-    "why": "Shallow pullback, strong earnings growth, stretched valuation, fundraise",
+    "why": "Shallow pullback, strong earnings growth, stretched valuation",
     "points": [
      {
       "text": "11.0% below its 12-month high: a shallow pullback inside the uptrend.",
@@ -2345,24 +2275,6 @@
       "kind": "catalyst",
       "source": "SwingScope data",
       "url": ""
-     },
-     {
-      "text": "[Fundraise] Aditya Infotech block deal: Dixon Tech offloads shares worth Rs 582 crore; Motilal Oswal MF, Kotak MF buye",
-      "kind": "risk",
-      "source": "The Economic Times",
-      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNaEJwTFBDWTVxRlY2YTRRdlpTZ2VjdW1GSTRCcWM2elZ4Uk1sMnQ4d1g0N1pGM0JJTW8yOWN4LWRZUGt4dHQ3bDAtQTRyZUxuX3hUQXF4NFkzVnBwRDZMQ1JNWkZ0MzA3WloxZWg3cWRXalcwaHZOMEpjRVJCWnVrenlhQkx5TGhhUGwwZzF0RkdUVFl2NE83MllhM1p2ZzcwOUxqYnRNZUpKeEctWFFjVEE2czQxVEl6aTduOHZRQXI0Yi03M2hERzE5Nm5mM2dBOXdzVGlvZW1QUUNqZTNFTXdhaWRZZXJoZ19hTDZpSDNPNkpET3VmZHFYRFpzaTVTSlUyN2J5RXF0dW_SAZACQVVfeXFMUElWVzE5aXJqeE5lZlhKZ25XSmUwRlhzcUxMNkVJNW5VYTlEdGwwbzZkN1FlZjRvQmVQZ3FKMG9JYUVZSE1ZWXQ0c2xsTkRvMGpEbW9Wc1g1QUdKa0lFaWYweW5rUXNwdmtNM0h1QVFMYW84eTQzazVhOGV3S3ZtWWxfSUFPandHNGtuQ3ZZaWsxekJMNEo2WGlqR1Y5MmM4cDdjQjdrakRza3M4aWdYYUFqYUIwaUpiTHBOSnM1c2dmRVdQblFzODdheEpJeDQ2UmhIbk9vcFdmM1BJek1WQTQ4LTFZQ1Z1TzA2Tmo5SnJodUEtb2VNc3RHQl9sTm1ZNTRuMzBIRGJ0cUlBaTM1bi0?oc=5"
-     },
-     {
-      "text": "[Results] Aditya Infotech CPPLUS Q2 FY27 Earnings Call Key Takeaways",
-      "kind": "context",
-      "source": "Kalkine India",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQnN1bFdPVE5fdFkxQjNZVUJWX0hLV0FzeWVPV1BCTEJiNmRZWm1GUUtPWGk2TWItMFctRldyQldTRXdVS09MZlNjV0FIZC1DLWVkN0pPS0dKVFl4SFRPLVlDbklwRXBMRkVGV1J1djVWQ29DNU4yTkhqVHU1UHB3endFMFZkSzM1S2dvRWNKVDdEcHdLX1YxYVl6YjhZZVdqeGprOExSYUtNcHlSQXZjNWZiOUdNNUFYNWRKZlRCSUp3RU0?oc=5"
-     },
-     {
-      "text": "[Stake/Promoter] Dixon Technologies sells half its stake in CP Plus parent Aditya Infotech for Rs 582 crore",
-      "kind": "context",
-      "source": "Moneycontrol.com",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQM0Vlek00WTY1R2xydE04Qjgwc3ZnUkZ0bXhzWHpzZGt0dGlYc1dIOVNldExtcnlUaTdSLUIxaEpOT1FoZ0NyMEpzRkdVTHNJLUxUTkV6eEVHLXhXX21sNU9zdlVDLVNvRU9zMWJhLXJzRUQwbS1oRmpwSlZ3Ujhyd3ZmN2p6STdOZC0tTk51X2xpaHZjdU51MkFVVkNwRFZUNWdHamlsWHo1LWlSNnZhb1g0THZUNnAwSTM2eVFELWxSaUs0LTIxSFE5TFVibUFHaUp4Z0hEWWRSeU5Oc3RjS0E1RnV6a1l6Qk9V0gHwAUFVX3lxTE9zVGRwV3JXMjl3RV93N1Z0NFFKUldySGxZZGtEUXVtTUdnMlotcUs5QlJNUXBjSG1lUnNGS25HMW1NM3d2LVRDZW1sb1Y3RnZKQ3J3SDBYWXMxR3dGRlVZSlJTNVpfZEowQzRrS01pVkNEdTAxR2NHeFFXUlpNQXJsVnBHZUw0TW56R0J4cFpoQkJOWTBqQWNVcUVvYTdJb1UzMVFPN0tjd0lrUzFUOEpyN1JKWUg5WEt2ZVQwbGFnNlVUbXFTYXZIclZMdmpCRzFtVWdtbDZyTGQ4Y0wxOVl0Vmg5RmE3akVsZngydDkzeA?oc=5"
      },
      {
       "text": "Since entry: +0.80% (Day 11).",
