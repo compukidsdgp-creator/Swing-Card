@@ -1204,18 +1204,9 @@
  },
  "entry_override": {},
  "news": {
-  "fetched": "2026-11-24 22:41",
+  "fetched": "2026-11-24 23:38",
   "days": 7,
   "items": [
-   {
-    "symbol": "MARKET",
-    "title": "Share Market Live, Share Market Today: Latest Share Market News, Share Market Live Updates on The Economic Times",
-    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBvU1A3YXdwdkdEeEhvQ1lLLVhhUk9sWUdXUFdDb1F4NjUxRDlnVDFkOUNjdFVjbTBBc09kNmNkRl9UbzkyOFVvbjIxYjFoMVQ3MUNJNGFmOA?oc=5",
-    "source": "The Economic Times",
-    "published": "2026-11-24 17:01",
-    "score": 0.0,
-    "label": "Neutral"
-   },
    {
     "symbol": "KIRLOSENG",
     "title": "Kirloskar Oil Engines Shares: Volume, Earnings and Technical Readings",
@@ -2144,15 +2135,6 @@
     "label": "Positive"
    },
    {
-    "symbol": "SYRMA",
-    "title": "Why Nuvama picks PG Electroplast, Syrma, Amber as top EMS bets over Dixon, Kaynes post Q2",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbXRBbHJSNy1rMk5yLXdBVUlGZFBPR1BKemRhRTU4MGFYQng2LWhidmlhQmRRdEtMb3pUb25uVkNJTlZwZ1VFSWJTNGJOcXVwd1g0bkptanRiYmo4U19xVl9Wa0YzUFNtejdhWFFJQS1DMVc1Q1JKVnNBWW9TWEwtQUFfUVQ3MFFtY0lGVnhKWHJleGxUV3hfUFlzSm9sNmtlMnF2SG1iTnRGY1dZbXBTRkQtU2R6c2lJUDBiRVBTN05sLXJsQ0toZjRzLWMwTWhk0gHXAUFVX3lxTE1OV2xtMzBmaURnZXpHZjJTVjJqSUI4RHFQc19JYUxLUDhvd3VueFg4d25kc1ltNXdIYUtUT2tCSU16R05iaGxkcGgyVzFQTFl3NDd0am5JYktUREtWUUJCeF9ualhpMmtDLTdrOW5EOVMteHdsd05fVmZDSjJHeTFrS0lNQUVWVjN3TVl4ZVpMS1Q5NUJYcEY2cnpEbzA1WC1oMFNYVTdRbTFfdTYyOXdvZHVQZWNTVEtweEJyUmttbzlUT3JCUFdTbUZSa0VPZUlEemttNXZB?oc=5",
-    "source": "The Financial Express",
-    "published": "2026-11-20 06:31",
-    "score": 0.202,
-    "label": "Positive"
-   },
-   {
     "symbol": "MARKET",
     "title": "NSE shares jump 3% to fresh high; JM Financial sees MSCI entry in March",
     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWW1JcVotRHRuVjNlMUlMYTdjMGl5TUtMeVNIUkZOeElvVEtTMVBKTFlMcGh6a2xqRU8tT1RVSnhtQ0E2NnJLYUlZQ2tLWlBibF9Ia2Y1Y2d4S254RVBiU282aHF4TnpGSmZId1ZXcG1NcGpOcHJYYVdRQWZpMTZmS2EwNTBXUWQ2YjY2VXBabF9GU2JISUtwS3MxMGhfdmtZdU93eHFYaWJUblR2OXU4LXV5dmdfWHBod1dwNUV0Nmt3WDYxUGkwSjhURlcxZDdsdWfSAdcBQVVfeXFMTlQ0d2VPTlhqUFhGYjlza296RDJRMDdXWEpUQ1NtWk1JTGVxZ29mSlZ3b1RkMWRTcVgxZUk4NnRFTFhNbW0yLVhRLXUzS1Y0cFozOER6aXlQUzVLNnJoTmlibDhsQ25XOFpYbXpKd01rdFJIaHN1c0JTNlVUQTdqOEdCd3FWdmlZY2JWbUExeFVLTkpmZ3RJc0JaQkJ6TVQ2ZjBrdk9LbWJoX3pHRWQ5RWEzU2ZhdFJkcGZNeVQxa3lNRkpSLVEtVmxyLWZGZlR6cndNa0VRMm8?oc=5",
@@ -2459,6 +2441,15 @@
     "label": "Positive"
    },
    {
+    "symbol": "MARKET",
+    "title": "Stock Markets Fall: IT Stocks, US Fed Rate Hike Jitters Drag Indices",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNREZ3WmprRXJJTlp6ODI1ZENqODRzbXlGNWVlaHVjVF93bnktQWJ2VWtTWWdoWGpmSjlNempLM1dIelhya3E1YU1wOUlwNDhvZjJPVE41aU8tYVdNdHVJeGt2TGw0QnNvU2lOdVFKalFSZGwwSzVJanpSNEh3bkYwdElFaVRoQk5kMFRwMlhiMXctVk9pQUxwcC1tT09nc1NjQmFPaTdzYzRScWEtbVJSc3V0OE9IQmV1cUHSAb8BQVVfeXFMTWE0VkNKSlBMS0JQNDJFT1otTUZ3WHN4UVQ0NDc0Nkl3UVlzR2M2OEk5ZUZDVlBPUGRhLXltTXduQVhmeFo3a2g4NWN1Z1NNY2FvZUNaRzB5ZDVNOTYtVDVKckxVcC1WLVhTRWtYbFJTVjBvb0dxdTlHejd3dEd4OVNfdDlyQlhhRDFZd2hvT1RkQ3dkdG5ndHA3SWFoa3NQZTdJLW5jbmdWUnE4cW11ejlHRC1FUk0taFB1ZHNFbk0?oc=5",
+    "source": "Rediff MoneyWiz",
+    "published": "2026-11-19 04:44",
+    "score": -0.511,
+    "label": "Negative"
+   },
+   {
     "symbol": "SYRMA",
     "title": "Syrma SGS Technology Share Price Rise Streak and Valuation",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPamNyWC1jY0dYbTNiYWp6UnZnQzF5enBwdi1obXJiXzM5Skd3ZlJGSUZVRjNGRjB5TTlnYjJaNmRzb1lQVEx4aHItTlF5cTRKTEdUQWZFV2lENzlkNlo0MU1GQW42X1pfVXp2U0FaM0RFZDF2SXlVenlEUHVJX1dmWlc3Y1k4akdPMXNOdlNuOFM?oc=5",
@@ -2615,7 +2606,7 @@
   "errors": []
  },
  "created": "2026-10-30T14:55:17",
- "last_updated": "2026-11-24T22:41:17",
+ "last_updated": "2026-11-24T23:38:08",
  "corp_actions": [
   {
    "symbol": "TDPOWERSYS",
@@ -2741,7 +2732,7 @@
  },
  "research": {
   "method": "auto",
-  "generated": "2026-11-24 22:41",
+  "generated": "2026-11-24 23:38",
   "title": "Stock by stock (auto-generated)",
   "stocks": {
    "AEROFLEX": {
