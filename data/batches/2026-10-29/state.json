@@ -1259,7 +1259,7 @@
  },
  "entry_override": {},
  "news": {
-  "fetched": "2026-11-25 21:55",
+  "fetched": "2026-11-25 23:18",
   "days": 7,
   "items": [
    {
@@ -1369,6 +1369,15 @@
     "published": "2026-11-25 07:16",
     "score": 0.0,
     "label": "Neutral"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Stock Market News: This Small-Cap Stock Reported 38% Growth. Should You Buy?",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXJzRDJIOExCeklabWJYalo5VjJBTzNmOEkwN2wzb1BYZWJnYWRReEtVTmo0NjFjM2p2RENldGVMdEYtZ3FwTjJXTEYxVHNoRHVsN1FHVE4wSVg1Uzk1TGR1R2RHV251QUZSb3NhY2xRTm5HaENRQldyaVBZYm5YOWxGVXdlSVp4bk1pQTloYWRhMG1ZemZOcGQ4R0JMZUM3SUF0SXk1TFdJcG1XSnZQdWxHc2RPdDjSAb8BQVVfeXFMT1VXSWZjSGdFTU9Yejc5Mkpia3VzcW0zRTZ6UEZlRjgyT2s0bXF5Z2dXNF9CcnJhWEw3SzdpVzEtTDEzMGthZ0VoTXFTNW9ubkNlWnJfbFFRODB0al9Pdi02MnBnSVlhaW5GakFNczhPaFN3MFZGd2lWMHZ1QVFoWGsxNU1adF9lRzl0aU5vd1FHczNOR1hBa0FEQU5BTHlJTURvUS0xUXhubTJyWkJVbXJBc05sZDdyeWZyM0VQY2s?oc=5",
+    "source": "NDTV",
+    "published": "2026-11-25 07:14",
+    "score": 0.572,
+    "label": "Positive"
    },
    {
     "symbol": "MARKET",
@@ -1777,15 +1786,6 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Stock Market Nov 23: Sensex Crashes 1,484 Pts, Nifty Slips Below 25,400",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdGJPU19BZlRjTXFJRlRJTWE3VHhoNUxfX2FCSWtoQnRWaHBIV3l0eVVzLUlHLUtZUHJKMUxlbDhWMF85M0lJTHFyaExESTk4M0VRSkNQSC1odDBnQUFOaFNWSzRYUWpkZ0paQlFrdTZZQ2dkU3BKLXhpUnZ5SFJCQzNyeE5HOFFPdDl1Sm43b2l2NmprYXJiRWVKMA?oc=5",
-    "source": "The Indian Awaaz",
-    "published": "2026-11-23 12:03",
-    "score": 0.077,
-    "label": "Neutral"
-   },
-   {
-    "symbol": "MARKET",
     "title": "Sensex suffers worst single-day fall in 4 months, Nifty below 25,350",
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWm1VSlpqLUFNMmRtOWh2N1YtakhQUkJEZkxsaUZ5d2kyQ2p0WWVhY1FJMExtMW9Oc2dWNzRabXNNUDJhM2hSR0lsUjhKNDRWNlJ1djBjN0d1UE9DNnRYbl80TnBwcGRFdmJWek1SV3ZMWUEzMzRIRzB5N2ltSVl5QWVucE14bTJKZThnNFFNUnJiRVRfRXdha0x6dU1INXFkaWlsR19KdXluQ002UFFOLUtoZmozSm14WkNzTzVNODRNbWNiaUVldGQxb9IBzgFBVV95cUxNbEtINTBKdFFvOUZrNktobEhhUTNXc0c3MUZRaFJ1cWdHZlhYOGRKRzB0cXZ2cGpjRjBRelAzUmRVSVVUTF9CNWtQQkhSOXF2R01aREtsRmlOSXJOdm1LOW8wa25GQjF6ZDJwWC10Zzc1akJKcThOWGhqY3RhU3pkNkZNbm5LaTQ4QjV6YVVNUkFtLVZNOVFRTWc3ekxyUkhXN3Y4anJ2WVJtakVDZFdudjVsWWxIZ19LSV9hMjY4eG1MYkk4ek9Xa3pmM2hrUQ?oc=5",
     "source": "Rediff.com",
@@ -1894,15 +1894,6 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Ratnaveer Precision surges 10% on huge volume; zooms 215% thus far in FY27",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd1pNSW84OVMtMGFOQmVtektLNGExTllkUjNCRVNtR0s5TThRWWgyWjNIcmkzSzVLX0o4cG9UNHJhdHVEZUVwblJQV3JRZ0dfRTU1cDJOUmltZXo3Q0JzSGlDUFFnTk12X3dtT29fd05sX3FCSElVb05hUTlXcENncU5mZGRwM3h2X0dHMU43a0V2N0ItbmRZUXlVOTRTUUxGNUVicjI1SzFPTlhlQmdpa0EzVTV2QjRfNnRucGl0b1Vnbl81WVd2OWhuYmhmcU5PUEczdNIB2gFBVV95cUxNQmNaX3FEN3BuMF9wb195RG5PRUpxSU1wSm5Kcms4VlZyQzcwZzNLbFZoTmFVYWllazUtRV9teXFrcm9XWlRKemk5NkhYNUZlMHdTMjRNNFR0LVNCVFV0b1cweWtFTjNFR0otelpsOUl4R0ljYVdFU0IwWHg2elE3MmwyU3NsN2VwTWx2RTFLWk1sdGF1dndtbjhVQUt1TG1OZHJONThfOXJGWE1WOVNyU05qYVZhdVpCSmoyaHc0MWFuRl8yS2N6Wk9vQmt3d3ZkNWpIZkdiTC1ydw?oc=5",
-    "source": "Business Standard",
-    "published": "2026-11-23 09:51",
-    "score": 0.67,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
     "title": "Financials drag Indian shares down on profit-taking after four-week rally",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdDVfby1VRHZ6aGZYVDB2dU9SSjlQRGlJcUUxQm5Gdk9vWkU4UG15RFdHeTZxVjZQUzVNLXRmX3FjVndPRFJQQzdoNWNsUlRMeEQzdWVxWE1RVWp3TUM2WnJRc2lqamVnM1Vlek5LdU1rZjVRNEdVOUNkMVpoNTRLQlMxRFlfUXZzd1JOQ2J2QUI2S0wzMTRUWnN5aVhrTG5qSmk0Mzc0NFEwU1owcEpPNlljaw?oc=5",
     "source": "Reuters",
@@ -1929,22 +1920,13 @@
     "label": "Neutral"
    },
    {
-    "symbol": "AETHER",
-    "title": "Aether Industries Share Price Target 2026 \u2014 Analyst Forecast",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DcDN5MmNrdEtFUW1vV2kzU3VubWFyR1RnenpaNUdaQ3BXQXRScm9XZUFPNW84NmRaM2cwYjhyUHlYMHQxX3hlZ0dQUUMzdmVuNlRsd3htOFFELVNieXpFSkdlMG1IWGVGdUp5ZnZlQWJhWFAx?oc=5",
-    "source": "Univest",
-    "published": "2026-11-23 08:00",
-    "score": 0.153,
-    "label": "Neutral"
-   },
-   {
     "symbol": "SBC",
-    "title": "SBC Exports Ltd. Share Price Fall: Price and Sector View",
-    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBkVE1jSlFjRmtDZllITlVzb0lpV3dDbWowa2ZOOXFzWXp5dW04U2RHV2dwRzlpY3JBQ1dSZ1JHRk5PVkt4Nzc2N1h6elcwTFRRXzlFUWtyUVdiNHRNTHJnX25CWTFTdzhpY09QaEhnZE5QaDczWjRz?oc=5",
-    "source": "Univest",
+    "title": "SBC Exports (NSEI:SBC) - Stock Analysis",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQU0cxV1FDSF9DSFdCQmlWbWdSenhVbjdZbkFjcU44VXk0cjVDbEJXTUUzaTJ3cnJjS3R4TjB3VDhYU1Q4UXE0QlF1TDE2MXhMVU1GRXkxWGJac21oaTdNalRXOVZlbkRtd0t3a1dHQ0xERzRhRkkwcG9OUzJDdVVvSEV3?oc=5",
+    "source": "Simply Wall St",
     "published": "2026-11-23 08:00",
-    "score": -0.34,
-    "label": "Negative"
+    "score": 0.0,
+    "label": "Neutral"
    },
    {
     "symbol": "RATNAVEER",
@@ -2037,15 +2019,6 @@
     "label": "Positive"
    },
    {
-    "symbol": "AEROFLEX",
-    "title": "Hindalco shares fall 2% to \u20b9910.30 after a 3% gap down at the open, as copper slides below $12,000 a ton",
-    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNV0VJa2g1cVJJMEdwcDltNEpfU1dXQ1llck5iaVVZeHZrZmZ6eXVDVjlSTktvWUhnMV9LU2JJZ05DbXB6U2c1V1VjN19ObWdvMDV0X2pKTWwyOWxiWThicXlzckRMYWxneldzTEg2M09ZbUg4NUVfZTViQWZ2Sms3VjJ3X2VqYTU1Zm13OEZBS0ZORTBqckl2MEF2NWNiN1FkcGpJY1NrZVQ0MUNTLThQV0gwT2ZSXy1mYm9palpmWDRqQ1dZejZzTW1RRHJLcF92Ymcxc1UxTFJ0OWsyTkhkejZrMXE?oc=5",
-    "source": "Business Upturn",
-    "published": "2026-11-23 05:12",
-    "score": -0.34,
-    "label": "Negative"
-   },
-   {
     "symbol": "MARKET",
     "title": "Sensex tumbles 1,450 pts from opening high, Nifty sheds 425 pts; metal, bank shares drag",
     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYmpLZjNYVEk2MzJUV25OcEFmYlFMSlV1a25WSko1azV5Z0dwNXQ5aHdxRDJZN25yTzNxMVJsMXV3Wi1SNjFrTzJ4RVFvbnBRMWpqWFZsMjJKS3EwZjRqUWtwNldzQzY3aEdBeWhUYm5KNFk0bGhHemNwd1J1d2d6b0VRN2d6TFZBSE15WVhITGRPVnZTN2FYWTFzTF8tUS1xb1p1RkVsdHRkejdOUUVTZDU5bXVJU19qbkZwUDZoWERTalllTXRLeW1IYnNyQy1xNi01SFoyT0Y4U0820gHqAUFVX3lxTE95MU9ibnc3UF8xOXB0TGVrOEstaHg0bFhGOWdYd0cwWVNfZ1hPcWVmT2F5SmJzd2JfaWpXajJuZERQbzJrbkdpeEwyZXNSTXJYc2RZVGxVZ0tPaHRUdDF1TzJjX3NiR0YzOFU1TndxaUhFTHJzMXhvMHZydjExYUxlZ2FySmtzSDZPTEFfa1JTVk5Md2hDUXZKSXkyVmk3WnNMOWJtYklYTWUxVnJiZ1dua09xQzdVZ2FrQ2dWSzBjcGZuOXRWX0Q3V19YZm9FSlFweHV2alpZdUtVVk50RTdZN3BsNTJ1LVZaQQ?oc=5",
@@ -2071,6 +2044,15 @@
     "published": "2026-11-23 04:49",
     "score": 0.048,
     "label": "Neutral"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Stock markets decline in early trade amid global sell-off, profit taking after two-day rally",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNb0tfY3VmZG5ZRGh3THNtNnVKLVFZUWNwWm1Hbl8zcFpzY29fWEtKRDRtWDRxWF9xbWFacWN2NWt1dklQcTY2SHhqNFVjUkFNLXVnQkhLdXVqcVpoaWJMeDk1bF9hbFFucEhGbXlhSFdnQ2hUTDctZ28yUWlrRXR1bXZjZE9zRTIzVFVnN3lfbURaU3ZGZ00yenZ3MC1RQVBRWHFOS2JtQm5vemNlMjQ5YTA3dHNFM0JVcGRjNV9GVDRLY0NaQzdmZGk4b0cxUEI1cGFjejdUVm4wQmhYOEHSAesBQVVfeXFMT3VwUk9EVk8teC1wbzlCdGZNWXlfaXFLUnlwU21aVXNlbF9YY1kzT2VaYW1fXzhpbDZ1cXp6S3lQZ1A2ZktjaDl5eFJEa2pUa0xUTEwtOHVaWTJLU0dHd1hmeHlnQWJMTVJiYTc4bmJZM0JXenAyZWEwaFl4VzRYSFprMXVvdy1rUENoTXNtNThRbXNjSnVORVhVWElwbXVXMDgtSjJ0OE41OUlsR2Z4R25zM2E5NHlURTJId2dqTTQwel82TGtjVFg1cGtpb3pOMnRiMzM0b2xvOWJPRDBsZXFaUDYyb2hTVkF1bw?oc=5",
+    "source": "The New Indian Express",
+    "published": "2026-11-23 04:43",
+    "score": 0.421,
+    "label": "Positive"
    },
    {
     "symbol": "MARKET",
@@ -2133,6 +2115,15 @@
     "source": "India Today",
     "published": "2026-11-23 03:48",
     "score": 0.421,
+    "label": "Positive"
+   },
+   {
+    "symbol": "MARKET",
+    "title": "Stock Market Today: Nifty, Sensex Rise in Pre-Open",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVkcwR2R0aS1nR0pCRC1DODVEUWdEYWJzdVgzNlJGX2x6dWZ2czNScHVMeUZ0b3h6amZPbkFQRXpvTFd0VWxJd1hHdmQ3U090WGR0ZjhMVEFnWGFnOUFYYWRxQXNlN2VLRXlkRUZfLWVhYndzaHhoTTNJZVVCWVVUQm84OWNpRWpFVWhJaThDWnBNLVVzanBLME05TG5HTk9kUnlVdUo0alh6T240UkJNbkc2VTFxZlVtSW9RWlN5ZDF1bFB6U25WX1d3SmJMZUppal9yN3pMckFsM3BB?oc=5",
+    "source": "HDFC Sky",
+    "published": "2026-11-23 03:42",
+    "score": 0.402,
     "label": "Positive"
    },
    {
@@ -2290,15 +2281,6 @@
    },
    {
     "symbol": "MARKET",
-    "title": "Indian Stock Market: Nifty Up 10.1% Despite Global Weakness",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd2Z2MTY4WkpuWlZQbmRZdFphcXNtTmpMRTZHaHBZZmh2by1yUHpNdXlhblRuWmdLNmVpUHVEb0tfVVZUY1N0Zy1sZzRzWWNNYkZSbnJWb0w3RmFTMjNabUJXcF9PTkRxMW1pRS1UV01BaGpwWTNBZ0w1R2c0RWVIUUs5M0ZRdE5xWnpCcEF0bGszVWVoRV92d1pKMVVHdl9IUm1QWVZmcFkxeWVU?oc=5",
-    "source": "Multibagg AI",
-    "published": "2026-11-20 20:59",
-    "score": 0.616,
-    "label": "Positive"
-   },
-   {
-    "symbol": "MARKET",
     "title": "Stock Market Weekly Round-Up (16-20 November 2026)",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOR25RTXBvbTJlMFdELVV2QlBPdXBydDlPNllpQnlQaWM5Z3c4Tk41ZmpBQ0l2Um11bWFmUVJ5Szg2TEVrRG9hcU10ZmFhTk9wSnF5TXdtODJQVWtXVEk4QjdtSllMRlJFR25jU3VxM19RVXg1b2o0ZnViR1JfZjUwVmtB?oc=5",
     "source": "The Indian Awaaz",
@@ -2451,15 +2433,6 @@
     "label": "Neutral"
    },
    {
-    "symbol": "AETHER",
-    "title": "Aether Industries Ltd. Share Price Today - Aether Industries Ltd. Stock Price Live NSE/BSE",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYnB3RDQ5cDJETHJhX1FZaXdsWWt0aW93Q21hNHRtTzUxN1puTEFXTnZZbW9OTEZHd1hpc3dqVDNzekR1Y2hUSEloSk9EMVU4TER5ZHJhemx6cFZqcE5DY1JTLTZubHZ2YW1pTGRTb0YwbkNqZ0htN3F0Vk9FcEdIbmxkU2w?oc=5",
-    "source": "CNBC TV18",
-    "published": "2026-11-20 10:00",
-    "score": 0.0,
-    "label": "Neutral"
-   },
-   {
     "symbol": "MARKET",
     "title": "Sensex, Nifty inching towards all-time high: India decouples from global rout, only major market in the...",
     "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPRGtSWW03RnNLcWJHZzU0STV4WVhtdXpFVXFQRlVPUkNXQ1FPY01yODk5dy1GNkY1N3pRemtoYnhFLVphVFpzeDQ1dHBGbnVDNVJvalpQN2FUakJlamtMQnJDTzhRN0JXUXpHSEVaVTNCYVh5bW9IaVRIM2w4Qjl4VlZwQ2tOMjRUUENRQ2RIRnZDeDVlTGVadEM5RTNRVlNaeEl6SndCV1EyVDhsd3dVUWI3V0RrRVBFT05KcUtVU0NzMzl4VjVQVU1HOTVNOTNTUU54OG1nel9CRHU3a1E3czZMMWtQM3lvX2wxY0hkTWs3N09KQ0xxeEZTNXl5cmhv0gGGAkFVX3lxTFBPWDBzQXNpdFNaMzZkNTZGb01SVXBOM3JGMHBETXZSZ2pKOUphUVFmaGxsQl9GalRPaHlmcEE2b1ZTSTk0OWVkX1VYRFRRZ0YwbDlNLXFrUk5WS2ZJNE53ZEJ0Z2t3aXo1Unp1LTRmaFhfeWJGTkJvZ2pMa3RHMzNhVzNTSFdtSjQwN21DVUNHckdoSzNoRGFfUV9oWDNJLTZ0cU5XMFdHSVNoVGZmSTNjRUZNZ2F6VEVPNm9VU3BQQzlPd2k3UnZhbXE5YWpES1l5bEFGNk1Fa0ZtcHFJWUVLTEU3Y1g3ZXlQdFpYSVEzWi1NRWs3RlkwV3BRb2FZUTNUTUJWTGc?oc=5",
@@ -2541,6 +2514,15 @@
     "label": "Positive"
    },
    {
+    "symbol": "AEROFLEX",
+    "title": "Borosil Renewables (NSE:BORORENEW) Announces SEBI Special Window for Physical Share Transfers and Dematerialisation",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOQ2JTZmZtX1FPdnJSOTlfNExIQkxVbktYTm0wVlBjR1daR1VJTzhqTEZ0ZWI2OVhNd1ZpZ3FhMDVkYThsdi1Hd0RSOW9iYlc0T1NhZmc0a3FrY0Q1Tk5hRWJPd3pPQTR1REptUU5YNHlkWUE4M1JwaGhyeHdoOXlzZEx3ZFNPLWFvMFFwcTRoLXpfd28wTlh2cERvNjR0VUxJSkFaVlJHVVNtZ3I4eEZuYVlVQWoyc1dZbGRJTUFqVjJJNlo0UFRab1pvRVUyWGo4dXVTRnFVaHZiLTNzZkRmZGdJR0FjQTBMLWtoWGgzZWw?oc=5",
+    "source": "Kalkine Media",
+    "published": "2026-11-20 06:43",
+    "score": 0.17,
+    "label": "Neutral"
+   },
+   {
     "symbol": "SYRMA",
     "title": "Why Nuvama picks PG Electroplast, Syrma, Amber as top EMS bets over Dixon, Kaynes post Q2",
     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbXRBbHJSNy1rMk5yLXdBVUlGZFBPR1BKemRhRTU4MGFYQng2LWhidmlhQmRRdEtMb3pUb25uVkNJTlZwZ1VFSWJTNGJOcXVwd1g0bkptanRiYmo4U19xVl9Wa0YzUFNtejdhWFFJQS1DMVc1Q1JKVnNBWW9TWEwtQUFfUVQ3MFFtY0lGVnhKWHJleGxUV3hfUFlzSm9sNmtlMnF2SG1iTnRGY1dZbXBTRkQtU2R6c2lJUDBiRVBTN05sLXJsQ0toZjRzLWMwTWhk0gHXAUFVX3lxTE1OV2xtMzBmaURnZXpHZjJTVjJqSUI4RHFQc19JYUxLUDhvd3VueFg4d25kc1ltNXdIYUtUT2tCSU16R05iaGxkcGgyVzFQTFl3NDd0am5JYktUREtWUUJCeF9ualhpMmtDLTdrOW5EOVMteHdsd05fVmZDSjJHeTFrS0lNQUVWVjN3TVl4ZVpMS1Q5NUJYcEY2cnpEbzA1WC1oMFNYVTdRbTFfdTYyOXdvZHVQZWNTVEtweEJyUmttbzlUT3JCUFdTbUZSa0VPZUlEemttNXZB?oc=5",
@@ -2613,15 +2595,6 @@
     "label": "Positive"
    },
    {
-    "symbol": "CPPLUS",
-    "title": "Aditya Infotech (NSEI:CPPLUS) Stock Forecast & Analyst Predictions",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZnhUTG1JamRWQkpjOGxPWkJCenpKaVdRdm5hLV9WYWdPNkhTN1pnWEtJOVBCWFVPckJhLWJJQUd3QmxfRENhU1FRLWExQkN3WjN3TUhRVW9fcXNhUXcwSktLRTdvbEdrcVFjLUxFQ1NhaDRia3E5aEpXbG1scjNyRW1zYw?oc=5",
-    "source": "Simply Wall St",
-    "published": "2026-11-19 08:00",
-    "score": 0.0,
-    "label": "Neutral"
-   },
-   {
     "symbol": "SYRMA",
     "title": "Syrma SGS Technology Share Price Rise Streak and Valuation",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPamNyWC1jY0dYbTNiYWp6UnZnQzF5enBwdi1obXJiXzM5Skd3ZlJGSUZVRjNGRjB5TTlnYjJaNmRzb1lQVEx4aHItTlF5cTRKTEdUQWZFV2lENzlkNlo0MU1GQW42X1pfVXp2U0FaM0RFZDF2SXlVenlEUHVJX1dmWlc3Y1k4akdPMXNOdlNuOFM?oc=5",
@@ -2643,7 +2616,7 @@
   "errors": []
  },
  "created": "2026-10-30T14:55:17",
- "last_updated": "2026-11-25T21:55:45",
+ "last_updated": "2026-11-25T23:18:33",
  "corp_actions": [
   {
    "symbol": "TDPOWERSYS",
@@ -2769,14 +2742,14 @@
  },
  "research": {
   "method": "auto",
-  "generated": "2026-11-25 21:55",
+  "generated": "2026-11-25 23:18",
   "title": "Stock by stock (auto-generated)",
   "stocks": {
    "AEROFLEX": {
     "symbol": "AEROFLEX",
     "name": "AEROFLEX INDUSTRIES LTD",
     "view": "Neutral to bullish",
-    "view_score": 0.66,
+    "view_score": 0.72,
     "tone": "spec",
     "summary": "6.1% below its 12-month high: a shallow pullback inside the uptrend.",
     "why": "Shallow pullback, strong earnings growth, highest volatility",
@@ -2822,6 +2795,12 @@
       "kind": "catalyst",
       "source": "Business Upturn",
       "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOWVlUcFA4TWJVcWZiUWcxVnhfZmxuZG1tMERCTTB1cDJwY1JGLXBHbFVCQTd2eU95ejJWNC1nWEJlQ29QWUd5T0w5ejY4eUNtU0draENVUUVVM0RIQldmS284M0hVY0FlaW1ubUVsT05mZkItaFFVOTlQdlU5a2pzV284bk1LVzd2cXA5aXhxWW5VMFpCNUlQZGVTZUdDMDlIenJrSVU4aFVJcUI2NVRvSTZEXy12OE9YU2U3UGUzcTZ6X1NzbWRNUUdwLS1Kd1pTNmg1LW1qYWx0Ml9TaEFBcGR2SWw5aVpJeTN4RnFfT0RReVBVeWJhaWtoSkUzUU44OXAxMFpWYVNZUzYzY3ItU0djTQ?oc=5"
+     },
+     {
+      "text": "[Regulatory] Borosil Renewables (NSE:BORORENEW) Announces SEBI Special Window for Physical Share Transfers and Dematerialisation",
+      "kind": "context",
+      "source": "Kalkine Media",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOQ2JTZmZtX1FPdnJSOTlfNExIQkxVbktYTm0wVlBjR1daR1VJTzhqTEZ0ZWI2OVhNd1ZpZ3FhMDVkYThsdi1Hd0RSOW9iYlc0T1NhZmc0a3FrY0Q1Tk5hRWJPd3pPQTR1REptUU5YNHlkWUE4M1JwaGhyeHdoOXlzZEx3ZFNPLWFvMFFwcTRoLXpfd28wTlh2cERvNjR0VUxJSkFaVlJHVVNtZ3I4eEZuYVlVQWoyc1dZbGRJTUFqVjJJNlo0UFRab1pvRVUyWGo4dXVTRnFVaHZiLTNzZkRmZGdJR0FjQTBMLWtoWGgzZWw?oc=5"
      },
      {
       "text": "Since entry: -12.89% (Day 17).",
@@ -2999,7 +2978,7 @@
     "symbol": "AETHER",
     "name": "AETHER INDUSTRIES LIMITED",
     "view": "Neutral to bearish",
-    "view_score": -0.86,
+    "view_score": -0.91,
     "tone": "mod-bear",
     "summary": "12.2% below its 12-month high \u2014 consolidating after a big run.",
     "why": "Thin liquidity, stretched valuation",
@@ -3023,12 +3002,6 @@
       "url": ""
      },
      {
-      "text": "[Broker call] Aether Industries Share Price Target 2026 \u2014 Analyst Forecast",
-      "kind": "context",
-      "source": "Univest",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DcDN5MmNrdEtFUW1vV2kzU3VubWFyR1RnenpaNUdaQ3BXQXRScm9XZUFPNW84NmRaM2cwYjhyUHlYMHQxX3hlZ0dQUUMzdmVuNlRsd3htOFFELVNieXpFSkdlMG1IWGVGdUp5ZnZlQWJhWFAx?oc=5"
-     },
-     {
       "text": "[Results] Aether Industries Q2 Results FY27: Date and Expectations",
       "kind": "context",
       "source": "Univest",
@@ -3046,7 +3019,7 @@
     "symbol": "SBC",
     "name": "SBC EXPORTS LIMITED",
     "view": "Bullish",
-    "view_score": 1.55,
+    "view_score": 1.68,
     "tone": "bull",
     "summary": "Close is only -0.0% below its 12-month high \u2014 relative strength near highs.",
     "why": "Near highs, accelerating momentum, thin liquidity",
